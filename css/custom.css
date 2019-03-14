@@ -1,0 +1,67 @@
+/* Add here all your CSS customizations */
+.blueLine {
+    margin-left: -49px !important;
+}
+
+#header .header-nav-main nav > ul > li img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    display: none;
+}
+
+#header .header-nav-main nav > ul > li:focus img,
+#header .header-nav-main nav > ul > li:hover img,
+#header .header-nav-main nav > ul:not(:hover) > li > a.active img {
+    display: block;
+}
+
+.lesson-1.overlay:before {
+	background: #063c85;
+}
+
+.lesson-2.overlay:before {
+	background: #063c85;
+}
+
+.lesson-3.overlay:before {
+	background: #063c85;
+}
+
+.footFlower:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FFF;
+    height: 20px;
+    width: 20px;
+    top: -5px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+img.thumb-info-inner.innerImg {
+    width: 3.5rem;
+    left: 50%;
+    margin-left: -1.75rem;
+    margin-bottom: 1rem;
+}
+
+.text-color-primary.month {
+    color: #063c85 !important;
+}
+
+canvas#flower{
+    margin: 0;
+    padding: 0;
+    display: block; /*  ˉ\_(ツ)_/ˉ  */
+    touch-action: none; 
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
