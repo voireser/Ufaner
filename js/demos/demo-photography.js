@@ -1,7 +1,7 @@
 /*
 Name: 			Photography
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	7.2.0
+Theme Version:	7.3.0
 */
 
 // Demo Config

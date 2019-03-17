@@ -1,67 +1,36 @@
-/* Add here all your CSS customizations */
-.blueLine {
-    margin-left: -49px !important;
+.blueLine{margin-left:-49px!important}
+.lesson-1.overlay:before{background:#063c85}
+.lesson-2.overlay:before{background:#063c85}
+.lesson-3.overlay:before{background:#063c85}
+.footFlower:before{content:"";display:block;position:absolute;border-left:20px solid transparent;border-right:20px solid transparent;border-top:20px solid #FFF;height:20px;width:20px;top:-5px;left:50%;margin-left:-20px}
+img.thumb-info-inner.innerImg{width:3.5rem;left:50%;margin-left:-1.75rem;margin-bottom:1rem}
+.text-color-primary.month{color:#063c85!important}
+canvas#flower{margin:0;padding:0;display:block;touch-action:none;pointer-events:none;position:fixed;top:0;left:0;z-index:9999}
+#sub-menu{text-align:center}
+#sub-menu li>:not(i){color:#777!important}
+.Ufaner span.sub-title.text-dark{text-align:left}
+html #history .text-color-primary,html #history .text-primary{color:#003a88!important}
+.eightStep{width:8rem}
+.eightStepText{text-align:left}
+.secondLine{content:'';width:3px;right:15px;left:auto;background:#063c85;position:absolute}
+.thirdLine{content:'';width:3px;right:auto;left:15px;background:#063c85;position:absolute}
+.readMore{background-color: #003b88 !important;text-align: right}
+
+@media (max-width: 767px) {
+    .secondLine, .thirdLine { display: none }
+    .list.list-borders li:last-child {text-align: center}
 }
 
-#header .header-nav-main nav > ul > li img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 18px;
-    display: none;
+@media (min-width: 768px) and (max-width: 991px) {
+    .secondLine, .thirdLine { display: none }
 }
 
-#header .header-nav-main nav > ul > li:focus img,
-#header .header-nav-main nav > ul > li:hover img,
-#header .header-nav-main nav > ul:not(:hover) > li > a.active img {
-    display: block;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .secondLine { top:112px; height:356px; }
+    .thirdLine { top:468px; height:380px; }
 }
 
-.lesson-1.overlay:before {
-	background: #063c85;
-}
-
-.lesson-2.overlay:before {
-	background: #063c85;
-}
-
-.lesson-3.overlay:before {
-	background: #063c85;
-}
-
-.footFlower:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #FFF;
-    height: 20px;
-    width: 20px;
-    top: -5px;
-    left: 50%;
-    margin-left: -20px;
-}
-
-img.thumb-info-inner.innerImg {
-    width: 3.5rem;
-    left: 50%;
-    margin-left: -1.75rem;
-    margin-bottom: 1rem;
-}
-
-.text-color-primary.month {
-    color: #063c85 !important;
-}
-
-canvas#flower{
-    margin: 0;
-    padding: 0;
-    display: block; /*  ˉ\_(ツ)_/ˉ  */
-    touch-action: none; 
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+@media (min-width: 1200px) {
+    .secondLine { top:112px; height:330px; }
+    .thirdLine { top:440px; height:356px; }
 }

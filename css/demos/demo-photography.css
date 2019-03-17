@@ -60,7 +60,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
 }
 
 h1 {
@@ -180,23 +180,23 @@ h6 {
   border-top: 0;
 }
 #header .header-nav-main nav > ul > li:hover > a {
-  color: #adb3c2 !important;
+  color: #063c85 !important;
 }
 #header .header-nav-main nav > ul > li:hover > a.dropdown-toggle:after {
-  border-color: #adb3c2 transparent transparent transparent !important;
+  border-color: #063c85 transparent transparent transparent !important;
 }
 #header .header-nav-main nav > ul > li a {
   background: none !important;
 }
 #header .header-nav-main nav > ul > li a:focus, #header .header-nav-main nav > ul > li a:active {
-  color: #adb3c2 !important;
+  color: #063c85 !important;
 }
 #header .header-nav-main nav > ul > li a.active {
   background: transparent;
-  color: #adb3c2 !important;
+  color: #063c85 !important;
 }
 #header .header-nav-main nav > ul > li a.active.dropdown-toggle:after {
-  border-color: #adb3c2 transparent transparent transparent !important;
+  border-color: #063c85 transparent transparent transparent !important;
 }
 #header .header-nav-main nav > ul > li ul.custom-dropdown-menu-style-1 {
   background-color: #182027;
@@ -242,7 +242,7 @@ html.sticky-header-active #header .header-body {
   }
   #header .header-nav-main nav > ul > li.active > a {
     background: transparent;
-    color: #adb3c2 !important;
+    color: #063c85 !important;
   }
   #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu > a:after {
     content: "\f105";
@@ -2040,11 +2040,11 @@ section.contact-details .feature-box p, section.contact-details .feature-box a {
 #footer.light.narrow .footer-copyright {
   border: 0;
   margin: 0;
-  padding: 30px 0;
+  /* padding: 30px 0; */
   background: #E8EDF0;
 }
 #footer.light.narrow .footer-copyright p {
   color: #777;
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
   font-size: 13px;
 }

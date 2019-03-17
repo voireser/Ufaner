@@ -4268,7 +4268,7 @@ html .call-to-action.call-to-action-light p {
 }
 section.timeline .timeline-box.left:before,
 section.timeline .timeline-box.right:before {
-  background: #063c85   ;
+  background: #ca193f   ;
   -webkit-box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #063c85  ;
           box-shadow: 0 0 0 3px #ffffff, 0 0 0 6px #063c85  ;
 }

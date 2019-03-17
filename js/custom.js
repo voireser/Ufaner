@@ -12,13 +12,18 @@ window.addEventListener('resize', function(){
 
 var mouse = {
     x: undefined,
-    y: undefined
+    y: undefined,
+    YorN: 0
 }
 window.addEventListener('mousemove',
     function (event) {
         mouse.x = event.x;
         mouse.y = event.y;
-        drawCircles();
+        if (mouse.YorN === 5) {
+            drawCircles();
+            mouse.YorN = 0;
+        }
+        mouse.YorN += 1
     }
 )
 window.addEventListener("touchmove", 
@@ -97,14 +102,13 @@ function drawCircles(){
         let rgb = colorArray[Math.floor(Math.random() * colorArray.length)];
         let life = 100;
         circleArray.push(new Circle(mouse.x, mouse.y, radius, vx, vy, rgb, 1, spawnFrame, life));
-
     }
 }
 
 var frame = 0;
 function animate() {
     requestAnimationFrame(animate);
-    frame += 3;
+    frame += 1;
     c.clearRect(0, 0, innerWidth, innerHeight);
     for (let i = 0; i < circleArray.length; i++ ){
         circleArray[i].update();
