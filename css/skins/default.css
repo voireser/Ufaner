@@ -99,7 +99,7 @@ html .bg-hover-quaternary:hover {
 }
 html .bg-color-dark,
 html .bg-dark {
-  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(255, 255, 255, 1);
 }
 html .bg-color-hover-dark:hover,
 html .bg-hover-dark:hover {
@@ -2884,25 +2884,25 @@ html[dir="rtl"] #header .tip-light:before {
     color: #063c85  ;
   }
   #header .header-nav.header-nav-links nav > ul li:hover > a {
-    color: #063c85  ;
+    color: #4787de  ;
   }
   #header .header-nav.header-nav-links nav > ul:not(:hover) > li > a.active {
-    color: #063c85  ;
+    color: #4787de  ;
   }
   #header .header-nav.header-nav-links.header-nav-links-vertical-slide nav ul li.dropdown .dropdown-menu::-webkit-scrollbar-thumb {
-    background: #063c85  !important;
+    background: #4787de  !important;
   }
   #header .header-nav.header-nav-line nav > ul li:hover > a {
-    color: #063c85  ;
+    color: #4787de  ;
   }
   #header .header-nav.header-nav-line nav > ul li:hover > a:before {
-    background: #063c85 ;
+    background: #4787de ;
   }
   #header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active {
-    color: #063c85  ;
+    color: #4787de  ;
   }
   #header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active:before {
-    background: #063c85 ;
+    background: #4787de ;
   }
   #header .header-nav-main.header-nav-main-slide nav > ul > li.open > span > a,
   #header .header-nav-main.header-nav-main-slide nav > ul > li:hover > span > a {

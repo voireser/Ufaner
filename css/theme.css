@@ -391,10 +391,10 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 #header .header-nav.header-nav-spaced nav>ul>li>a{margin:0!important;padding-right:1.5rem!important;padding-left:1.5rem!important}
 #header .header-nav.header-nav-first-item-no-padding nav>ul>li:first-child>a{padding-left:0!important}
 #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown>a:before{border-bottom:0}
-#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown li a{border-bottom-color:#2a2a2a}
-#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu{background:#1e1e1e;margin-top:0}
-#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li>a{color:#969696}
-#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li:focus>a,#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li:hover>a{background:#282828}
+#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown li a{border-bottom-color:transparent}
+#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu{background:rgba(255,255,255,0.3);margin-top:0}
+#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li>a{color:#fff}
+#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li:focus>a,#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li:hover>a{background:#ffffff}
 #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown.dropdown-mega .dropdown-mega-sub-title{color:#ababab}
 #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown.dropdown-mega .dropdown-mega-sub-nav>li.active>a,#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown.dropdown-mega .dropdown-mega-sub-nav>li:active>a,#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown.dropdown-mega .dropdown-mega-sub-nav>li:focus>a,#header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown.dropdown-mega .dropdown-mega-sub-nav>li:hover>a{background:#282828}
 #header .header-nav.header-nav-sub-title .header-nav-main nav>ul>li>a,#header .header-nav.header-nav-sub-title-animated .header-nav-main nav>ul>li>a{position:relative;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-right:0;padding-left:0;margin-left:.7rem;margin-right:.7rem}

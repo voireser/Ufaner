@@ -15,6 +15,45 @@ html #history .text-color-primary,html #history .text-primary{color:#003a88!impo
 .secondLine{content:'';width:3px;right:15px;left:auto;background:#063c85;position:absolute}
 .thirdLine{content:'';width:3px;right:auto;left:15px;background:#063c85;position:absolute}
 .readMore{background-color: #003b88 !important;text-align: right}
+li.dropdown  a:hover{-webkit-animation: dropdownLi .3s;animation: dropdownLi .3s;animation-fill-mode: forwards;}
+@-webkit-keyframes dropdownLi{
+    0%{transform:rotate(0deg) scale(1,1);
+        -ms-transform:rotate(0deg) scale(1,1); 	/* IE 9 */
+        -moz-transform:rotate(0deg) scale(1,1); 	/* Firefox */
+        -webkit-transform:rotate(0deg) scale(1,1); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg) scale(1,1); 
+    }
+    100%{transform:rotate(-3deg) scale(1.1,1.1);
+        -ms-transform:rotate(-3deg) scale(1.1,1.1); 	/* IE 9 */
+        -moz-transform:rotate(-3deg) scale(1.1,1.1); 	/* Firefox */
+        -webkit-transform:rotate(-3deg) scale(1.1,1.1); /* Safari 和 Chrome */
+        -o-transform:rotate(-3deg) scale(1.1,1.1); 
+    color:#4787de}
+}
+@keyframes dropdownLi{
+    0%{transform:rotate(0deg) scale(1,1);
+        -ms-transform:rotate(0deg) scale(1,1); 	/* IE 9 */
+        -moz-transform:rotate(0deg) scale(1,1); 	/* Firefox */
+        -webkit-transform:rotate(0deg) scale(1,1); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg) scale(1,1); 
+    }
+    100%{transform:rotate(-3deg) scale(1.1,1.1);
+        -ms-transform:rotate(-3deg) scale(1.1,1.1); 	/* IE 9 */
+        -moz-transform:rotate(-3deg) scale(1.1,1.1); 	/* Firefox */
+        -webkit-transform:rotate(-3deg) scale(1.1,1.1); /* Safari 和 Chrome */
+        -o-transform:rotate(-3deg) scale(1.1,1.1); 
+    color:#4787de}
+}
+
+@media (min-width: 992px) {
+    html.sticky-header-active .bg-dark{background-color:rgba(255,255,255,0)!important;background-image:url(../img/headerGround.png)!important;background-size:100% 100%!important;}
+    html.sticky-header-active #header .header-nav.header-nav-links.header-nav-light-text nav>ul>li>a{color:#444;}
+    html.sticky-header-active #header .header-nav.header-nav-links nav>ul:not(:hover)>li>a.active{color:#4787de;}
+    html.sticky-header-active #header .header-nav.header-nav-links nav>ul li:hover>a{color:#4787de;}
+    #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li>a{color:#fff}
+    html.sticky-header-active #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu>li>a{color:#666}
+    html.sticky-header-active #header .header-nav.header-nav-dropdowns-dark nav>ul>li.dropdown .dropdown-menu{background:rgba(255,255,255,0.3)
+}
 
 @media (max-width: 767px) {
     .secondLine, .thirdLine { display: none }

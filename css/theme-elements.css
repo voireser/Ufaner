@@ -11675,7 +11675,7 @@ html.boxed .slider-container {
 
 .thumb-info .thumb-info-wrapper:after {
 	content: "";
-	background: rgba(0, 58, 135, 0.5);
+	/* background: rgba(0, 58, 135, 0.5); */
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	border-radius: 4px;
@@ -11811,8 +11811,8 @@ html.boxed .slider-container {
 }
 
 .thumb-info img {
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
 	border-radius: 3px;
 	position: relative;
 	width: 100%;
