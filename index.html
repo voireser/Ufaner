@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
@@ -21,7 +20,9 @@
 		<!-- Web Fonts  -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-		<!-- Vendor CSS -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+        <!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
 		<link rel="stylesheet" href="vendor/animate/animate.min.css">
@@ -44,6 +45,7 @@
 		
 		<!-- Skin CSS -->
         <link rel="stylesheet" href="css/skins/default.css">
+	    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
@@ -52,7 +54,7 @@
 		<script type="text/javascript" src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
-	<body>
+	<body class="index">
 		<div class="body">
 			<div role="main" class="main">
                 <header id="header" class="header-transparent header-semi-transparent-light header-effect-shrink" 
@@ -130,7 +132,7 @@
                                     data-volume="mute" 
                                     data-videowidth="100%" 
                                     data-videoheight="100%" 
-                                    data-videomp4="video/video-1.mp4" 
+                                    data-videomp4="video/video-1.mp4?1" 
                                     data-videopreload="preload" 
                                     data-videoloop="loop" 
                                     data-forceCover="1" 
@@ -213,14 +215,15 @@
                     </div>
                 </div>
 
-                <div class="container py-2">
-                    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}">
+                <div class="container" id="main">
+                    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" 
+                    data-option-key="filter" data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}">
                     </ul>
                     <div class="sort-destination-loader sort-destination-loader-showing pb-5 mt-4 pt-2">
                         <div class="row portfolio-list no-gutters sort-destination" data-sort-id="portfolio">
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-1.jpg" class="img-fluid border-radius-0" alt="">
@@ -232,7 +235,7 @@
                         
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-2.jpg" class="img-fluid border-radius-0" alt="">
@@ -244,7 +247,7 @@
                         
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-3.jpg" class="img-fluid border-radius-0" alt="">
@@ -256,7 +259,7 @@
                         
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-4.jpg" class="img-fluid border-radius-0" alt="">
@@ -268,7 +271,7 @@
                         
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-5.jpg" class="img-fluid border-radius-0" alt="">
@@ -280,7 +283,7 @@
                         
                             <div class="col-md-6 col-lg-4 isotope-item m-0 p-0">
                                 <div class="portfolio-item m-0">
-                                    <a href="portfolio-single-wide-slider.html">
+                                    <a href="">
                                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0 m-0">
                                             <span class="thumb-info-wrapper border-radius-0">
                                                 <img src="img/case-6.jpg" class="img-fluid border-radius-0" alt="">
@@ -289,303 +292,327 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                
-				<div class="main" id="main">
-					<div class="text-center pt-5 pb-4 mt-5">
-						<div class="col-md-10 mx-md-auto">
-							<h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
-								<span>优范的精彩瞬间</span>
-							</h1>
-						</div>
-                    </div>
-                    
-                    <div class="image-gallery sort-destination full-width mb-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                        <div class="isotope-item">
-                            <div class="image-gallery-item mb-0">
-                                <a href="lesson.html#lFour">
-                                    <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                        <span class="thumb-info-wrapper">
-                                            <img src="img/case-1.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title">
-                                                <img class="thumb-info-inner innerImg" src="img/lessonIcon-1.png">
-                                                <span class="thumb-info-inner">亲子游泳</span>
-                                            </span>
-                                            <span class="thumb-info-action">
-                                            </span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="isotope-item">
-                            <div class="image-gallery-item mb-0">
-                                <a href="lesson.html#lFour">
-                                    <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                        <span class="thumb-info-wrapper">
-                                            <img src="img/case-2.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title">
-                                                <img class="thumb-info-inner innerImg" src="img/lessonIcon-2.png">
-                                                <span class="thumb-info-inner">自救课</span>
-                                            </span>
-                                            <span class="thumb-info-action">
-                                            </span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="isotope-item">
-                            <div class="image-gallery-item mb-0">
-                                <a href="lesson.html#lFour">
-                                    <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                        <span class="thumb-info-wrapper">
-                                            <img src="img/case-3.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title">
-                                                <img class="thumb-info-inner innerImg" src="img/lessonIcon-3.png">
-                                                <span class="thumb-info-inner">水训课</span>
-                                            </span>
-                                            <span class="thumb-info-action">
-                                            </span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="isotope-item">
-                            <div class="image-gallery-item mb-0">
-                                <a href="lesson.html#lFour">
-                                    <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                        <span class="thumb-info-wrapper">
-                                            <img src="img/case-4.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title">
-                                                <img class="thumb-info-inner innerImg" src="img/lessonIcon-4.png">
-                                                <span class="thumb-info-inner">水适能课</span>
-                                            </span>
-                                            <span class="thumb-info-action">
-                                            </span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="isotope-item">
-                            <div class="image-gallery-item mb-0">
-                                <a href="lesson.html#lFour">
-                                    <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                                        <span class="thumb-info-wrapper">
-                                            <img src="img/case-5.jpg" class="img-fluid" alt="">
-                                            <span class="thumb-info-title">
-                                                <span class="thumb-info-inner">了解更多</span>
-                                            </span>
-                                            <span class="thumb-info-action">
-                                            </span>
-                                        </span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <section class="section my-0">
-                    <div class="container py-5">
-                        <div class="row justify-content-center py-4">
-                            <div class="col-12 col-sm-auto text-center text-sm-left">
-                                <span class="d-block font-weight-light negative-ls-1 text-3 ml-2 mb-1 appear-animation" data-appear-animation="fadeInUp"><em class="opacity-8">源于美国60年历史</em></span>
-                                <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200" style="white-space: nowrap">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;品 牌 起 源&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </em></h1>
-                                <span class="d-block text-sm-right alternative-font text-color-primay ml-2 ml-sm-0 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="400">since <span style="color: #ca193f;">1960</span></span>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-10 text-center">
-                                <p class="lead lead-2 mb-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
-                                    水中运动起源于二战之后,1950年，Virginia Hunt Newman女士开始在美国教授婴儿及幼儿水中运动课程，并且在后来的几十年中影响了一大批水中运动的倡导者，在60-70年代传入其他西方发达国家。</p>
-                                <img class="lead lead-2 mb-5 appear-animation col-lg-6 col-lg-offset-3" src="img/indexBrandF.png" data-appear-animation="fadeInUp" data-appear-animation-delay="700">
-                                <p class="lead lead-2 mb-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800">
-                                    由于Virginia突出而意义非凡的贡献，她在1971年获得由美国国家服务奖，1983年获得美国国家荣誉奖。并于1980年成为美国国家水中运动运动基金的执行董事。1993年，由于她创始的亲子水中运动运动在世界范围内的影响力，Virginia被国际水中运动名人堂授予了先锋贡献奖……</p>
-                                <a href="Ufaner.html" data-hash data-hash-offset="125" class="btn btn-primary btn-rounded btn-xl font-weight-semibold text-2 px-5 py-3 box-shadow-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800">了解更多</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="section bg-color-grey section-height-3 border-0 m-0 appear-animation" data-appear-animation="fadeIn">
-                    <div class="text-center pb-4 mb-3">
-                        <div class="col-md-10 mx-md-auto">
-                            <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="fadeInUpShorter">
-                                <span>我们的课程</span>
-                            </h1>
-                        </div>
-                    </div>
-                    <div class="container my-3">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                <div class="featured-boxes featured-boxes-modern-style-1">
-                                    <div class="featured-box overlay lesson-1 overlay-show">
-                                        <div class="featured-box-background" style="background-image: url(img/lesson-1.jpg); background-size: cover; background-position: center;"></div>
-                                        <div class="box-content px-lg-4 px-xl-5 py-lg-5">
-                                            <h2>四大课程</h2>
-                                            <p class="font-weight-light">为每个孩子提供最优秀的游泳课程</p>
-                                            <a href="lesson.html" class="btn btn-light-2 btn-outline font-weight-semibold btn-px-5 btn-py-2 border-width-1 text-1">了解更多</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-                                <div class="featured-boxes featured-boxes-modern-style-1">
-                                    <div class="featured-box overlay lesson-2 overlay-show">
-                                        <div class="featured-box-background" style="background-image: url(img/lesson-2.jpg); background-size: cover; background-position: center;"></div>
-                                        <div class="box-content px-lg-4 px-xl-5 py-lg-5">
-                                            <h2>八段学习阶梯体系</h2>
-                                            <p class="font-weight-light">让孩子科学成长</p>
-                                            <a href="lesson.html" class="btn btn-light-2 btn-outline font-weight-semibold btn-px-5 btn-py-2 border-width-1 text-1">了解更多</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-10 col-md-7 col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="featured-boxes featured-boxes-modern-style-1">
-                                    <div class="featured-box overlay lesson-3 overlay-show">
-                                        <div class="featured-box-background" style="background-image: url(img/lesson-3.jpg); background-size: cover; background-position: center;"></div>
-                                        <div class="box-content px-lg-4 px-xl-5 py-lg-5">
-                                            <h2>九级奖励机制</h2>
-                                            <p class="font-weight-light">鼓励孩子不断进步</p>
-                                            <a href="lesson.html" class="btn btn-light-2 btn-outline font-weight-semibold btn-px-5 btn-py-2 border-width-1 text-1">了解更多</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="section section-height-3 border-0 m-0 appear-animation" data-appear-animation="fadeIn">
-                    <div class="container">
-                        <div class="row text-center pb-4 mb-3">
-                            <div class="col-md-10 mx-md-auto">
-                                <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="fadeInUpShorter">
-                                    <span>优范 ING</span>
-                                </h1>
+                            <a href="#" class="floatWindow caseIndex wave">
+                                <span>专属空间</span>
+                                <p>
+                                    优范儿 | YOUFANER 根据中国宝宝的体质研发的综合水
+                                    中运动课程，针对不同年龄、体质、及成长阶段而设计，
+                                    能为每个独特的宝宝找到最适合他们的课程
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="aboutArea row">
+                        <div class="col-lg-12">
+                            <img src="img/aboutAreaFlower.png" alt="">
+                            <p class="">
+                                体育的培养也是一种人格的培养，游泳是在儿童体育运动中最能提升孩子各方面能力的体育运动，每个孩子从不能游，不会游，不敢游，到在水中“自游自在”的享受游泳运动带来的快乐。是心理，生理上的一种全方位的提升。所以在优范儿，我们希望帮助每一个孩子都能爱上运动......<a class="particletext bubbles" style="color: #063c85" href="">MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="boxInside">
+                        <p class="title">国际同步</p>
+                        <div class="row counters text-dark">
+                            <div class="col-sm-4 col-lg-4 mb-4 mb-lg-0">
+                                <div class="counter">
+                                    <div class="row">
+                                        <img src="img/aboutIcon_1.png" alt="">
+                                        <strong data-to="30000" data-append="+">0</strong>
+                                    </div>
+                                    <label>名毕业宝宝</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 mb-4 mb-sm-0">
+                                <div class="counter">
+                                    <div class="row">
+                                        <img src="img/aboutIcon_2.png" alt="">
+                                        <strong data-to="352">0</strong>
+                                    </div>
+                                    <label>个进驻城市</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-4">
+                                <div class="counter">
+                                    <div class="row">
+                                        <img src="img/aboutIcon_3.png" alt="">
+                                        <strong data-to="178">0</strong>
+                                    </div>
+                                    <label>个门店</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="row recent-posts appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                                <article>
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="news-inside.html" class="text-decoration-none">
-                                                <img src="img/news-1.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                                            </a>
-                                        </div>
+                        <p class="wordInside">
+                            <strong>优范儿 | YourFancy </strong>亲子水育中心，成立于2013年，隶属于北京优范儿教育科技有限公司。作为全国最高端的亲子水育中心，优范儿致力于为0-8岁的婴幼儿及家庭提供科学、健康、全方位的亲子运动服务。优范儿（YourFancy）的课程起源于美国，并由美国常青藤名校布林斯顿教授-Isaac，东京著名的儿童医学专家-柴崎广骏、慕尼黑伊萨右岸医院主任-Erik、北京海淀医院全科主任杜乃勤等多名专家共同汇编而成......<a class="particletext bubbles" style="color: #063c85" href="">MORE</a>
+                        </p>
+                        <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio"
+                        data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
+                        <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
+                            <div class="row portfolio-list no-gutters sort-destination" data-sort-id="portfolio">
+                                <div class="col-lg-12 isotope-item">
+                                    <div class="portfolio-item">
+                                        <a href="">
+                                            <span class="thumb-info thumb-info-lighten border-radius-0">
+                                                <span class="thumb-info-wrapper border-radius-0">
+                                                    <span class="owl-carousel owl-theme dots-inside m-0" 
+                                                    data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}">
+                                                        <span>
+                                                            <img src="img/us_1.jpg" class="img-fluid border-radius-0" alt="">
+                                                        </span>
+                                                        <span>
+                                                            <img src="img/us_2.jpg" class="img-fluid border-radius-0" alt="">
+                                                        </span>
+                                                        <span>
+                                                            <img src="img/us_3.jpg" class="img-fluid border-radius-0" alt="">
+                                                        </span>
+                                                        <span>
+                                                            <img src="img/us_4.jpg" class="img-fluid border-radius-0" alt="">
+                                                        </span>
+                                                        <span>
+                                                            <img src="img/us_5.jpg" class="img-fluid border-radius-0" alt="">
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </a>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-auto pr-0">
-                                            <div class="date">
-                                                <span class="day bg-color-light text-color-dark font-weight-extra-bold">15</span>
-                                                <span class="month bg-color-light font-weight-semibold text-color-primary text-1">十一月</span>
-                                            </div>
-                                        </div>
-                                        <div class="col pl-1">
-                                            <h4 class="line-height-3 text-4"><a href="news-inside.html" class="text-dark">新闻标题新闻标题</a></h4>
-                                            <p class="line-height-5 opacity-6 pr-4 mb-1">新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
-                                            <a href="" class="read-more font-weight-semibold text-2">阅读更多 <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-                                <article>
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="news-inside.html" class="text-decoration-none">
-                                                <img src="img/news-2.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-auto pr-0">
-                                            <div class="date">
-                                                <span class="day bg-color-light text-color-dark font-weight-extra-bold">14</span>
-                                                <span class="month bg-color-light font-weight-semibold text-color-primary text-1">十一月</span>
-                                            </div>
-                                        </div>
-                                        <div class="col pl-1">
-                                            <h4 class="line-height-3 text-4"><a href="news-inside.html" class="text-dark">新闻标题新闻标题</a></h4>
-                                            <p class="line-height-5 opacity-6 pr-4 mb-1">新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
-                                            <a href="" class="read-more font-weight-semibold text-2">阅读更多 <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                                <article>
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="news-inside.html" class="text-decoration-none">
-                                                <img src="img/news-3.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-auto pr-0">
-                                            <div class="date">
-                                                <span class="day bg-color-light text-color-dark font-weight-extra-bold">13</span>
-                                                <span class="month bg-color-light font-weight-semibold text-color-primary text-1">十一月</span>
-                                            </div>
-                                        </div>
-                                        <div class="col pl-1">
-                                            <h4 class="line-height-3 text-4"><a href="news-inside.html" class="text-dark">新闻标题新闻标题</a></h4>
-                                            <p class="line-height-5 opacity-6 pr-4 mb-1">新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
-                                            <a href="" class="read-more font-weight-semibold text-2">阅读更多 <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <article>
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="news-inside.html" class="text-decoration-none">
-                                                <img src="img/news-4.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-auto pr-0">
-                                            <div class="date">
-                                                <span class="day bg-color-light text-color-dark font-weight-extra-bold">12</span>
-                                                <span class="month bg-color-light font-weight-semibold text-color-primary text-1">十一月</span>
-                                            </div>
-                                        </div>
-                                        <div class="col pl-1">
-                                            <h4 class="line-height-3 text-4"><a href="news-inside.html" class="text-dark">新闻标题新闻标题</a></h4>
-                                            <p class="line-height-5 opacity-6 pr-4 mb-1">新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
-                                            <a href="" class="read-more font-weight-semibold text-2">阅读更多 <i class="fas fa-chevron-right text-1 ml-1"></i></a>
-                                        </div>
-                                    </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+
+                <div class="container">
+                    <div class="aboutArea second row">
+                        <div class="col-lg-12">
+                            <img src="img/aboutAreaFlower_2.png" alt="">
+                            <p class="">
+                                传统健身馆的“棍棒式”教育，为了技能的提升，“学习”变成了逼迫式的教学。虽然学会了，但是孩子可能从那天起已经讨厌上了游泳，讨厌了运动，更甚至对“学习”这件事产生了抵触。水育中心又是以娱乐、游乐为主，在能力提升方面实在有限。
+                                所以我决心做一家能够真正培养孩子对“学习”的兴趣，让孩子从刚出生开始就爱上学习，让孩子可以受用终生的教育机构。通过对孩子人格的培养，让孩子可以在生理、心理、人际等多个层面得到全方位的增强。
+                                这也是优范儿教育的核心所在，所以在优范儿我们做的真真正正的是一家教育机构......<a class="particletext bubbles" style="color: #063c85" href="">MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <p class="title">我们的课程</p>
+                    <div class="container">
+                        <div class="ballArea row">
+                            <img class="ball" src="img/ball.png" alt="">
+                        </div>
+                    </div>
+                    <p class="titleNext">为每个孩子提供最优秀的游泳课程</p>
+                    <div class="row">
+                        <div class="project-list col-lg-4">
+                            <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="img/lesson-1.jpg" alt=""></a>
+                                    <div class="project__detail">
+                                        <img src="img/lessonIcon-4.png" class="project__title">
+                                        <small class="project__category"><a href="#">水育早教</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-list col-lg-4">
+                            <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="img/lesson-3.jpg" alt=""></a>
+                                    <div class="project__detail">
+                                        <img src="img/lessonIcon-1.png" class="project__title">
+                                        <small class="project__category"><a href="#">亲子游泳</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-list col-lg-4">
+                            <div class="project">
+                                <div class="project__card">
+                                    <a href="" class="project__image"><img src="img/lesson-2.jpg" alt=""></a>
+                                    <div class="project__detail">
+                                        <img src="img/lessonIcon-2.png" class="project__title">
+                                        <small class="project__category"><a href="#">水训课</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="boxInside">
+                        <p class="title">Youfanering</p>
+                        
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="blog-posts">
+                                    <article class="post post-medium">
+                                        <div class="row mb-3">
+                                            <div class="col-lg-5">
+                                                <div class="post-image">
+                                                    <a href="">
+                                                        <img src="img/newsLarge-1.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="post-content">
+                                                    <h2 class="font-weight-semibold text-5 line-height-4 mb-2"><a href="">新闻新闻新闻标题</a></h2>
+                                                    <p class="mb-0">新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容 [...]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="post-meta">
+                                                    <span><i class="far fa-calendar-alt"></i> 2019-3-27 </span>
+                                                    <span><i class="far fa-folder"></i> <a href="">两会</a>, <a href="">游泳</a> </span>
+                                                    <span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="" class="particletext bubbles">MORE</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog-posts">
+                                    <article class="post post-medium">
+                                        <div class="row mb-3">
+                                            <div class="col-lg-5">
+                                                <div class="post-image">
+                                                    <a href="">
+                                                        <img src="img/newsLarge-2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="post-content">
+                                                    <h2 class="font-weight-semibold text-5 line-height-4 mb-2"><a href="">新闻新闻新闻标题</a></h2>
+                                                    <p class="mb-0">新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容 [...]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="post-meta">
+                                                    <span><i class="far fa-calendar-alt"></i> 2019-3-27 </span>
+                                                    <span><i class="far fa-folder"></i> <a href="">两会</a>, <a href="">游泳</a> </span>
+                                                    <span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="" class="particletext bubbles">MORE</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog-posts">
+                                    <article class="post post-medium">
+                                        <div class="row mb-3">
+                                            <div class="col-lg-5">
+                                                <div class="post-image">
+                                                    <a href="">
+                                                        <img src="img/newsLarge-1.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="post-content">
+                                                    <h2 class="font-weight-semibold text-5 line-height-4 mb-2"><a href="">新闻新闻新闻标题</a></h2>
+                                                    <p class="mb-0">新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容 [...]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="post-meta">
+                                                    <span><i class="far fa-calendar-alt"></i> 2019-3-27 </span>
+                                                    <span><i class="far fa-folder"></i> <a href="">两会</a>, <a href="">游泳</a> </span>
+                                                    <span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="" class="particletext bubbles">MORE</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="blog-posts">
+                                    <article class="post post-medium">
+                                        <div class="row mb-3">
+                                            <div class="col-lg-5">
+                                                <div class="post-image">
+                                                    <a href="">
+                                                        <img src="img/newsLarge-2.jpg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="post-content">
+                                                    <h2 class="font-weight-semibold text-5 line-height-4 mb-2"><a href="">新闻新闻新闻标题</a></h2>
+                                                    <p class="mb-0">新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容新闻新闻新闻新闻新闻内容 [...]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="post-meta">
+                                                    <span><i class="far fa-calendar-alt"></i> 2019-3-27 </span>
+                                                    <span><i class="far fa-folder"></i> <a href="">两会</a>, <a href="">游泳</a> </span>
+                                                    <span class="d-block d-sm-inline-block float-sm-right mt-3 mt-sm-0"><a href="" class="particletext bubbles">MORE</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+				<div class="container">
+                    <p class="title" style="margin-bottom: 0px;">认证</p>
+                    <div class="row text-center mt-5">
+                        <div class="owl-carousel owl-theme carousel-center-active-item"
+                        data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1},
+                        '768': {'items': 5}, '992': {'items': 5}, '1200': {'items': 5}}, 'autoplay': true, 
+                        'autoplayTimeout': 6000, 'dots': false}">
+                            <div>
+                                <img class="img-fluid" src="img/logo_1.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="img/logo_2.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="img/logo_3.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="img/logo_4.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="img/logo_5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 
             <footer id="footer" class="border-0 footFlower" style="background: url('img/parallax-8.jpg'); background-size:cover; background-position: 0 100%;">
 				<div class="container py-4">
 					<div class="row justify-content-md-center py-5 mt-3">
 						<div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="index"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
+							<a href="index.html"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
 						</div>
 					
-						<div class="col-md-6 text-center text-lg-left">
-                            <p class="mt-3 mb-0 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-right">
+                            <p class="mt-3 mb-0 text-center text-lg-right">
                                 <i class="fab fa-whatsapp text-color-primary"></i><span class="text-color-light opacity-7 pl-2">400-660-1255</span>
-                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mailto:mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
+                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
                                 <i class="far fa-dot-circle text-color-primary ml-4"></i><span class="opacity-7 pl-2 text-color-light">北京市朝阳区世贸天阶南街</span>
                             </p>
 						</div>
@@ -633,7 +660,7 @@
         <script type="text/javascript" src="js/views/view.home.js"></script>
         
 		<!-- Theme Custom -->
-		<script type="text/javascript" src="js/custom.js"></script>
+	    <script src="js/jquery.hover3d.js" ></script>
 		
 		<!-- Theme Initialization Files -->
 		<script type="text/javascript" src="js/theme.init.js"></script>

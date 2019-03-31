@@ -1953,7 +1953,7 @@ html .inverted-light {
 }
 .owl-carousel .owl-dots .owl-dot.active span,
 .owl-carousel .owl-dots .owl-dot:hover span {
-  background-color: #0074ad;
+  /* background-color: #0074ad; */
 }
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"],
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:hover,

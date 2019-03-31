@@ -3098,15 +3098,16 @@ html.ie9 .call-to-action.button-centered .container > .row > [class*="col-"], ht
 .counters strong {
 	display: block;
 	font-weight: bold;
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 60px;
+	line-height: 65px;
 }
 
 .counters label {
 	display: block;
 	font-weight: 100;
 	font-size: 20px;
-	line-height: 20px;
+    line-height: 20px;
+    color: #063c85;
 }
 
 .counters .counter-side-icon [class*="fa-"], .counters .counter-side-icon .icons, .counters .counter-side-icon strong {
@@ -10331,7 +10332,7 @@ html.boxed .slider-container {
 
 /* Sort Destination */
 .sort-destination {
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .sort-destination .isotope-item {
