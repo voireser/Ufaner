@@ -18,6 +18,7 @@
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<!-- Web Fonts  -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
@@ -54,367 +55,215 @@
 	</head>
 	<body>
 		<div class="body">
-			<div role="main" class="main">
-                <header id="header" class="header-narrow header-below-slider" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-                    <div class="header-body border-top-0">
-                        <div class="header-container container-fluid px-lg-4">
-                            <div class="header-row">
-                                <div class="header-column">
-                                    <div class="header-row">
-                                        <div class="header-logo">
-                                            <a href="index.html">
-                                                <img alt="Porto" width="112" height="40" data-sticky-width="112" data-sticky-height="40" src="img/logo.png">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="header-column justify-content-end mr-lg-4">
-                                    <div class="header-row">
-                                        <div class="header-nav header-nav-links order-2 order-lg-1">
-                                            <div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                                <nav class="collapse">
-                                                    <ul class="nav nav-pills" id="mainNav">
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html">主页</a></li>
-                                                        <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
-                                                                <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="lesson.html">我们的课程</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="lesson.html#lFour">四大课程</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
-                                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                                <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul> -->
-                                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                                                <i class="fas fa-bars"></i>
-                                            </button>
-                                        </div>
+            <header id="header" class="header-transparent header-semi-transparent-light header-effect-shrink" 
+            data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 
+            'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 320, 'stickyHeaderContainerHeight': 70}">
+                <div class="header-body border-top-0 bg-dark box-shadow-none">
+                    <div class="header-container container-fluid px-lg-4">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo header-logo-sticky-change">
+                                        <a href="index.html">
+                                            <img class="header-logo-non-sticky opacity-0" width="112" height="40" src="img/logo-default-slim-dark.png">
+                                            <img class="header-logo-sticky opacity-0" width="112" height="40" src="img/logo.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="page-header page-header-modern page-header-background page-header-background-sm overlay overlay-color-primary overlay-show overlay-op-8 mb-5" style="background-image: url(img/page-header-elements.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 align-self-center p-static order-2 text-center">
-								<h1>我们的课程</h1>
-							</div>
-							<div class="col-md-12 align-self-center order-1">
-								<ul class="breadcrumb breadcrumb-light d-block text-center">
-									<li class="active">我们让孩子在中国最好的水中学习成长</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-                
-                <div class="row text-center pt-5 pb-0 mt-5 mb-0" id="lFour">
-                    <div class="col-md-10 mx-md-auto">
-                        <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">
-                            <span>四大课程</span>
-                        </h1>
-                        <p class="appear-animation mb-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                            为每个孩子提供最优秀的游泳课程
-                        </p>
-                    </div>
-                </div>
-
-                <div class="container py-4 mb-5">
-                    <div class="col-lg-12 isotope-item mt-4 brands">
-                        <div class="row lessonFour">
-                            <div class="col-lg-3">
-                                <div class="portfolio-item">
-                                    <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-                                        <img src="img/lessonMain-1.png" class="img-fluid border-radius-0" alt="">
-                                    </span>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+                                        <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="index.html">主页</a></li>
+                                                    <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
+                                                            <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="lesson.html">我们的课程</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="lesson.html#lFour">三大课程</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
+                                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul> -->
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <div class="overflow-hidden">
-                                    <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="700">亲子游泳</h2>
-                                </div>
-                                <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                                    延续宝宝与生俱来的亲水性，开启宝宝发现的本能及对运动的欲望，激发其自主运动意识，熟悉外力支撑躺在妈妈肩上的感觉。通过教练在水中的指导，妈妈与孩子建立良好的亲子关系，帮助宝宝认知美妙的世界。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 isotope-item mt-4 brands">
-                        <div class="row lessonFour">
-                            <div class="col-lg-3">
-                                <div class="portfolio-item">
-                                    <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-                                        <img src="img/lessonMain-2.png" class="img-fluid border-radius-0" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <div class="overflow-hidden">
-                                    <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="700">水训课</h2>
-                                </div>
-                                <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                                    由专业的儿童游泳教练，运用国际领先的科学训练方式，从培养兴趣到熟悉掌握有用技能，发掘孩子的运动天赋、增强体能、学会呼吸控制及自由泳、仰泳、蛙泳、蝶泳四种各专业泳姿，以及标准的跳水、出发转身。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 isotope-item mt-4 brands">
-                        <div class="row lessonFour">
-                            <div class="col-lg-3">
-                                <div class="portfolio-item">
-                                    <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-                                        <img src="img/lessonMain-3.png" class="img-fluid border-radius-0" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <div class="overflow-hidden">
-                                    <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="700">自救课</h2>
-                                </div>
-                                <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                                    通过过安全、系统、规范的课程体系，让孩子对呼吸达到一个有效的控制，不断巩固加强孩子应急入水的能力，深化在水中自主推进、滑行、独立俯仰转换等专业技能，让孩子掌握初步的水中自救的本领。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 isotope-item mt-4 brands">
-                        <div class="row lessonFour">
-                            <div class="col-lg-3">
-                                <div class="portfolio-item">
-                                    <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500">
-                                        <img src="img/lessonMain-4.png" class="img-fluid border-radius-0" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-9">
-                                <div class="overflow-hidden">
-                                    <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="700">水适能课</h2>
-                                </div>
-                                <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                                    结合孩子爱玩的天性，不在局限于运动形式，以水为媒介，把玩乐融入到水中课程中来，通过合理的运动量以增强孩子的体能储备，增强儿童的身体素质、专注力团队参与感和竞争意识。通过科学系统的训练，让孩子力量、速度、耐力、柔韧性等身体素质等到全面发展，拥有实现梦想的能力。
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </header>
 
-                <section class="section bg-color-grey section-height-3 border-0 m-0 appear-animation" data-appear-animation="fadeIn" id="lEight">
-                    <div class="row text-center pb-4 mb-4">
-                        <div class="col-md-10 mx-md-auto">
-                            <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="fadeInUpShorter">
-                                <span>八大学习阶梯体系</span>
-                            </h1>
-                            <p class="appear-animation mb-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                                让孩子科学成长
-                            </p>
-                        </div>
-                    </div>
-                    <div class="container py-2">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-2">基础 · C1-C4</h4>
-    
-                                <div class="row process mt-5">
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-                                        <img class="eightStep" src="img/eightStep-1.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以延续宝贝本能闭气反射能力、熟悉适应水、有辅助传递和潜水、放松仰漂、坐立入水为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
-                                        <img class="eightStep" src="img/eightStep-2.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以锻炼宝贝主动踢腿意识和能力、潜水长短漂浮、精细动作、俯仰转换、站立入水为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">
-                                        <img class="eightStep" src="img/eightStep-3.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以呼吸控制、主动潜水，抓边上岸、在水中无辅助的推进滑行、站立跳水、建立规则和秩序感等练习为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800">
-                                        <img class="eightStep" src="img/eightStep-4.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以鼓励孩子连续独立的呼吸控制、主动踢腿游进能力、独立俯仰转换、安全自救能力、为水训课打下坚实的基础练习为主。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container py-2">
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-2">提高 · W1-W4</h4>
-    
-                                <div class="row process mt-5">
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-                                        <img class="eightStep" src="img/eightStep-5.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以锻炼孩子连续呼吸换气能力、扶板踢腿游进、有辅助划手练习、独立俯仰转换、跳水出发等练习为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                                        <img class="eightStep" src="img/eightStep-6.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以锻炼孩子独立踢腿游进、扶板划手配合、转头呼吸换气、独立池底取物、仰泳初步练习为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-                                        <img class="eightStep" src="img/eightStep-7.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以自由泳独立配合游进、仰泳独立配合游进、蛙泳初步练习、标准的出发转身等练习为主。</p>
-                                        </div>
-                                    </div>
-                                    <div class="process-step col-md-6 col-lg-3 mb-5 mb-md-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-                                        <img class="eightStep" src="img/eightStep-8.png">
-                                        <div class="process-step-content">
-                                            <p class="mb-0 eightStepText">主要以四种泳姿独立配合游进、增加游进距离和提高游进速度、比赛标准的跳水出发和转身技术为主。</p>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="row text-center pt-5 mt-4" id="lNight">
-                    <div class="col-md-10 mx-md-auto">
-                        <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="fadeInUpShorter">
-                            <span>九级奖励机制</span>
-                        </h1>
-                        <p class="appear-animation mb-0" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-                            鼓励孩子不断进步
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="container py-2">
+            <section class="bannerThin page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/banner_lesson.jpg);">
+                <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <div class="row process process-connecting-line my-5">
-                                <div class="connecting-line appear-animation" data-appear-animation="fadeIn"></div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-                                    <img class="eightStep" src="img/nightLevel-1.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">一星</h4>
-                                        <p class="mb-0">能够适应脸上及眼睛有水，有主动踢腿地意识，可以适应周围环境，放松地躺在妈妈肩上。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-                                    <img class="eightStep" src="img/nightLevel-2.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">二星</h4>
-                                        <p class="mb-0">轻松潜水2s，仰泳时适应耳朵没入水中，听从指令坐立入水，会帮妈妈擦脸，与家长配合默契。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-                                    <img class="eightStep" src="img/nightLevel-3.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">三星</h4>
-                                        <p class="mb-0">放松状态下潜水漂浮3s，独立跳入水中，转身抓边上岸，借助面条放松漂浮在水面上，跳水自信且勇敢，懂得和他人分享。</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="connecting-line appear-animation secondLine" data-appear-animation="fadeIn"></div>
-                            
-                            <div class="row process process-connecting-line my-5">
-                                <div class="connecting-line appear-animation" data-appear-animation="fadeIn"></div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">
-                                    <img class="eightStep" src="img/nightLevel-6.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">银牌</h4>
-                                        <p class="mb-0">无辅助的情况下自由泳游进20m，仰配合游进20m，独立池底取物，有独立思考和解决问题的能力，会主动学习。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800">
-                                    <img class="eightStep" src="img/nightLevel-5.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">铜牌</h4>
-                                        <p class="mb-0">脚踩池底连续的呼吸换气10次，再无辅助的情况下，手拿扶板踢腿游进10m，无辅助划手配合游进6m独立在水面上仰漂5s，有团队合作意识，遵守纪律。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000">
-                                    <img class="eightStep" src="img/nightLevel-4.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">四星</h4>
-                                        <p class="mb-0">独立完成俯仰转换，有连续呼吸控制，在无辅助的情况下独立踢腿游进3m，有辅助情况下扶板踢腿与呼吸配合游进10m，有初步独立能力，享受课程。</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="connecting-line appear-animation thirdLine" data-appear-animation="fadeIn"></div>
-                            
-                            <div class="row process process-connecting-line my-5">
-                                <div class="connecting-line appear-animation" data-appear-animation="fadeIn"></div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-                                    <img class="eightStep" src="img/nightLevel-7.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">金牌</h4>
-                                        <p class="mb-0">无辅助情况下，独立自由泳完整配合游进40m，仰泳配合游进40m,蛙泳整体配合游进40m.爱生活，享受游泳。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-                                    <img class="eightStep" src="img/nightLevel-8.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">奖杯</h4>
-                                        <p class="mb-0">四种泳姿独立游进各40米，标准的出发和转身技术，享受快乐，玩转泳池。</p>
-                                    </div>
-                                </div>
-                                <div class="process-step col-lg-4 mb-5 mb-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-                                    <img class="eightStep" src="img/nightLevel-9.png">
-                                    <div class="process-step-content">
-                                        <h4 class="mb-1 text-4 font-weight-bold">结业证书</h4>
-                                        <p class="mb-0">送给即将毕业的每一位宝贝，感谢这一路得信任与陪伴，我们要让学习成为一种习惯。让运动成为一种生活方式，继续享受生活。</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+                            <h1 class="text-9 font-weight-bold">完 美 水 质</h1>
+                            <span class="sub-title">采用国际空间站和雅典奥运会泳池的水设备处理100%不添加任何化学物的泳池<br>水质达到欧盟饮用水标准</span>
                         </div>
                     </div>
                 </div>
-			</div>
+            </section>
+
+            <div class="container brandMain">
+                <div class="row">
+                    <div class="boxInside">
+                        <p class="title">教学理论</p>
+                        <p class="wordInside col-lg-4">
+                            <strong>3个维度 </strong><br>优范儿水育运动课程，既不偏重于单个维度或单项技能培养，而是从“生理、心理、智力”三个维度六大方向扩充教育内涵，制定出二十一个一级发展指标，让教育立体化，为孩子提供全面而丰富的体验机会。</p>
+                        <div class="steps">
+                            <img class="step" src="img/steps_1.png" alt="">
+                            <img src="img/steps_and.png" alt="">
+                            <img class="step" src="img/steps_2.png" alt="">
+                            <img src="img/steps_and.png" alt="">
+                            <img class="step" src="img/steps_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container lesson" id="lFour">
+                <p class="title">三大课程</p>
+                <p class="titleNext">为每个孩子提供最优秀的游泳课程</p>
+                <div class="row">
+                    <a class="col-lg-4" href="#" data-toggle="modal" data-target="#lesson_1">
+                        <img src="img/lessonIcon-4.png" alt="">
+                        <p>水育早教</p>
+                        <p>通过过安全、系统、规范的课程体系，让孩子对呼吸达到一个有效的控制，不断巩固加强孩子应急入水的能力，深化在水中自主推进、滑行、独立俯仰转换等专业技能，让孩子掌握初步的水中自救的本领。
+                            <span class="particletext bubbles" style="color: #063c85; float: right;">MORE</span></p>
+                    </a>
+                    <a class="col-lg-4" href="#" data-toggle="modal" data-target="#lesson_2">
+                        <img src="img/lessonIcon-1.png" alt="">
+                        <p>亲子游泳</p>
+                        <p>延续宝宝与生俱来的亲水性，开启宝宝发现的本能及对运动的欲望，激发其自主运动意识，熟悉外力支撑躺在妈妈肩上的感觉。通过教练在水中的指导，妈妈与孩子建立良好的亲子关系，帮助宝宝认知美妙的世界。
+                            <span class="particletext bubbles" style="color: #063c85; float: right;">MORE</span></p>
+                    </a>
+                    <a class="col-lg-4" href="#" data-toggle="modal" data-target="#lesson_3">
+                        <div>
+                            <img src="img/lessonIcon-2.png" alt="">
+                            <img src="img/lessonIcon-3.png" alt="">
+                        </div>
+                        <p>水训课</p>
+                        <p>由专业的儿童游泳教练，运用国际领先的科学训练方式，从培养兴趣到熟悉掌握有用技能，充分发掘孩子的运动天赋、增强体能、学会呼吸控制及自由泳、仰泳、蛙泳、蝶泳四种各专业泳姿，以及标准的跳水、出发转身。
+                            <span class="particletext bubbles" style="color: #063c85; float: right;">MORE</span></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lesson_1" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <img src="img/lesson_inside_1.png" alt="">
+                </div>
+            </div>
+            <div class="modal fade" id="lesson_2" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <img src="img/lesson_inside_2.png" alt="">
+                </div>
+            </div>
+            <div class="modal fade" id="lesson_3" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <img src="img/lesson_inside_3.png" alt="">
+                </div>
+            </div>  
+            
+            <div class="container" id="lEight">
+                <div class="row">
+                    <div class="boxInside level">
+                        <p class="title">成长与进阶</p>
+                        <div class="levelTab">
+                            <span>B1-C1</span><span>B2-C2</span><span>B3-C3</span><span>B4-C4</span>
+                            <span>W1</span><span>W2</span><span>W3</span><span>W4</span>
+                        </div>
+                        <div class="levelImg">
+                            <img src="img/levelInside.png" style="" alt="">
+                            <img src="img/levelFrame.png" alt="">
+                            <div style="height: 90%"></div>
+                        </div>
+                        <p class="wordInside col-lg-6">
+                            <strong>B1-C1</strong> 主要以延续宝贝本能闭气反射能力、熟悉适应水、有辅助传递和潜水、放松仰漂、坐立入水，以及锻炼宝贝五指分化及手眼协调能力，初步培养宝贝音乐感知能力。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container lesson" style="margin-bottom: 150px;" id="lNight">
+                <p class="title">帮助与鼓励</p>
+                <p class="titleNext">鼓励孩子不断进步</p>
+                <div class="row">
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-1.png"/>
+                                <p class="info">一星阶</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-2.png"/>
+                                <p class="info">二星阶</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-3.png"/>
+                                <p class="info">三星阶</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-4.png"/>
+                                <p class="info">四星阶</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-5.png"/>
+                                <p class="info">铜牌</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-6.png"/>
+                                <p class="info">银牌</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-7.png"/>
+                                <p class="info">金牌</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-8.png"/>
+                                <p class="info">奖杯</p>
+                            </div>
+                            <div class="frame">
+                                <img class="image" src="img/nightLevel-9.png"/>
+                                <p class="info">结业证书</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p><strong style="color: #063c85; font-size: 24px;">一星级</strong><br>送给即将毕业的每一位宝贝，感谢这一路得信任与陪伴，我们要让学习成为一种习惯。让运动成为一种生活方式，继续享受生活。</p>
+                </div>
+            </div>
 
             <footer id="footer" class="border-0 footFlower" style="background: url('img/parallax-8.jpg'); background-size:cover; background-position: 0 100%;">
 				<div class="container py-4">
 					<div class="row justify-content-md-center py-5 mt-3">
 						<div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="index"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
+							<a href="index.html"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
 						</div>
 					
-						<div class="col-md-6 text-center text-lg-left">
-                            <p class="mt-3 mb-0 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-right">
+                            <p class="mt-3 mb-0 text-center text-lg-right">
                                 <i class="fab fa-whatsapp text-color-primary"></i><span class="text-color-light opacity-7 pl-2">400-660-1255</span>
-                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mailto:mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
+                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
                                 <i class="far fa-dot-circle text-color-primary ml-4"></i><span class="opacity-7 pl-2 text-color-light">北京市朝阳区世贸天阶南街</span>
                             </p>
 						</div>
@@ -463,11 +312,11 @@
         
 		<!-- Theme Custom -->
 		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/lesson.js"></script>
 		
 		<!-- Theme Initialization Files -->
 		<script type="text/javascript" src="js/theme.init.js"></script>
 
 		<script type="text/javascript" src="master/analytics/analytics.js"></script>
-
 	</body>
 </html>

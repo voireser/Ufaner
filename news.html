@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
@@ -53,207 +52,202 @@
 
 	</head>
 	<body>
-		<div class="body">
-			<div role="main" class="main">
-                <header id="header" class="header-narrow header-below-slider" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-                    <div class="header-body border-top-0">
-                        <div class="header-container container-fluid px-lg-4">
-                            <div class="header-row">
-                                <div class="header-column">
-                                    <div class="header-row">
-                                        <div class="header-logo">
-                                            <a href="index.html">
-                                                <img alt="Porto" width="112" height="40" data-sticky-width="112" data-sticky-height="40" src="img/logo.png">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="header-column justify-content-end mr-lg-4">
-                                    <div class="header-row">
-                                        <div class="header-nav header-nav-links order-2 order-lg-1">
-                                            <div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                                <nav class="collapse">
-                                                    <ul class="nav nav-pills" id="mainNav">
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html">主页</a></li>
-                                                        <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
-                                                                <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="lesson.html">我们的课程</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="lesson.html#lFour">四大课程</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
-                                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                                <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul> -->
-                                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                                                <i class="fas fa-bars"></i>
-                                            </button>
-                                        </div>
+		<div class="body newsPage">
+            <header id="header" class="header-transparent header-semi-transparent-light header-effect-shrink" 
+            data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 
+            'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 320, 'stickyHeaderContainerHeight': 70}">
+                <div class="header-body border-top-0 bg-dark box-shadow-none">
+                    <div class="header-container container-fluid px-lg-4">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo header-logo-sticky-change">
+                                        <a href="index.html">
+                                            <img class="header-logo-non-sticky opacity-0" width="112" height="40" src="img/logo-default-slim-dark.png">
+                                            <img class="header-logo-sticky opacity-0" width="112" height="40" src="img/logo.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="page-header page-header-modern page-header-background page-header-background-sm overlay overlay-color-primary overlay-show overlay-op-8 mb-5" style="background-image: url(img/page-header-news.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 align-self-center p-static order-2 text-center">
-								<h1>优范 ING</h1>
-							</div>
-						</div>
-					</div>
-				</section>
-                
-                <div class="container py-2">
-                    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
-						<li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active" href="#">全部</a></li>
-						<li class="nav-item" data-option-value=".business"><a class="nav-link text-1 text-uppercase" href="#">行业动态</a></li>
-						<li class="nav-item" data-option-value=".science"><a class="nav-link text-1 text-uppercase" href="#">科学育儿</a></li>
-						<li class="nav-item" data-option-value=".news"><a class="nav-link text-1 text-uppercase" href="#">新闻活动</a></li>
-					</ul>
-
-                    <div class="sort-destination-loader sort-destination-loader-showing mt-3">
-                        <div class="row portfolio-list sort-destination" data-sort-id="portfolio">
-                            <div class="col-lg-12 isotope-item mt-4 business">
-                                <div class="row lessonFour">
-                                    <div class="col-lg-6">
-                                        <div class="portfolio-item">
-                                            <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-                                                <img src="img/newsLarge-1.jpg" class="img-fluid border-radius-0" alt="">
-                                            </span>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+                                        <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="index.html">主页</a></li>
+                                                    <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
+                                                            <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="lesson.html">我们的课程</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="lesson.html#lFour">三大课程</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="news.html">优范ing</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
+                                                </ul>
+                                            </nav>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6">
-                                        <div class="overflow-hidden">
-                                            <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">新闻标题新闻标题</h2>
-                                        </div>
-                                        <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                                            新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介
-                                        </p>
-                                        <ul class="list list-icons list-primary list-borders text-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                                            <li><i class="fas fa-caret-right left-10"></i>行业动态</li>
-                                            <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
-                                            <li><a href="news-inside.html" class="readMore badge-dark badge-lg badge-pill px-4 py-2 ml-1">查看</a></li>    
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 isotope-item mt-4 science">
-                                <div class="row lessonFour">
-                                    <div class="col-lg-6">
-                                        <div class="portfolio-item">
-                                            <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-                                                <img src="img/newsLarge-1.jpg" class="img-fluid border-radius-0" alt="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6">
-                                        <div class="overflow-hidden">
-                                            <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">新闻标题新闻标题</h2>
-                                        </div>
-                                        <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                                            新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介
-                                        
-                                        </p>
-                                        <ul class="list list-icons list-primary list-borders text-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                                            <li><i class="fas fa-caret-right left-10"></i>科学育儿</li>
-                                            <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
-                                            <li><a href="news-inside.html" class="readMore badge-dark badge-lg badge-pill px-4 py-2 ml-1">查看</a></li>    
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 isotope-item mt-4 news">
-                                <div class="row lessonFour">
-                                    <div class="col-lg-6">
-                                        <div class="portfolio-item">
-                                            <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-                                                <img src="img/newsLarge-1.jpg" class="img-fluid border-radius-0" alt="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6">
-                                        <div class="overflow-hidden">
-                                            <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">新闻标题新闻标题</h2>
-                                        </div>
-                                        <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                                            新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介
-                                        
-                                        </p>
-                                        <ul class="list list-icons list-primary list-borders text-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                                            <li><i class="fas fa-caret-right left-10"></i>新闻活动</li>
-                                            <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
-                                            <li><a href="news-inside.html" class="readMore badge-dark badge-lg badge-pill px-4 py-2 ml-1">查看</a></li>    
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 isotope-item mt-4 news">
-                                <div class="row lessonFour">
-                                    <div class="col-lg-6">
-                                        <div class="portfolio-item">
-                                            <span class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-                                                <img src="img/newsLarge-1.jpg" class="img-fluid border-radius-0" alt="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6">
-                                        <div class="overflow-hidden">
-                                            <h2 class="text-color-dark font-weight-bold text-5 mb-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">新闻标题新闻标题</h2>
-                                        </div>
-                                        <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                                            新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介
-                                        
-                                        </p>
-                                        <ul class="list list-icons list-primary list-borders text-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-                                            <li><i class="fas fa-caret-right left-10"></i>新闻活动</li>
-                                            <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
-                                            <li><a href="news-inside.html" class="readMore badge-dark badge-lg badge-pill px-4 py-2 ml-1">查看</a></li>    
-                                        </ul>
+                                        <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
+                                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul> -->
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </header>
+
+            <section class="bannerThin page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/banner_news.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+                            <h1 class="text-9 font-weight-bold">YOUFANER ing</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+            <div class="container brandMain">
+                <div class="row">
+                    <div class="boxInside">
+                        <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+                            <li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active" href="#">全部</a></li>
+                            <li class="nav-item" data-option-value=".business"><a class="nav-link text-1 text-uppercase" href="#">行业动态</a></li>
+                            <li class="nav-item" data-option-value=".science"><a class="nav-link text-1 text-uppercase" href="#">科学育儿</a></li>
+                            <li class="nav-item" data-option-value=".news"><a class="nav-link text-1 text-uppercase" href="#">新闻活动</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="sort-destination-loader sort-destination-loader-showing mt-3">
+                    <div class="row portfolio-list sort-destination" data-sort-id="portfolio">
+                        <div class="col-lg-12 isotope-item mt-4 business">
+                            <div class="row lessonFour">
+                                <div class="col-lg-5">
+                                    <div class="portfolio-item">
+                                        <a href="news-inside.html" class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0">
+                                            <img src="img/newsWide-1.jpg" class="img-fluid border-radius-0" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-7">
+                                    <div class="overflow-hidden">
+                                        <h2 class="text-color-dark font-weight-bold text-5 mb-2">新闻标题新闻标题</h2>
+                                    </div>
+                                    <p>新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
+                                    <ul class="list list-icons list-primary list-borders text-2">
+                                        <li><i class="fas fa-caret-right left-10"></i>行业动态</li>
+                                        <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
+                                        <li><a href="news-inside.html" class="particletext bubbles" style="color: #063c85; float: right;">MORE</a></li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 isotope-item mt-4 business">
+                            <div class="row lessonFour">
+                                <div class="col-lg-5">
+                                    <div class="portfolio-item">
+                                        <a href="news-inside.html" class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0">
+                                            <img src="img/newsWide-1.jpg" class="img-fluid border-radius-0" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-7">
+                                    <div class="overflow-hidden">
+                                        <h2 class="text-color-dark font-weight-bold text-5 mb-2">新闻标题新闻标题</h2>
+                                    </div>
+                                    <p>新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
+                                    <ul class="list list-icons list-primary list-borders text-2">
+                                        <li><i class="fas fa-caret-right left-10"></i>行业动态</li>
+                                        <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
+                                        <li><a href="news-inside.html" class="particletext bubbles" style="color: #063c85; float: right;">MORE</a></li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 isotope-item mt-4 business">
+                            <div class="row lessonFour">
+                                <div class="col-lg-5">
+                                    <div class="portfolio-item">
+                                        <a href="news-inside.html" class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0">
+                                            <img src="img/newsWide-1.jpg" class="img-fluid border-radius-0" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-7">
+                                    <div class="overflow-hidden">
+                                        <h2 class="text-color-dark font-weight-bold text-5 mb-2">新闻标题新闻标题</h2>
+                                    </div>
+                                    <p>新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
+                                    <ul class="list list-icons list-primary list-borders text-2">
+                                        <li><i class="fas fa-caret-right left-10"></i>行业动态</li>
+                                        <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
+                                        <li><a href="news-inside.html" class="particletext bubbles" style="color: #063c85; float: right;">MORE</a></li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 isotope-item mt-4 business">
+                            <div class="row lessonFour">
+                                <div class="col-lg-5">
+                                    <div class="portfolio-item">
+                                        <a href="news-inside.html" class="thumb-info thumb-info-no-zoom thumb-info-lighten border-radius-0">
+                                            <img src="img/newsWide-1.jpg" class="img-fluid border-radius-0" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-7">
+                                    <div class="overflow-hidden">
+                                        <h2 class="text-color-dark font-weight-bold text-5 mb-2">新闻标题新闻标题</h2>
+                                    </div>
+                                    <p>新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介新闻简介简介</p>
+                                    <ul class="list list-icons list-primary list-borders text-2">
+                                        <li><i class="fas fa-caret-right left-10"></i>行业动态</li>
+                                        <li><i class="fas fa-caret-right left-10"></i>2019.3.17</li>
+                                        <li><a href="news-inside.html" class="particletext bubbles" style="color: #063c85; float: right;">MORE</a></li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <footer id="footer" class="border-0 footFlower" style="background: url('img/parallax-8.jpg'); background-size:cover; background-position: 0 100%;">
 				<div class="container py-4">
 					<div class="row justify-content-md-center py-5 mt-3">
 						<div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="index"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
+							<a href="index.html"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
 						</div>
 					
-						<div class="col-md-6 text-center text-lg-left">
-                            <p class="mt-3 mb-0 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-right">
+                            <p class="mt-3 mb-0 text-center text-lg-right">
                                 <i class="fab fa-whatsapp text-color-primary"></i><span class="text-color-light opacity-7 pl-2">400-660-1255</span>
-                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mailto:mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
+                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
                                 <i class="far fa-dot-circle text-color-primary ml-4"></i><span class="opacity-7 pl-2 text-color-light">北京市朝阳区世贸天阶南街</span>
                             </p>
 						</div>
