@@ -240,7 +240,9 @@ html #header.header-transparent .header-nav-main:before{width:calc(100% - 30px)}
 html #header.header-transparent .header-nav-main nav{padding:0 30px}
 html.sticky-header-active #header.header-transparent .header-nav-main nav{padding:0 15px}
 }
-html.sticky-header-active #header .header-body{position:fixed;border-bottom-color:rgba(234,234,234,.5);-webkit-box-shadow:0 0 3px rgba(234,234,234,.5);box-shadow:0 0 10px rgba(0, 58, 135, .1)}
+html.sticky-header-active #header .header-body{position:fixed;border-bottom-color:rgba(234,234,234,.5);
+    /* -webkit-box-shadow:0 0 3px rgba(234,234,234,.5);box-shadow:0 0 10px rgba(0, 58, 135, .1) */
+}
 html.sticky-header-active #header .header-body.header-body-bottom-border{border-bottom:1px solid rgba(234,234,234,.5)!important}
 html.sticky-header-active #header.header-effect-shrink .header-body{position:relative}
 html.sticky-header-reveal.sticky-header-active #header .header-body{position:fixed;border-bottom:none;width:100%;max-width:100%}

@@ -8684,7 +8684,7 @@ html.boxed .nav-secondary.sticky-active {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 0;
 	background: #063c85;
 	opacity: 0;
 	pointer-events: none;

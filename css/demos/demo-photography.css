@@ -193,7 +193,7 @@ h6 {
 }
 #header .header-nav-main nav > ul > li a.active {
   background: transparent;
-  color: #063c85 !important;
+  /* color: #063c85 !important; */
 }
 #header .header-nav-main nav > ul > li a.active.dropdown-toggle:after {
   border-color: #063c85 transparent transparent transparent !important;

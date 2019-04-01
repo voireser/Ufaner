@@ -15,6 +15,9 @@ canvas#flower{position:fixed;top:0;left:0;z-index:9999;display:block;margin:0;pa
 #sub-menu li>:not(i){color:#777!important;}
 .Ufaner span.sub-title.text-dark{text-align:left;}
 html #history .text-color-primary,html #history .text-primary{color:#063c85!important;}
+#history .title{
+    margin-top: 80px;
+}
 .eightStep{width:8rem;}
 .eightStepText{text-align:left;}
 .secondLine{position:absolute;right:15px;left:auto;width:3px;background:#063c85;content:'';}
@@ -45,9 +48,11 @@ li.dropdown a:hover{-webkit-animation:dropdownLi .3s;animation:dropdownLi .3s;an
 .aboutArea>.col-lg-12 img{position:absolute;margin-left:60px;height:48px;}
 .aboutArea>.col-lg-12 p{margin:0;padding-left:200px;font-size:12px;line-height:24px;}
 .boxInside{padding:70px 100px;background-color:#fff;box-shadow:0 0 10px rgba(0,0,0,.1);}
+.boxInside p.title::before{position:absolute;top:11px;left:0;width:500px;height:1px;background-color:#ccc;content:'';}
+.boxInside p.title::after{position:absolute;top:11px;right:0;width:500px;height:1px;background-color:#ccc;content:'';}
 p.title{position:relative;margin-bottom:65px;font-size:12px;text-align:center;}
-p.title::before{position:absolute;top:11px;left:0;width:500px;height:1px;background-color:#ccc;content:'';}
-p.title::after{position:absolute;top:11px;right:0;width:500px;height:1px;background-color:#ccc;content:'';}
+p.title::before{position:absolute;top:11px;left:0;width:600px;height:1px;background-color:#ccc;content:'';}
+p.title::after{position:absolute;top:11px;right:0;width:600px;height:1px;background-color:#ccc;content:'';}
 p.titleNext{position:relative;margin-bottom:70px;color:#333;text-align:center;font-weight:900;font-size:50px;font-family:initial;line-height:50px;}
 .ball{position:absolute;left:0;margin-left:-25px;width:50px;-webkit-animation:ball 30s ease-in-out infinite;animation:ball 30s ease-in-out infinite;}
 @-webkit-keyframes ball{
@@ -70,10 +75,16 @@ p.titleNext{position:relative;margin-bottom:70px;color:#333;text-align:center;fo
 .aboutArea.second{margin:0 auto 50px auto;padding:100px 0 50px 0;border-top:none;}
 .index>div>div>.container:nth-child(3){padding-top:10px;}
 .index>div>div>.container:nth-child(7){margin-bottom:50px;}
-.index>div>div>.container:nth-child(9){margin-top:50px;margin-bottom:100px;}
+.container.global{margin-top:50px;margin-bottom:100px;}
+.container.global .title{margin-bottom:0;}
+.bannerThin{margin:0;padding:150px 0 180px 0!important;background-position:50%;background-repeat:no-repeat;}
+.bannerThin h1{margin-bottom:12px;}
+.brandMain .boxInside{z-index:1;margin-top:-50px;}
+.brandMain .boxInside img{float:right;margin:-300px 0 0 0;width:500px;}
+
 
 @media (min-width: 992px) {
-    html.sticky-header-active .bg-dark{background-color:rgba(255,255,255,0)!important;background-image:url(../img/headerGround.png)!important;background-size:100% 100%!important;}
+    html.sticky-header-active .bg-dark,.headerOther{background-color:rgba(255,255,255,0)!important;background-image:url(../img/headerGround.png)!important;background-size:100% 100%!important;}
     html.sticky-header-active #header .header-nav.header-nav-links.header-nav-light-text nav>ul>li>a{color:#444;}
     html.sticky-header-active #header .header-nav.header-nav-links nav>ul:not(:hover)>li>a.active{color:#4787de;}
     html.sticky-header-active #header .header-nav.header-nav-links nav>ul li:hover>a{color:#4787de;}
@@ -132,14 +143,5 @@ img.project__title{margin:0 auto 10px auto;width:100px;height:100px;}
 .project__category{opacity:0;transition:.4s ease;transition-delay:.1s;-webkit-transform:translateY(40px) scale(0);transform:translateY(40px) scale(0);-ms-transform:translateY(40px) scale(0);will-change:transform;}
 .project__category a{color:rgba(255,255,255,1);font-weight:700;font-size:1.3em;}
 
-html a.scroll-to-top {
-    height: 50px;
-    width: 50px;
-    line-height: 26px;
-    border-radius: 100px;
-    background-color: #fff;
-    border: 2px solid #063c85;
-    color: #063c85;
-    font-weight: 900;
-    bottom: 10px;
-}
+html a.scroll-to-top{bottom:10px;width:50px;height:50px;border:2px solid #063c85;border-radius:100px;background-color:#fff;color:#063c85;font-weight:900;line-height:26px;}
+

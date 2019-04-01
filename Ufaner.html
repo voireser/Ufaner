@@ -49,306 +49,338 @@
 	</head>
 	<body>
 		<div class="body Ufaner">
-			<div id="intro">
-                <header id="header" class="header-narrow header-below-slider" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-                    <div class="header-body border-top-0">
-                        <div class="header-container container-fluid px-lg-4">
-                            <div class="header-row">
-                                <div class="header-column">
-                                    <div class="header-row">
-                                        <div class="header-logo">
-                                            <a href="index.html">
-                                                <img alt="Porto" width="112" height="40" data-sticky-width="112" data-sticky-height="40" src="img/logo.png">
-                                            </a>
-                                        </div>
+            <header id="header" class="header-transparent header-semi-transparent-light header-effect-shrink" 
+            data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 
+            'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 320, 'stickyHeaderContainerHeight': 70}">
+                <div class="header-body border-top-0 bg-dark box-shadow-none">
+                    <div class="header-container container-fluid px-lg-4">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo header-logo-sticky-change">
+                                        <a href="index.html">
+                                            <img class="header-logo-non-sticky opacity-0" width="112" height="40" src="img/logo-default-slim-dark.png">
+                                            <img class="header-logo-sticky opacity-0" width="112" height="40" src="img/logo.png">
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="header-column justify-content-end mr-lg-4">
-                                    <div class="header-row">
-                                        <div class="header-nav header-nav-links order-2 order-lg-1">
-                                            <div class="header-nav-main header-nav-main-clone-items header-nav-main-slide header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                                <nav class="collapse">
-                                                    <ul class="nav nav-pills" id="mainNav">
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html">主页</a></li>
-                                                        <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
-                                                                <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="lesson.html">我们的课程</a>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="lesson.html#lFour">四大课程</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
-                                                                <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
-                                                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
-                                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                                <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul> -->
-                                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                                                <i class="fas fa-bars"></i>
-                                            </button>
+                            </div>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+                                        <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="index.html">主页</a></li>
+                                                    <li class="dropdown dropdown-mega"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="Ufaner.html">关于优范儿</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="Ufaner.html#history">优范简史</a></li>
+                                                            <li><a class="dropdown-item" href="Ufaner.html#KOL">优范KOL</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="lesson.html">我们的课程</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="lesson.html#lFour">四大课程</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lEight">八大学习阶梯体系</a></li>
+                                                            <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">预约体验</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
+                                                </ul>
+                                            </nav>
                                         </div>
+                                        <!-- <ul class="header-social-icons social-icons d-none d-sm-block">
+                                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul> -->
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </header>
+                </div>
+            </header>
+            
+            <section class="bannerThin page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/banner_ufaner.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 align-self-center p-static order-2 text-center">
+                            <h1 class="text-9 font-weight-bold">来自美国的优范儿</h1>
+                            <span class="sub-title">YOUFANER from Amarican</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container brandMain">
+                <div class="row">
+                    <div class="boxInside">
+                        <p class="title">品牌起源</p>
+                        <p class="titleNext">源于美国的水中运动专家</p>
+                        <p class="wordInside col-lg-6">
+                            <strong>优范儿 | YourFancy </strong>亲子水育中心，成立于2013年，隶属于北京优范儿教育科技有限公司。作为全国最高端的亲子水育中心，优范儿致力于为0-8岁的婴幼儿及家庭提供科学、健康、全方位的亲子运动服务。优范儿（YourFancy）的课程起源于美国，并由美国常青藤名校布林斯顿教授-Isaac，东京著名的儿童医学专家-柴崎广骏、慕尼黑伊萨右岸医院主任-Erik、北京海淀医院全科主任杜乃勤等多名专家共同汇编而成。
+                            <br>
+                            <br>
+                            课程涵盖亲子游泳，亲子健身、水中瑜伽以及水中特色课程等。优范儿（YourFancy）各大中心内的所有设备均来自美国和德国进口。同时，泳池中的水质达到美国饮用水级别，保证宝宝的健康。并综合音乐、陆地运动、舞蹈、水中游戏等多方面内容，让宝宝们在轻松、安全、快乐的水环境中尽情玩耍的同时收获体能、智能和心理及社交能力的全方面发展。
+                        </p>
+                        <img class="boxImg col-lg-6" src="img/indexBrandF_1.png" alt="">
+                    </div>
+                </div>
             </div>
+			
+			<div class="container" id="history">
+                <p class="title">优范简史</p>
+                <div class="row">
+                    <div class="mx-md-auto text-center">
+                        <section class="timeline" id="timeline">
+                            <div class="timeline-body">
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2013</h3>
+                                </div>
 
-			<div role="main" class="main">
-				<section class="page-header page-header-modern page-header-md bg-transparent m-0 mt-5 mb-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 align-self-center p-static order-2 text-center">
-                                <h1 class="text-dark text-10"><strong>品 牌 起 源</strong></h1>
-                                <br>
-                                <br>
-                                <span class="sub-title text-dark">水中运动起源于二战之后,1950年，Virginia Hunt Newman女士开始在美国教授婴儿及幼儿水中运动课程，并且在后来的几十年中影响了一大批水中运动的倡导者，在60-70年代传入其他西方发达国家。</span>
-                                <br>
-                                <span class="sub-title text-dark">由于Virginia突出而意义非凡的贡献，她在1971年获得由美国国家服务奖，1983年获得美国国家荣誉奖。并于1980年成为美国国家水中运动运动基金的执行董事。1993年，由于她创始的亲子水中运动运动在世界范围内的影响力，Virginia被国际水中运动名人堂授予了先锋贡献奖，</span>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿创始人王煦宁，前赴美国7州进行长达30天的课程考察。</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 回国后，聘请中、美、德、日、澳多国婴幼儿领域专家教师形成课程科研小组。</p>
+                                    </div>
+                                </article>
+
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2014</h3>
+                                </div>
+
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 再次赴美，调硏选购顶级水育相关设备。使水质达到国际饮用水级别。</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <img alt="" class="img-fluid" src="img/history-1.jpg" />
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 历经20个月的研发及多地考究，形成我国首个由多领域跨国专家共同汇编，以中国婴幼儿为主体的水育课程体系。</p>
+                                    </div>
+                                </article>
+
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2015</h3>
+                                </div>
+
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 以责任为导向，历经长达两年的准备，首家优范儿亲子水中教育正式成立，落户北京蓝色港湾</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <img alt="" class="img-fluid" src="img/history-2.jpg" />
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 邀请中医药大学领导在初代课程基础上，以国粹中医的角度深耕陆地课程内容</p>
+                                    </div>
+                                </article>
+                                
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2016</h3>
+                                </div>
+
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 设立科妮运动早教中心，占地450㎡ / 入驻哈尔滨万象里，占地面积300㎡ / 入驻浙江省温州市，占地面积800㎡。</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿突破3000VIP会员</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿荣获新浪教育“2015中国品牌知名度儿童教育机构”</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <img alt="" class="img-fluid" src="img/history-3.jpg" />
+                                    </div>
+                                </article>
+                                
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2017</h3>
+                                </div>
+
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 成为世界婴幼儿游泳协会会员单位</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 比如世界占地面积650㎡ / 入驻江苏盐城恒达世纪新城中心，占地面积700㎡</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 开设北京最大的婴幼儿亲子水育中心：优范儿旗舰店，坐落于北京世贸天阶中心，占地1300平米</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <img alt="" class="img-fluid" src="img/history-4.jpg" />
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿荣获腾讯2017回响中国十大杰出品牌</p>
+                                    </div>
+                                </article>
+
+                                <div class="timeline-date">
+                                    <h3 class="text-primary font-weight-bold">2018</h3>
+                                </div>
+
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿水中课程体系荣获国家著作权</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 入驻石家庄长安区先天下店，占地面积220㎡</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 入驻江苏盐城滨海贻成福地广场，占地面积1000㎡。</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 石家庄华润万象城分店开业，占地面积220㎡。</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                    <div class="timeline-box-arrow"></div>
+                                    <div class="p-2">
+                                        <p class="mb-0 text-2">· 优范儿入驻内蒙古通辽市科尔沁区</p>
+                                    </div>
+                                </article>
                             </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container" id="KOL">
+                <div class="boxInside">
+                    <p class="title">优范KOL</p>
+                    <div class="row pb-4 mb-2">
+                        <div class="col-sm-6 col-lg-6 mb-6 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                            <span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="img/team-1.jpg" class="img-fluid border-radius-0" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner">周杰伦</span>
+                                        <span class="thumb-info-type">歌手</span>
+                                    </span>
+                                </span>
+                                <span class="thumb-info-caption">
+                                    <span class="thumb-info-caption-text">周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼</span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 mb-6 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                            <span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="img/team-2.jpg" class="img-fluid border-radius-0" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner">Lana Del Rey</span>
+                                        <span class="thumb-info-type">歌手</span>
+                                    </span>
+                                </span>
+                                <span class="thumb-info-caption">
+                                    <span class="thumb-info-caption-text">Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼</span>
+                                </span>
+                            </span>
                         </div>
                     </div>
-                </section>
-
-				<div class="container pb-1 pt-5" id="history">
-					<div class="row">
-						<div class="col-md-12 mx-md-auto text-center">
-							<section class="timeline" id="timeline">
-								<div class="timeline-body">
-									<div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2013</h3>
-									</div>
-
-									<article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-                                            <p class="mb-0 text-2">· 优范儿创始人王煦宁，前赴美国7州进行长达30天的课程考察。</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-                                            <p class="mb-0 text-2">· 回国后，聘请中、美、德、日、澳多国婴幼儿领域专家教师形成课程科研小组。</p>
-										</div>
-									</article>
-
-									<div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2014</h3>
-									</div>
-
-									<article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 再次赴美，调硏选购顶级水育相关设备。使水质达到国际饮用水级别。</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<img alt="" class="img-fluid" src="img/history-1.jpg" />
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 历经20个月的研发及多地考究，形成我国首个由多领域跨国专家共同汇编，以中国婴幼儿为主体的水育课程体系。</p>
-										</div>
-									</article>
-
-									<div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2015</h3>
-									</div>
-
-									<article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 以责任为导向，历经长达两年的准备，首家优范儿亲子水中教育正式成立，落户北京蓝色港湾</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<img alt="" class="img-fluid" src="img/history-2.jpg" />
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 邀请中医药大学领导在初代课程基础上，以国粹中医的角度深耕陆地课程内容</p>
-										</div>
-                                    </article>
-                                    
-                                    <div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2016</h3>
-									</div>
-
-									<article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 设立科妮运动早教中心，占地450㎡ / 入驻哈尔滨万象里，占地面积300㎡ / 入驻浙江省温州市，占地面积800㎡。</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 优范儿突破3000VIP会员</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 优范儿荣获新浪教育“2015中国品牌知名度儿童教育机构”</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<img alt="" class="img-fluid" src="img/history-3.jpg" />
-										</div>
-                                    </article>
-                                    
-                                    <div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2017</h3>
-									</div>
-
-									<article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 成为世界婴幼儿游泳协会会员单位</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 比如世界占地面积650㎡ / 入驻江苏盐城恒达世纪新城中心，占地面积700㎡</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 开设北京最大的婴幼儿亲子水育中心：优范儿旗舰店，坐落于北京世贸天阶中心，占地1300平米</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<img alt="" class="img-fluid" src="img/history-4.jpg" />
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 优范儿荣获腾讯2017回响中国十大杰出品牌</p>
-										</div>
-                                    </article>
-
-                                    <div class="timeline-date">
-										<h3 class="text-primary font-weight-bold">2018</h3>
-									</div>
-
-									<article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 优范儿水中课程体系荣获国家著作权</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 入驻石家庄长安区先天下店，占地面积220㎡</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 入驻江苏盐城滨海贻成福地广场，占地面积1000㎡。</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 石家庄华润万象城分店开业，占地面积220㎡。</p>
-										</div>
-                                    </article>
-                                    <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-										<div class="timeline-box-arrow"></div>
-										<div class="p-2">
-											<p class="mb-0 text-2">· 优范儿入驻内蒙古通辽市科尔沁区</p>
-										</div>
-                                    </article>
-								</div>
-							</section>
-						</div>
-					</div>
-				</div>
-
-				<section class="section section-default border-0" id="KOL">
-					<div class="container py-4">
-                        <div class="row text-center pt-5 pb-4 mb-2">
-                            <div class="col-md-10 mx-md-auto">
-                                <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                                    <span>优范 KOL</span>
-                                </h1>
-                            </div>
+                </div>
+            </div>
+            
+            <div class="container global">
+                <p class="title">国际认证</p>
+                <div class="row text-center mt-5">
+                    <div class="owl-carousel owl-theme carousel-center-active-item"
+                    data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1},
+                    '768': {'items': 5}, '992': {'items': 5}, '1200': {'items': 5}}, 'autoplay': true, 
+                    'autoplayTimeout': 6000, 'dots': false}">
+                        <div>
+                            <img class="img-fluid" src="img/logo_1.png" alt="">
                         </div>
-						<div class="row pb-4 mb-2">
-							<div class="col-sm-6 col-lg-6 mb-6 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
-									<span class="thumb-info-wrapper border-radius-0">
-                                        <img src="img/team-1.jpg" class="img-fluid border-radius-0" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">周杰伦</span>
-                                            <span class="thumb-info-type">歌手</span>
-                                        </span>
-									</span>
-									<span class="thumb-info-caption">
-										<span class="thumb-info-caption-text">周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼周杰伦很牛逼</span>
-									</span>
-								</span>
-							</div>
-							<div class="col-sm-6 col-lg-6 mb-6 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
-									<span class="thumb-info-wrapper border-radius-0">
-                                        <img src="img/team-2.jpg" class="img-fluid border-radius-0" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">Lana Del Rey</span>
-                                            <span class="thumb-info-type">歌手</span>
-                                        </span>
-									</span>
-									<span class="thumb-info-caption">
-										<span class="thumb-info-caption-text">Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼Lana Del Rey很牛逼</span>
-									</span>
-								</span>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
+                        <div>
+                            <img class="img-fluid" src="img/logo_2.png" alt="">
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="img/logo_3.png" alt="">
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="img/logo_4.png" alt="">
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="img/logo_5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 			<footer id="footer" class="border-0 footFlower" style="background: url('img/parallax-8.jpg'); background-size:cover; background-position: 0 100%;">
 				<div class="container py-4">
 					<div class="row justify-content-md-center py-5 mt-3">
 						<div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="index"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
+							<a href="index.html"><img src="img/logo-default-slim-dark.png" alt="Logo" class="img-fluid" style="max-width: 110px;"></a>
 						</div>
 					
-						<div class="col-md-6 text-center text-lg-left">
-                            <p class="mt-3 mb-0 text-center text-lg-left">
+						<div class="col-md-6 text-center text-lg-right">
+                            <p class="mt-3 mb-0 text-center text-lg-right">
                                 <i class="fab fa-whatsapp text-color-primary"></i><span class="text-color-light opacity-7 pl-2">400-660-1255</span>
-                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mailto:mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
+                                <i class="far fa-envelope text-color-primary ml-4"></i><a href="mail@example.com" class="opacity-7 pl-2 text-color-light">yourfancy@sina.com</a>
                                 <i class="far fa-dot-circle text-color-primary ml-4"></i><span class="opacity-7 pl-2 text-color-light">北京市朝阳区世贸天阶南街</span>
                             </p>
 						</div>
