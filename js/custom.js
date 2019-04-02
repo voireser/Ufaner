@@ -39,7 +39,7 @@
         function (event) {
             mouse.x = event.x;
             mouse.y = event.y;
-            if (mouse.YorN === 5) {
+            if (mouse.YorN === 20) {
                 drawCircles();
                 mouse.YorN = 0;
             }
@@ -133,12 +133,10 @@
         for (let i = 0; i < circleArray.length; i++ ){
             circleArray[i].update();
         }
-        
     }
 
     initCanvas();
     animate();
-
 }).apply(this, [window.theme, jQuery]);
 
 // bubbles

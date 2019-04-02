@@ -11,7 +11,7 @@ canvas#flower{position:fixed;top:0;left:0;z-index:9999;display:block;margin:0;pa
 #sub-menu li>:not(i){color:#777!important;}
 .Ufaner span.sub-title.text-dark{text-align:left;}
 html #history .text-color-primary,html #history .text-primary{color:#063c85!important;}
-#history .title{padding-top:80px;}
+#history .title{margin-top:80px;}
 
 .eightStep{width:8rem;}
 .eightStepText{text-align:left;}
@@ -40,8 +40,8 @@ li.dropdown a:hover{-webkit-animation:dropdownLi .3s;animation:dropdownLi .3s;an
 .aboutArea{margin:50px auto 0 auto;padding:50px 0 100px 0;border-top:1px solid #ddd;}
 .aboutArea>:not(ol){float:left;}
 .aboutArea>.col-lg-12{position:relative;}
-.aboutArea>.col-lg-12 img{position:absolute;margin-left:60px;height:48px;}
-.aboutArea>.col-lg-12 p{margin:0;padding-left:200px;font-size:12px;line-height:24px;}
+.aboutArea>.col-lg-12 img{position:absolute;margin-top:15px;margin-left:60px;width:250px;}
+.aboutArea>.col-lg-12 p{margin:0;padding-left:400px;font-size:12px;line-height:24px;}
 .boxInside{padding:70px 100px;background-color:#fff;box-shadow:0 0 10px rgba(0,0,0,.1);position: relative;}
 .boxInside p.title::before{position:absolute;top:11px;left:0;width:500px;height:1px;background-color:#ccc;content:'';}
 .boxInside p.title::after{position:absolute;top:11px;right:0;width:500px;height:1px;background-color:#ccc;content:'';}
@@ -70,7 +70,7 @@ p.titleNext{position:relative;margin-bottom:70px;color:#333;text-align:center;fo
 .aboutArea.second{margin:0 auto 50px auto;padding:100px 0 50px 0;border-top:none;}
 .index>div>div>.container:nth-child(3){padding-top:10px;}
 .index>div>div>.container:nth-child(7){margin-bottom:50px;}
-.container.global{margin-top:50px;margin-bottom:100px;}
+.container.global{margin-top: 70px;margin-bottom: 120px;}
 .container.global .title{margin-bottom:0;}
 .bannerThin{margin:0;padding:150px 0 180px 0!important;background-position:50%;background-repeat:no-repeat;}
 .bannerThin h1{margin-bottom:12px;}
@@ -162,11 +162,8 @@ p.titleNext{position:relative;margin-bottom:70px;color:#333;text-align:center;fo
 .gallery .frame:nth-child(9) .info{color:#6D6F71;}
 #codepen-link{position:absolute;right:30px;bottom:20px;z-index:10;box-sizing:border-box;width:40px;height:40px;border-radius:50%;background-position:center center;background-size:cover;opacity:.4;transition:all .25s;}
 #codepen-link:hover{box-shadow:0 0 6px #000;opacity:.8;}
-.newsPage .boxInside {    width: 100%;
-    padding: 20px 0;}
-    
-
-
+.newsPage .boxInside{padding:20px 0;width:100%;}
+.scroll-to-top.hidden-mobile.visible img{position:absolute;top:-18px;left:-36px;width:50px;}
 
 @media (min-width: 992px) {
     html.sticky-header-active .bg-dark,.headerOther{background-color:rgba(255,255,255,0)!important;background-image:url(../img/headerGround.png)!important;background-size:100% 100%!important;}
@@ -230,3 +227,56 @@ img.project__title{margin:0 auto 10px auto;width:100px;height:100px;}
 
 html a.scroll-to-top{bottom:10px;width:50px;height:50px;border:2px solid #063c85;border-radius:100px;background-color:#fff;color:#063c85;font-weight:900;line-height:26px;}
 
+.clearfix::after{clear:both;display:block;visibility:hidden;height:0;content:".";}
+.map-content{padding:30px 0;margin: 0 auto;}
+.map-content .map-module{position:relative;margin:0 auto;width:1200px!important;transition:all .3s ease;}
+.map-content .map-title{position:relative;margin:50px 0;color:#333;text-align:center;font-size:24px;}
+.map-content .map-branch .map-title{z-index:1;margin:20px 0 0;}
+.map-content .map-title:before{position:absolute;bottom:-23px;left:50%;width:0;height:0;border:6px solid;border-color:#20B09F transparent transparent;content:"";transform:translateX(-50%);}
+.map-content .map-title:after{position:absolute;bottom:-12px;left:50%;width:52px;height:3px;background-color:#20B09F;content:"";transform:translateX(-50%);}
+.map-content .map-content-info{position:relative;margin-bottom:30px;}
+.map-content .branch-map-l{position:relative;width:849px;height:575px;}
+.map-content .map-content-box{position:relative;width:100%;height:100%;background:url(../img/map-bj.png) no-repeat center;}
+.map-content .map-dot{position:absolute;text-align:center;font-size:12px;cursor:pointer;}
+.map-content .beijing{top:200px;left:574px;}
+.map-content .tianjin{top:216px;left:590px;}
+.map-content .hebei{top:236px;left:565px;}
+.map-content .shanxi{top:276px;left:540px;}
+.map-content .liaoning{top:196px;left:660px;}
+.map-content .jilin{top:167px;left:696px;}
+.map-content .heilongjiang{top:82px;left:688px;}
+.map-content .shanghai{top:341px;left:668px;}
+.map-content .jiangsu{top:318px;left:627px;}
+.map-content .zhejiang{top:376px;left:640px;}
+.map-content .anhui{top:334px;left:605px;}
+.map-content .fujian{top:428px;left:625px;}
+.map-content .jiangxi{top:402px;left:595px;}
+.map-content .shandong{top:284px;left:610px;}
+.map-content .henan{top:316px;left:562px;}
+.map-content .hubei{top:359px;left:555px;}
+.map-content .hunan{top:409px;left:545px;}
+.map-content .guangdong{top:466px;left:575px;}
+.map-content .guangxi{top:461px;left:506px;}
+.map-content .chongqing{top:364px;left:495px;}
+.map-content .sichuan{top:354px;left:425px;}
+.map-content .guizhou{top:424px;left:484px;}
+.map-content .yunnan{top:462px;left:405px;}
+.map-content .shanxi1{top:312px;left:502px;}
+.map-content .map-dot:after{display:block;margin:0 auto;width:8px;height:8px;border-radius:50%;background-color:#063c85;content:"";}
+.map-content .map-dot.beijing:after{width:13px;height:12px;border-radius:0;background:url(../img/icon-star.png) no-repeat center;}
+.map-content .branch-map-data{position:absolute;z-index:1;display:none;box-sizing:border-box;padding:10px 40px 20px 40px;width:430px;border-radius:10px;background-color:rgba(255,255,255,.9);box-shadow:0 0 10px 2px #e9e9e9;}
+.map-content .branch-map-data-title{border-bottom:1px solid #eee;}
+.map-content .branch-map-data-title p{color:#333;font-size:18px;line-height:28px;margin: 20px 0;}
+.map-content .branch-map-data-info{overflow-y:auto;max-height:236px;}
+.map-content .data-branch{box-sizing:border-box;padding:6px 0;border-bottom:1px dashed #eee;}
+.map-content .data-branch:last-child{border:none;}
+.map-content .data-branch .data-name{margin-bottom:5px;color:#666;font-size:14px;line-height:26px;margin: 10px 0;}
+.map-content .data-branch p{color:#999;font-size:12px;line-height:20px;margin-bottom: 10px}
+.map-content .branch-map-data:before{position:absolute;top:50%;left:-16px;width:0;height:0;border:8px solid;border-color:transparent;content:"";transform:translateY(-50%);}
+.map-content .branch-map-data:after{position:absolute;top:50%;left:-15px;width:0;height:0;border:8px solid;border-color:transparent #fff transparent transparent;content:"";transform:translateY(-50%);}
+.map-content .map-dot.cur:before{position:absolute;bottom:-4px;left:50%;width:14px;height:14px;border:1px solid #063c85;border-radius:50%;content:"";transform:translateX(-50%);animation:dot 4s infinite;}
+.map-content .map-dot.beijing.cur:before{bottom:-2.5px;left:12px;width:14px;height:14px;border:1px solid #b81c25;}
+@keyframes dot{0%{opacity:0;transform:translateX(-50%) scale(0);}
+50%{opacity:1;}
+100%{opacity:0;transform:translateX(-50%) scale(1.5);}
+}

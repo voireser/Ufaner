@@ -2094,9 +2094,7 @@ window.theme.fn = {
 	theme = theme || {};
 
 	$.extend(theme, {
-
 		PluginScrollToTop: {
-
 			defaults: {
 				wrapper: $('body'),
 				offset: 150,
@@ -2141,8 +2139,8 @@ window.theme.fn = {
 						'href': '#',
 					})
 					.append(
-						$('<i />')
-						.addClass(self.options.iconClass)
+						$('<i /><img src="img/baby.png">')
+                        .addClass(self.options.iconClass)
 				);
 
 				// Visible Mobile
@@ -2158,9 +2156,7 @@ window.theme.fn = {
 				}
 
 				this.options.wrapper.append($el);
-
 				this.$el = $el;
-
 				return this;
 			},
 
@@ -2179,34 +2175,22 @@ window.theme.fn = {
 
 				// Show/Hide Button on Window Scroll event.
 				$(window).scroll(function() {
-
 					if (!_isScrolling) {
-
 						_isScrolling = true;
 
 						if ($(window).scrollTop() > self.options.offset) {
-
 							self.$el.stop(true, true).addClass('visible');
 							_isScrolling = false;
-
 						} else {
-
 							self.$el.stop(true, true).removeClass('visible');
 							_isScrolling = false;
-
 						}
-
 					}
-
 				});
-
 				return this;
 			}
-
 		}
-
 	});
-
 }).apply(this, [window.theme, jQuery]);
 
 // Scrollable
