@@ -2099,7 +2099,7 @@ window.theme.fn = {
 				wrapper: $('body'),
 				offset: 150,
 				buttonClass: 'scroll-to-top',
-				iconClass: 'fas fa-chevron-up',
+				iconClass: 'iconfont',
 				delay: 1000,
 				visibleMobile: false,
 				label: false,
@@ -2139,8 +2139,9 @@ window.theme.fn = {
 						'href': '#',
 					})
 					.append(
-						$('<i /><img src="img/baby.png">')
+						$('<span /><img src="img/baby.png">')
                         .addClass(self.options.iconClass)
+                        .html('&#xe651;')
 				);
 
 				// Visible Mobile
