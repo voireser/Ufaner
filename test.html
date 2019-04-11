@@ -16,368 +16,107 @@
 		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+        <style>
+            .load{margin:0;background-color:#000;counter-reset:points;}
+            .screen{position:relative;overflow:hidden;width:100%;height:100vh;}
+            .sky{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;}
+            .sky>div{position:absolute;top:0;right:0;bottom:0;left:0;}
+            .sky>div::before{position:absolute;top:0;right:0;left:0;display:block;height:1000vh;content:"";}
+            .sky>div+div{animation:opacity 30s linear infinite forwards paused;}
+            .sky>div::before{background:linear-gradient(#063c85,#404a54 10%,#3ec38f 11%,#fc6769,#fdaf2a 21%,#063c85 22%,#c471ed,#12c2e9 32%,#f7797d 33%,#fbd786,#c6ffdd 43%,#8a2387 44%,#063c85,#f27121 54%,#3a1c71 55%,#d76d77,#fdbb2d 65%,#22c1c3 66%,#fdbb2d 76%,#1a2a6c 77%,#063c85,#fdbb2d 87%);animation:sky 240s steps(8,end) infinite forwards paused;}
+            .sky>div+div::before{background:linear-gradient(#063c85,#ff8c00,#40e0d0 10%,#1d2671 11%,#063c85 21%,#78ffd6 22%,#a8ff78 32%,#4b1248 33%,#f0c27b 43%,#2980b9 44%,#6dd5fa,#fff 54%,#03001e 55%,#7303c0,#063c85,#fdeff9 65%,#56ccf2 66%,#2f80ed 76%,#0c0510 77%,#160b3e,#5f4282,#cecc99 87%);animation:sky 240s steps(8,end) -15s infinite forwards paused;}
+            .last,input{position:absolute;z-index:1;display:none;width:300vh;height:300vh;opacity:0;cursor:pointer;transform:translate(-150vh,-150vh);pointer-events:auto;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+            #last{display:initial;pointer-events:none;}
+            #last:checked,input:checked{display:none!important;}
+            .base{position:relative;top:50vh;left:calc(50% - 15vh);width:30vh;height:30vh;background-color:#063c85;background-image:url(img/logo_only.png);background-size:cover;transition:transform .5s ease-in-out;transform:rotateX(45deg) rotateZ(45deg);pointer-events:none;transform-style:preserve-3d;}
+            .base::after,.base::before{position:absolute;z-index:-1;display:block;content:"";}
+            .base::before{right:0;width:50vh;height:100%;background:linear-gradient(to left,#063574,rgba(221,0,0,0));transform:rotateY(-90deg);transform-origin:right;}
+            .base::after{bottom:0;width:100%;height:50vh;background:linear-gradient(to top,#053777,rgba(238,0,0,0));transform:rotateX(90deg);transform-origin:bottom;}
+            .container{position:absolute;display:flex;transform-style:preserve-3d;}
+            .container.horizontal{left:-45vh;width:calc(90vh + 100%);height:100%;flex-direction:row;}
+            .container.vertical{top:-45vh;width:100%;height:calc(90vh + 100%);flex-direction:column;}
+            .container::after,.container::before{content:"";}
+            .container.horizontal::after,.container.horizontal::before{height:100%;max-width:calc(100% - 45vh);min-width:45vh;}
+            .container.vertical::after,.container.vertical::before{width:100%;max-height:calc(100% - 45vh);min-height:45vh;}
+            .block{position:relative;visibility:hidden;background-color:currentColor;transform:translateZ(6vh);flex-grow:1;transform-style:preserve-3d;}
+            .block.horizontal{height:100%;}
+            .block.vertical{width:100%;}
+            .block.floating{position:absolute;display:none;visibility:visible;}
+            .block.floating.horizontal{width:calc(100% - 90vh);animation:left 2s linear alternate infinite both;}
+            .block.floating.vertical{height:calc(100% - 90vh);animation:top 2s linear alternate infinite both;}
+            .block::after,.block::before{position:absolute;z-index:-1;display:block;background-color:currentColor;content:"";}
+            .block::before{right:0;width:6vh;height:100%;box-shadow:inset -6vh 0 rgba(0,0,0,.2);transform:rotateY(-90deg);transform-origin:right;}
+            .block::after{bottom:0;width:100%;height:6vh;box-shadow:inset 0 -6vh rgba(0,0,0,.1);transform:rotateX(90deg);transform-origin:bottom;}
+            .end{position:absolute;top:-300vh;left:-200vh;visibility:visible;max-width:400vh;max-height:600vh;cursor:pointer;transform:rotateZ(-45deg) rotateX(-45deg) translateZ(100vh);pointer-events:auto;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+            .end.horizontal{width:calc(400vh - 100000%);height:600vh;}
+            .end.vertical{width:400vh;height:calc(600vh - 100000%);}
+            .points{position:absolute;top:0;right:0;left:0;display:none;color:#fff;text-align:center;font-weight:lighter;font-size:9vh;font-family:Helvetica,Roboto,"Segoe UI",Arial,sans-serif;pointer-events:none;}
+            .points::before{display:block;margin:4vh auto;content:"YOU'VE REACHED THE TOP!";font-size:4vh;opacity:0;transition:opacity .25s;}
+            .points::after{display:block;content:counter(points);}
+            .start{position:absolute;top:0;right:0;bottom:0;left:0;padding:15vh 0;color:transparent;text-align:center;text-shadow:0 0 0 #fff;font-weight:lighter;font-size:9vh;font-family:Helvetica,Roboto,"Segoe UI",Arial,sans-serif;cursor:pointer;transition:opacity .25s;animation:start .75s linear;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+            button{position:absolute;top:0;right:0;bottom:0;left:0;padding-top:80vh;width:100%;border:none;background:0 0;color:#fff;font-weight:lighter;font-size:4vh;font-family:Helvetica,Roboto,"Segoe UI",Arial,sans-serif;opacity:0;cursor:pointer;transition:opacity .25s;pointer-events:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+            .screen p{position: absolute;bottom: 20px;left: 40px;margin: 0;font-size: 36px;color: #fff;}
+            @keyframes opacity{0%{opacity:1;}
+            25%{opacity:1;}
+            50%{opacity:0;}
+            75%{opacity:0;}
+            100%{opacity:1;}
+            }
+            @keyframes sky{from{transform:none;}
+            to{transform:translateY(-880vh);}
+            }
+            @keyframes width{from{width:0;}
+            to{width:90vh;}
+            }
+            @keyframes height{from{height:0;}
+            to{height:90vh;}
+            }
+            @keyframes left{from{left:0;}
+            to{left:90vh;}
+            }
+            @keyframes top{from{top:0;}
+            to{top:90vh;}
+            }
+            @keyframes color{0%{color:#063c85;}
+            19%{color:#ff0;}
+            31%{color:#0f0;}
+            43%{color:#0ff;}
+            62%{color:#00f;}
+            81%{color:#f0f;}
+            100%{color:#063c85;}
+            }
+            @keyframes start{from{text-shadow:0 0 1vh #fff,2vh -2vh 1vh #fff,2vh 2vh 1vh #fff,-2vh 2vh 1vh #fff,-2vh -2vh 1vh #fff;opacity:0;}
+            to{text-shadow:0 0 0 #fff;opacity:1;}
+            }
+            #start:checked~.sky>div+div,#start:checked~.sky>div::before{animation-play-state:running;}
+            #end:checked~.sky>div+div,#end:checked~.sky>div::before,#last:checked~.sky>div+div,#last:checked~.sky>div::before{animation-play-state:paused;}
+            #start:checked~.base{transition-timing-function:linear;transition-duration:60s;transform:translateY(200vh) rotateX(45deg) rotateZ(45deg);}
+            #end:checked~.base,#last:checked~.base{transition-timing-function:ease-in-out;transition-duration:1s;transform:translateY(25vh) rotateX(45deg) rotateZ(45deg) scale3d(.3,.3,.3);}
+            #start:checked~.base>input,input:checked+.container>.block>.last,input:checked+.container>.block>input{display:block;}
+            #start:checked~.base .container{animation:color 60s linear alternate infinite both;}
+            #start:checked~.base>.container,input:checked+.container>.block>.container{animation-play-state:paused!important;}
+            #start:checked~.base>.container.horizontal::before,input:checked+.container>.block>.container.horizontal::before{animation:width 2s linear infinite alternate both running;}
+            #start:checked~.base>.container.horizontal::after,input:checked+.container>.block>.container.horizontal::after{animation:width 2s linear infinite alternate-reverse both running;}
+            #start:checked~.base>.container.vertical::before,input:checked+.container>.block>.container.vertical::before{animation:height 2s linear infinite alternate both running;}
+            #start:checked~.base>.container.vertical::after,input:checked+.container>.block>.container.vertical::after{animation:height 2s linear infinite alternate-reverse both running;}
+            #end:active~.base .container::after,#end:active~.base .container::before,#end:checked~.base .container::after,#end:checked~.base .container::before,#last:active~.base .container::after,#last:active~.base .container::before,#last:checked~.base .container::after,#last:checked~.base .container::before,input:active+.container::after,input:active+.container::before,input:checked+.container::after,input:checked+.container::before{animation-play-state:paused!important;}
+            #start:checked~.base>.container>.floating,input:checked+.container>.block>.container>.floating{display:block;}
+            #end:active~.base .floating,#last:active~.base .floating,input:active+.container>.floating{animation-play-state:paused;}
+            #end:checked~.base .floating,#last:checked~.base .floating,input:checked+.container>.floating{visibility:hidden;color:transparent;transition:color .5s,background-color .5s,visibility 0s .5s;animation-play-state:paused;}
+            #last:checked~.base .floating,input:checked+.container>.floating{counter-increment:points 1;}
+            #end:checked~.base .floating::after,#end:checked~.base .floating::before,#last:checked~.base .floating::after,#last:checked~.base .floating::before,input:checked+.container>.floating::after,input:checked+.container>.floating::before{visibility:hidden;opacity:0;transition:opacity .5s,visibility 0s .5s;animation-play-state:paused;}
+            #last:checked~.base .last+.container>.floating+.block,input:checked+.container>.floating+.block{visibility:visible;}
+            .screen:valid .points{display:block;}
+            #last:checked~.points::before{opacity:1;}
+            #start:checked~.start{opacity:0;pointer-events:none;animation:none;}
+            #end:checked~button,#last:checked~button{opacity:1;pointer-events:auto;}
+
+        </style>
 	</head>
 	<body class="index">
-        <div>
-            <script src="js/dat.gui.js"></script>
-            <canvas id="canvas" width="0" height="0" ></canvas>
-            <canvas id="canvas_2" width="0" height="0" ></canvas>
+        <div class="load">
+            <form class="screen" novalidate><input id="start" type="checkbox" tabindex="-1"> <input id="end" type="checkbox" tabindex="-1"> <input id="last" type="checkbox" tabindex="-1"><div class="sky"><div></div><div></div></div><div class="base"><input type="checkbox" tabindex="-1" required><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><input type="checkbox" tabindex="-1"><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><input type="checkbox" tabindex="-1"><div class="container horizontal"><div class="block floating horizontal"></div><div class="block horizontal"><label class="last" for="last" tabindex="-1"></label><div class="container vertical"><div class="block floating vertical"></div><div class="block vertical"><label class="end horizontal" for="end"></label> <label class="end vertical" for="end"></label></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="points"></div><label class="start" for="start" tabindex="-1">点击开始</label> <button type="reset" tabindex="-1">重新开始</button><p>LOADING......</p></form>
         </div>
-        <p>adfjoaoidfjoiqrewgn</p>
-
-        <script> const mobile = ( navigator.userAgent.match(/Android/i)
-      || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)
-      );
-
-  var animate = true;
-
-  //Main display canvas
-  var ctx = canvas.getContext("2d");
-
-  //Hidden canvas
-  var ctx_2 = canvas_2.getContext("2d");
-
-  //Two height maps are used to store the current and previous states of the water
-  //Use single array with offset
-  var ripplemap = [];
-
-  //Displayed image of ripples on background
-  var ripple;
-
-  //Dimensions of image
-  var width;
-  var height;
-  if(mobile){
-    width = 300;
-    height = 300;
-    canvas.width = 300;
-    canvas.height = 300;
-  }else{
-    width = 550;
-    height = 550;
-  }
-//Set hidden canvas to the specifed size such that it fits two images next to each other (with a gap of 10 pixels in between)
-canvas_2.width = 2*width+10;
-canvas_2.height = height;
-
-//Half width and half height for displaying image centrally
-var hwidth = width/2;
-var hheight = height/2;
-
-var oldind = width;
-var newind = width * (height+2);
-//Twice the pixel count in image with 2 additional buffer rows
-var size = width * (height+2) * 2;
-//Background image data
-var texture;
-//Wave crest highlight data
-var highlights;
-//Width and height of background checkerboard pattern
-var rx = 16;
-var ry = 61;
-
-//Draw background image on hidden canvas
-ctx_2.fillStyle = '#147'
-ctx_2.fillRect(0,0,width,height);
-var grd = ctx_2.createLinearGradient(0,0,width,height);
-grd.addColorStop(0, 'rgb(0,255,255)');
-grd.addColorStop(0.33, 'rgb(255,125,255)');
-grd.addColorStop(0.66, 'rgb(255,255,0)');
-grd.addColorStop(1, 'rgb(0,255,255)');
-ctx_2.fillStyle = grd;
-for(i = 0; i < width/rx; i+=2){
-  for(j = 0; j < height/ry; j+=2){
-    ctx_2.fillRect(i * rx,j * ry,rx,ry);
-  } 
-}
-for(i = 1; i < width/rx; i+=2){
-  for(j = 1; j < height/ry; j+=2){
-    ctx_2.fillRect(i * rx,j * ry,rx,ry);
-  } 
-}
-
-var discrete = false;
-
-var radius = 3;
-var fade = 5;
-
-//dat.gui library controls
-var gui = new dat.GUI();
-
-var droplets = true;
-gui.add(this, 'radius').min(1.0).max(10.0).step(1.0);
-gui.add(this, 'fade').min(1.0).max(10.0).step(1.0);
-gui.add(this, 'discrete');
-gui.add(this, 'droplets');
-gui.close();
-
-//Set texture, ripple and highlights to the image data
-texture = ctx_2.getImageData(0, 0, width, height);
-ripple = ctx_2.getImageData(0, 0, width, height);
-highlights = ctx_2.getImageData(0, 0, width, height);
-
-//Initialise ripplemap to size
-for (var i = 0; i < size; i++) {
-  ripplemap[i] = 0;
-}
-
-var i_ = 0;
-var mapind;
-var a;
-var b;
-var data;
-var frame = 0;
-var new_pixel;
-var cur_pixel;
-
-
-//Increase height within a radius of a specified location
-function disturb(x,y, strength){
-  for (var j = y - radius; j < y + radius; j++) {
-    for (var k = x - radius; k < x + radius; k++) {
-      if((j>radius)&&(j < height-radius)&&(k > radius)&&(k<width-radius)){
-        ripplemap[oldind + (j * width) + k] += strength;
-      }
-    }
-  }
-}
-
-var x_old = -1;
-var y_old = -1;
-//When mouse leaves window, animate a lemiscate
-function animate_(){
-  animate = true;
-  x_old = -1;
-  y_old = -1;
-}
-
-function mouse_enter(){
-  x_old = -1;
-  y_old = -1;
-}
-
-function mouse_down(event) {
-  x = Math.round(event.offsetX - (canvas.width/2-hwidth));
-  y = Math.round(event.offsetY - (canvas.height/2-hheight));
-  disturb(x,y, 10000);
-}
-
-function disturbLine(x_new, y_new){
-
-  //Bresenham's line algorithm
-  //https://stackoverflow.com/questions/4672279/bresenham-algorithm-in-javascript
-  var dx = Math.abs(x_old - x_new);
-  var dy = Math.abs(y_old - y_new);
-  var sx = Math.sign(x_old - x_new);
-  var sy = Math.sign(y_old - y_new);
-  var err = dx-dy;
-
-  var x = x_new;
-  var y = y_new;
-
-  if(x_old > 0 && y_old > -1){
-    while(true){
-      disturb(x,y, 256);
-
-      if ((x==x_old) && (y==y_old)){
-        break;
-      }
-      var e2 = err<<1;
-      if (e2 >-dy){
-        err -= dy; 
-        x  += sx; 
-      }
-      if (e2 < dx){ 
-        err += dx; 
-        y += sy; 
-      }
-    }
-  }else{
-    disturb(x,y, 256);
-  }
-}
-function mouse_track(event) {
-  animate = false;
-  x_new = Math.round(event.offsetX - (canvas.width/2-hwidth));
-  y_new = Math.round(event.offsetY - (canvas.height/2-hheight));
-  if(discrete){
-    disturb(x_new, y_new, 1024);
-  }else{
-    disturbLine(x_new, y_new);
-  }
-  x_old = x_new;
-  y_old = y_new;
-}
-canvas.addEventListener('mouseenter', mouse_enter);
-canvas.addEventListener('mousedown', mouse_down);
-canvas.addEventListener('mousemove', mouse_track);
-canvas.addEventListener('mouseleave', animate_);
-
-function getPos(canvas, evt) {
-  var rect = canvas.getBoundingClientRect();
-  return {
-    x: evt.touches[0].clientX - rect.left,
-      y: evt.touches[0].clientY - rect.top
-  };
-}
-canvas.addEventListener("touchstart", touch_start);
-canvas.addEventListener("touchend", animate_);
-canvas.addEventListener("touchcancel", animate_);
-canvas.addEventListener("touchmove", touch_move);
-
-function touch_start(event) {
-  event.preventDefault();
-  animate = false;
-  x = Math.round(getPos(canvas, event).x - (canvas.width/2-hwidth));
-  y = Math.round(getPos(canvas, event).y - (canvas.height/2-hheight));
-  disturb(x,y, 1024);
-  x_old = x;
-  y_old = y;
-}
-
-function touch_move(event) {
-  event.preventDefault();
-  animate = false;
-  x_new = Math.round(getPos(canvas, event).x - (canvas.width/2-hwidth));
-  y_new = Math.round(getPos(canvas, event).y - (canvas.height/2-hheight));
-  if(discrete){
-    disturb(x_new, y_new, 1024);
-  }else{
-    disturbLine(x_new, y_new);
-  }
-  x_old = x_new;
-  y_old = y_new;
-}
-
-
-//Lemiscate variable
-var t = 0;
-var x_new;
-var y_new;
-
-var TWO_PI = 2 * Math.PI;
-
-
-//********************** DRAW **********************
-function draw() {
-	//Animate lemiscate when mouse is not on window
-if(!mobile){
-    //Animate lemiscate when mouse is not on window
-    if(animate){
-      t = (t+0.025)%(TWO_PI);
-      //Parametric equation for lemnsicate taken from:
-      //http://mathworld.wolfram.com/Lemniscate.html
-      //Some terms are left out
-      x_new = Math.round(width/2+(width/3 * Math.cos(t)));
-      y_new = Math.round(height/2+(height/4 * Math.sin(t) * Math.cos(t)));
-      if(discrete){
-        disturb(x_new, y_new, 1024);
-      }else{
-        disturbLine(x_new, y_new, 256);
-      }
-      x_old = x_new;
-      y_old = y_new;
-    }
-  }
-  //Raindrops
-  if(droplets){
-    if(frame % 5 === 0){
-      disturb(Math.round(Math.random() * width), Math.round(Math.random() * height), Math.round(Math.random() * 1024));
-    }
-  }
-
-	frame++;
-
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-
-	i_ = oldind;
-	oldind = newind;
-	newind = i_;
-
-	i_ = 0;
-	mapind = oldind;
-	for(y = 0; y < (height); y++){
-		for(x = 0; x < (width); x++){
-
-			//Look at the neighbouring pixels from the previous state. Take the sum and divide by 2 (with bitshift)
-			if(x > 0){
-				data = (ripplemap[mapind-width]+ripplemap[mapind+width]+ripplemap[mapind-1]+ripplemap[mapind+1]) >> 1;
-			}else{
-				//Freeze left wall so rows aren't periodic
-				data = 0
-			}
-			//Subtract the value in the current state map
-			data -= ripplemap[newind+i_];
-			//Reduce the strength of the ripple by 1/32nd with bitshift
-			data -= data >> (10-fade);
-			ripplemap[newind+i_] = data;
-
-			//Get ripple strength difference in x and y direction
-			xoffset =(ripplemap[x-1+y*width] - ripplemap[x+1+y*width])>>5;
-			yoffset = (ripplemap[x+(y-1)*width] - ripplemap[x+(y+1)*width])>>5;
-
-
-			//Determine which pixel to display based on the strength of ripple distortion in the region
-			a = (x + xoffset) << 0;
-			b = (y + yoffset) << 0;
-			//bounds check
-			if(a >= width){a = width - 1;}
-			if(a < 0){a = 0;}
-			if(b >= height){b = height - 1;}
-			if(b < 0){b = 0;}
-
-			//Pixel data is stored as (red, green, blue, alpha) values. Each pixel index is 4 addresses apart
-
-			//The pixel to draw
-			new_pixel = (a + (b * width)) << 2;
-			//The pixel location to draw to
-			cur_pixel = i_ << 2;
-
-			//Copy appropriate rgb pixel values from texture to ripple image
-			ripple.data[cur_pixel] = texture.data[new_pixel];
-			ripple.data[cur_pixel+1] = texture.data[new_pixel+1];
-			ripple.data[cur_pixel+2] = texture.data[new_pixel+2];
-
-			if(!mobile){
-				//Display highlights on waves
-				highlights.data[cur_pixel] = 128+texture.data[new_pixel];
-				highlights.data[cur_pixel+1] = 128+texture.data[new_pixel+1];
-				highlights.data[cur_pixel+2] = 255;
-				//Set transparency based on the xoffset. Zero-offset pixels will be transparent
-				highlights.data[cur_pixel+3] = xoffset<<2;
-			}
-			mapind++;
-			i_++;
-		}
-	}
-
-	//Draw ripple data on hidden canvas
-	ctx_2.putImageData(ripple, 0, 0);
-	//Draw highlights data on hidden canvas next to ripple with a 10 pixel space inbetween
-	if(!mobile){
-		ctx_2.putImageData(highlights, width+10, 0);
-		//Have highlights brighten the values underneath
-		ctx.globalCompositeOperation = "lighter";
-	}
-	//Draw ripple data from hidden canvas to main display canvas
-	ctx.drawImage(canvas_2,0,0,width,height,window.innerWidth/2-hwidth, window.innerHeight/2-hheight, width,height);
-	if(!mobile){
-	//Draw highlights data from hidden canvas to main display canvas
-	ctx.drawImage(canvas_2,width+10,0,width,height,window.innerWidth/2-hwidth, window.innerHeight/2-hheight, width,height);
-	}
-
-	window.requestAnimationFrame(draw);
-}
-
-window.requestAnimationFrame(draw);
-            
-        </script>
-	</body>
+    </body>
 </html>
