@@ -8721,7 +8721,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .overlay.overlay-op-7:hover:before, .overlay.overlay-op-7.overlay-show:before, .overlay.overlay-op-7.show:before {
-	opacity: 0.7;
+	opacity: 0;
 }
 
 .overlay.overlay-op-8:hover:before, .overlay.overlay-op-8.overlay-show:before, .overlay.overlay-op-8.show:before {
