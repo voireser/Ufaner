@@ -350,13 +350,11 @@ window.requestAnimationFrame(draw);
 document.onreadystatechange = completeLoading;
   
 function completeLoading() {  
-    setTimeout(() => {
-        if (document.readyState == "complete") {  
-            $("#load").animate({opacity:"0"});
-            setTimeout(() => {
-                $("#load").remove()
-            }, 1000);
-        }
-        $('.body').append('<script type="text/javascript" src="vendor/jquery.appear/jquery.appear.min.js"></script><script type="text/javascript" src="vendor/jquery.easing/jquery.easing.min.js"></script><script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script><script type="text/javascript" src="vendor/common/common.min.js"></script><script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/custom.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script><script type="text/javascript" src="js/theme.init.js"></script><script type="text/javascript" src="master/analytics/analytics.js"></script>')
-    }, 10000);
+    if (document.readyState == "complete") {  
+        $("#load").animate({opacity:"0"});
+        setTimeout(() => {
+            $("#load").remove()
+        }, 1000);
+    }
+    $('.body').append('<script type="text/javascript" src="vendor/jquery.appear/jquery.appear.min.js"></script><script type="text/javascript" src="vendor/jquery.easing/jquery.easing.min.js"></script><script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script><script type="text/javascript" src="vendor/common/common.min.js"></script><script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/custom.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script><script type="text/javascript" src="js/theme.init.js"></script><script type="text/javascript" src="master/analytics/analytics.js"></script>')
 }  
