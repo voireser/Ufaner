@@ -1,7 +1,7 @@
 // var value = sessionStorage.getItem("key");console.log(value)
 // if(value === null) {
 // sessionStorage.setItem("key", 1); 
-var _LoadingHtml = '<div id="load" style="position:fixed;top:0;bottom:0;width:100%;height:100%;"><canvas id="canvas"></canvas><canvas id="canvas_2"></canvas></div>';  
+var _LoadingHtml = '<div id="load" style="position:fixed;top:0;bottom:0;width:100%;height:100%;z-index: 9999;"><canvas id="canvas" style="background-color:#063c85;"></canvas><canvas id="canvas_2"></canvas></div>';  
 document.write(_LoadingHtml);
 
 const mobile = (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i));
@@ -10,7 +10,7 @@ var animate = true;
 
 //Main display canvas
 var canvas = document.getElementById("canvas");
-var canvas_2 = document.getElementById("canvas");
+var canvas_2 = document.getElementById("canvas_2");
 var ctx = canvas.getContext("2d");
 
 //Hidden canvas
@@ -353,10 +353,9 @@ document.onreadystatechange = completeLoading;
   
 function completeLoading() {  
     if (document.readyState == "complete") {  
-        var loadingMask = document.getElementById('load');  
-        loadingMask.className = 'disappear';
-        setTimeout(function disappear(){
-            loadingMask.parentNode.removeChild(loadingMask); 
-        }, 500)
-    }  
+        $("#load").animate({opacity:"0"});
+        setTimeout(() => {
+            $("#load").remove()
+        }, 1000);
+    }
 }  
