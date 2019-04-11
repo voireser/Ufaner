@@ -9,6 +9,8 @@ const mobile = (navigator.userAgent.match(/Android/i) || navigator.userAgent.mat
 var animate = true;
 
 //Main display canvas
+var canvas = document.getElementById("canvas");
+var canvas_2 = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 //Hidden canvas
