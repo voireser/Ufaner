@@ -18,14 +18,14 @@
 
 	var initialized = false;
 
-	var canvas = document.querySelector('canvas');
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-    c = canvas.getContext('2d');
+	var canvas_flower = document.querySelector('canvas');
+    canvas_flower.height = window.innerHeight;
+    canvas_flower.width = window.innerWidth;
+    cvs = canvas_flower.getContext('2d');
 
     window.addEventListener('resize', function(){
-        canvas.height = window.innerHeight;
-        canvas.width = window.innerWidth;
+        canvas_flower.height = window.innerHeight;
+        canvas_flower.width = window.innerWidth;
 
         initCanvas();
     })
@@ -67,10 +67,10 @@
         this.opacity = opacity;
 
         this.draw = function() {
-            c.beginPath();
-            c.arc(this.x, this.y, this.radius, Math.PI * 2, false);
-            c.fillStyle = 'rgba(' + rgb +','+ this.opacity +')';
-            c.fill();
+            cvs.beginPath();
+            cvs.arc(this.x, this.y, this.radius, Math.PI * 2, false);
+            cvs.fillStyle = 'rgba(' + rgb +','+ this.opacity +')';
+            cvs.fill();
         }
 
         this.update = function(){
@@ -129,7 +129,7 @@
     function animate() {
         requestAnimationFrame(animate);
         frame += 1;
-        c.clearRect(0, 0, innerWidth, innerHeight);
+        cvs.clearRect(0, 0, innerWidth, innerHeight);
         for (let i = 0; i < circleArray.length; i++ ){
             circleArray[i].update();
         }

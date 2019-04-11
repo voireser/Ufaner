@@ -1,16 +1,14 @@
 // var value = sessionStorage.getItem("key");console.log(value)
 // if(value === null) {
 // sessionStorage.setItem("key", 1); 
-var _LoadingHtml = '<div id="load" style="position:fixed;top:0;bottom:0;width:100%;height:100%;z-index: 9999;"><canvas id="canvas" style="background-color:#063c85;"></canvas><canvas id="canvas_2"></canvas></div>';  
-document.write(_LoadingHtml);
-
 const mobile = (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i));
 
 var animate = true;
 
+var canvas = document.getElementById("water");
+var canvas_2 = document.getElementById("water_2");
+
 //Main display canvas
-var canvas = document.getElementById("canvas");
-var canvas_2 = document.getElementById("canvas_2");
 var ctx = canvas.getContext("2d");
 
 //Hidden canvas
@@ -352,10 +350,13 @@ window.requestAnimationFrame(draw);
 document.onreadystatechange = completeLoading;
   
 function completeLoading() {  
-    if (document.readyState == "complete") {  
-        $("#load").animate({opacity:"0"});
-        setTimeout(() => {
-            $("#load").remove()
-        }, 1000);
-    }
+    setTimeout(() => {
+        if (document.readyState == "complete") {  
+            $("#load").animate({opacity:"0"});
+            setTimeout(() => {
+                $("#load").remove()
+            }, 1000);
+        }
+        $('.body').append('<script type="text/javascript" src="vendor/jquery.appear/jquery.appear.min.js"></script><script type="text/javascript" src="vendor/jquery.easing/jquery.easing.min.js"></script><script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script><script type="text/javascript" src="vendor/common/common.min.js"></script><script type="text/javascript" src="js/theme.js"></script><script type="text/javascript" src="js/custom.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script><script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script><script type="text/javascript" src="js/theme.init.js"></script><script type="text/javascript" src="master/analytics/analytics.js"></script>')
+    }, 10000);
 }  
