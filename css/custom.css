@@ -20,8 +20,8 @@ li.dropdown a:hover{-webkit-animation:dropdownLi .3s;animation:dropdownLi .3s;an
     0%{-webkit-transform:rotate(0) scale(1,1);transform:rotate(0) scale(1,1);}
     100%{-webkit-transform:rotate(-3deg) scale(1.1,1.1);transform:rotate(-3deg) scale(1.1,1.1);color:#4787de;}
 }
-.qrcodeArea{}
-.qrcodeArea>img.dropdown-menu{padding: 0!important;min-width: 100px!important;width: 100px;}
+.qrcodeArea>.dropdown-menu{background-color: #fff !important;padding: 0 5.5px !important;border-radius: 10px !important;}
+.qrcodeArea>.dropdown-menu>img:nth-child(2){position:absolute;bottom:19px;left:44px;width:110px;}
 
 @font-face {
     font-family: 'iconfont';
@@ -239,9 +239,16 @@ canvas#flower{position:fixed;top:0;left:0;z-index:9999;display:block;margin:0;pa
 #footer.container{margin:0;padding-top:40px;padding-bottom:20px;border:none!important;background-color:#f4f8fc;}
 #footer>.row:nth-child(1)>p{font-size:24px;margin-bottom: 40px;}
 #footer>.row:nth-child(1)>div{position: relative;margin: auto;}
-#footer>.row:nth-child(1)>div>div{display:inline-block;margin-right:35px;padding-right:20px;border-right:1px solid #aaa;}
-#footer>.row:nth-child(1)>div>div>img{margin:0 15px;width:40px;}
-#footer>.row:nth-child(1)>div>div>img:first-child{margin-left:0;}
+#footer>.row:nth-child(1)>div>div:nth-child(1){display:inline-block;margin-right:35px;padding-right:20px;border-right:1px solid #aaa;}
+#footer>.row:nth-child(1)>div>div:nth-child(1)>img{margin:0 15px;width:40px;}
+#footer>.row:nth-child(1)>div>div:nth-child(1)>img:first-child{margin-left:0;}
+#footer>.row:nth-child(1)>div>div:nth-child(2){position:relative;float:right;display:block;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>img{margin-top:-54px;width:310px;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>div{position:absolute;bottom:32px;left:32px;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>div>p{color:#fff;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>div>p>span:nth-child(1){float:left;display:block;padding-right:5px;height:28px;font-size:20px;line-height:24px;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>div>p>:not(ol):nth-child(2){display:inline-block;color:#fff;line-height:28px;}
+#footer>.row:nth-child(1)>div>div:nth-child(2)>div>p:nth-child(2)>span:nth-child(1){padding-left:1px;padding-right: 7px;font-size:17px;line-height:26px;}
 #footer>.row:nth-child(1)>div>p{display:inline-block;position: relative;}
 #footer>.row:nth-child(1)>div>p+p{margin-left: 35px;}
 #footer>.row:nth-child(1)>div>p>:not(ol){color:#333;display: inline-block;}
@@ -318,7 +325,7 @@ html a.scroll-to-top{bottom:10px;width:50px;height:50px;border:2px solid #063c85
 .lessonPage_2 .swiper-container{padding: 150px 0;}
 .lessonPage_2 .swiper-slide{opacity: 0 !important;}
 .lessonPage_2 .swiper-slide.swiper-slide-active{opacity: 1 !important;}
-.lessonPage_2 .swiper-pagination{position:absolute;top:0;left:0;width:100%;height:100%;}
+.lessonPage_2 .swiper-pagination{position: absolute;top: 0;left: 50%;width: 950px;height: 100%;margin-left: -475px;}
 .lessonPage_2 .swiper-pagination-bullet{opacity: 1;position:absolute;top:100px;left:50%;width:150px;height:150px;background-color:transparent;background-size:contain;border-radius: 0;}
 .lessonPage_2 .swiper-pagination-bullet:nth-child(1){background-image:url(../img/eightPoint_1.png);top: 70px;left: 190px;}
 .lessonPage_2 .swiper-pagination-bullet:nth-child(2){background-image:url(../img/eightPoint_2.png);top: 230px;left: 140px;}
@@ -378,7 +385,7 @@ html a.scroll-to-top{bottom:10px;width:50px;height:50px;border:2px solid #063c85
 .lessonPage_4 .swiper-container{padding:250px 0 30px 0;}
 .lessonPage_4 .swiper-slide{opacity:0!important;}
 .lessonPage_4 .swiper-slide.swiper-slide-active{opacity:1!important;}
-.lessonPage_4 .swiper-pagination{position:absolute;top:0;left:0;width:100%;height:100%;}
+.lessonPage_4 .swiper-pagination{position: absolute;top: 0;left: 50%;width: 950px;height: 100%;margin-left: -475px;}
 .lessonPage_4 .swiper-pagination-bullet{position:absolute;width:90px;height:90px;background-color:#fff;background-size:contain;box-shadow:0 0 10px rgba(0,0,0,.05);opacity:1;}
 .lessonPage_4 .swiper-pagination-bullet:nth-child(1){bottom:50px;left:0;background-image:url(../img/nightLevel-1.png);}
 .lessonPage_4 .swiper-pagination-bullet:nth-child(2){bottom:190px;left:50px;background-image:url(../img/nightLevel-2.png);}
