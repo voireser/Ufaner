@@ -256,18 +256,19 @@ canvas#flower{position:fixed;top:0;left:0;z-index:9999;display:block;margin:0;pa
 #footer>.row:nth-child(1)>div>p>.iconfont{position: absolute;color: #063c85;font-size: 28px;}
 #footer>.row:nth-child(2){padding-top:50px;text-align:center;}
 #footer>.row:nth-child(2)>p{color: #aaa;font-size: 9px;}
-html a.scroll-to-top{bottom:10px;width:50px;height:50px;border:2px solid #063c85;border-radius:100px;background-color:#fff;color:#063c85;font-weight:900;line-height:26px;}
-.scroll-to-top.hidden-mobile.visible img{position:absolute;top:-18px;left:-36px;width:50px;}
+html a.scroll-to-top{bottom: 20px;right: 20px;width: 120px;height: 156px;background-color: transparent;opacity: 1 !important;overflow: visible;padding: 0;}
+.scroll-to-top.hidden-mobile.visible img{position:absolute;top:0;left:0;width:100%;}
+.scroll-to-top.hidden-mobile.visible img:nth-child(2){top:97px;}
 
 .swiperPhoto{padding-top:50px;}
 .swiperPhoto .swiper-container{margin:0;}
 .swiperPhoto>.row>.col-lg-4{padding:0 0 0 40px;}
 .swiperPhoto>.row>.col-lg-4>p:nth-child(1){margin-bottom:50px;color:#0a3c7b;white-space:nowrap;font-weight:900;font-size:60px;line-height:72px;}
 .swiperPhoto>.row>.col-lg-4>p:nth-child(2){line-height:32px;}
-.swiperPhoto .swiper-pagination{padding-right:20px;color:#fff;text-align:right;}
+.swiperPhoto .swiper-pagination{color: #0a3c7b;text-align: left;padding-left: 40px;bottom: 0;}
 .swiperPhoto .swiper-pagination-current{font-weight:900;font-size:28px;}
-.swiperPhoto .swiper-button-next{top:auto;bottom:0;left:100px;width:15px;height:28.5px;background-image:url(../img/next.png);background-size:100%;}
-.swiperPhoto .swiper-button-prev{top:auto;bottom:0;left:40px;width:15px;height:28.5px;background-image:url(../img/prev.png);background-size:100%;}
+.swiperPhoto .swiper-button-next{background-image:url(../img/next_KOL.png);}
+.swiperPhoto .swiper-button-prev{background-image:url(../img/prev_KOL.png);}
 
 .timeline>div>div:nth-child(1){background-image: url(../img/line_back.png);height: 134px;display: inline-block;width: 100%;}
 .timeline .inside{background-image: url(../img/line.png);background-repeat: repeat-y;display: inline-block;width:100%;min-height: 100px;}

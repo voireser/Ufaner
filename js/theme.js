@@ -2137,14 +2137,13 @@ window.theme.fn = {
 					.addClass(self.options.buttonClass)
 					.attr({
 						'href': '#',
-					})
+                    })
+                    
 					.append(
-						$('<span /><img src="img/baby.png">')
-                        .addClass(self.options.iconClass)
-                        .html('&#xe651;')
+						$('<div><img src="img/baby_toToptop.png"><img src="img/baby_toTopbottom.png"></div>')
 				);
 
-				// Visible Mobile
+                // Visible Mobile
 				if (!self.options.visibleMobile) {
 					$el.addClass('hidden-mobile');
 				}
@@ -2166,11 +2165,16 @@ window.theme.fn = {
 					_isScrolling = false;
 
 				// Click Element Action
-				self.$el.on('click', function(e) {
-					e.preventDefault();
-					$('body, html').animate({
-						scrollTop: 0
-					}, self.options.delay, self.options.easing);
+				self.$el.children().children().on('click', function(e) {
+                    e.preventDefault();
+                    console.log(this.src)
+                    if (this.src.indexOf('Topbottom') === -1) {
+                        $('body, html').animate({
+                            scrollTop: 0
+                        }, self.options.delay, self.options.easing);
+                    } else {
+                        window.location.href = 'index.html'
+                    }
 					return false;
 				});
 
