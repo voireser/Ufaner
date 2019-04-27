@@ -55,7 +55,7 @@
 		<div class="body newsPage">
             <header id="header" class="header-transparent header-semi-transparent-light header-effect-shrink" 
             data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 
-            'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 685, 'stickyHeaderContainerHeight': 70}">
+            'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 380, 'stickyHeaderContainerHeight': 70}">
                 <div class="header-body border-top-0">
                     <div class="header-container container-fluid px-lg-4">
                         <div class="header-row">
@@ -75,7 +75,7 @@
                                         <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                             <nav class="collapse">
                                                 <ul class="nav nav-pills" id="mainNav">
-                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html">主页</a></li>
+                                                    <li class="dropdown"><a class=" dropdown-itemdropdown-toggle" href="index.html">主页</a></li>
                                                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
                                                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
                                                         <ul class="dropdown-menu">
@@ -90,7 +90,7 @@
                                                             <li><a class="dropdown-item" href="lesson.html#lNight">九级奖励机制</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="news.html">优范ing</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="news.html">优范ing</a></li>
                                                     <!-- <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="join.html">预约体验</a></li> -->
                                                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">加入我们</a></li>
                                                     <li class="dropdown qrcodeArea"><a class="dropdown-item dropdown-toggle" href="#"><span class="iconfont">&#xe62d;</span></a>
@@ -115,14 +115,35 @@
                 </div>
             </header>
 
-            <section class="newsBanner page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/newsBanner.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 align-self-center p-static order-2 text-center">
-                        </div>
-                    </div>
+            <div class="newsBanner slider-container rev_slider_wrapper">
+                <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8">
+                    <ul>
+                        <li class="slide-overlay" data-transition="fade">
+                            <img src="video/video-2.jpg"  
+                                alt=""
+                                data-bgposition="center bottom" 
+                                data-bgfit="cover" 
+                                data-bgrepeat="no-repeat" 
+                                class="rev-slidebg">
+
+                            <div class="rs-background-video-layer" 
+                                data-forcerewind="on" 
+                                data-volume="mute" 
+                                data-videowidth="100%" 
+                                data-videoheight="100%" 
+                                data-videomp4="video/video-2.mp4" 
+                                data-videopreload="preload" 
+                                data-videoloop="loop" 
+                                data-forceCover="1" 
+                                data-aspectratio="1920:720" 
+                                data-autoplay="true" 
+                                data-autoplayonlyfirsttime="false" 
+                                data-nextslideatend="false">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
                 
             <div class="container newsTab">
                 <div class="row">

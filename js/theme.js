@@ -4099,8 +4099,7 @@ window.theme.fn = {
 				});
 
 				// Mobile Arrows
-				$header.find('.dropdown-toggle, .dropdown-submenu > a')
-					.append('<i class="fas fa-chevron-down"></i>');
+				$header.find('.dropdown-toggle, .dropdown-submenu > a');
 				
 				$header.find('.dropdown-toggle[href="#"], .dropdown-submenu a[href="#"], .dropdown-toggle[href!="#"] .fa-chevron-down, .dropdown-submenu a[href!="#"] .fa-chevron-down').on('click', function(e) {
 					e.preventDefault();

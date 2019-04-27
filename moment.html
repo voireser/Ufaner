@@ -58,8 +58,8 @@
                                         <div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                             <nav class="collapse">
                                                 <ul class="nav nav-pills" id="mainNav">
-                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html">主页</a></li>
-                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="moment.html">精彩瞬间</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="index.html">主页</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="moment.html">精彩瞬间</a></li>
                                                     <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="Ufaner.html">关于优范儿</a>
                                                         <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="Ufaner-timeline.html">优范儿简史</a></li>
@@ -105,7 +105,7 @@
 
             <div class="container swiperPhoto">
                 <div class="row">
-                    <div class="swiper-container col-lg-8">
+                    <div class="swiper-container photoArea col-lg-8">
                         <div class="swiper-wrapper">
                             <img class="swiper-slide" src="img/photo_1.jpg" alt="">
                             <img class="swiper-slide" src="img/photo_2.jpg" alt="">
@@ -126,7 +126,16 @@
 
                     <div class="col-lg-4">
                         <p>孩子们<br>的精彩瞬间</p>
-                        <p>北京长楹天街天街店内<br>跳水训练课<br>课程等级-W4</p>
+                        <div class="swiper-container textArea">
+                            <div class="swiper-wrapper">
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W1</p>
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W2</p>
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W3</p>
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W4</p>
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W5</p>
+                                <p class="swiper-slide swiper-no-swiping" >北京长楹天街天街店内<br>跳水训练课<br>课程等级-W6</p>
+                            </div>
+                        </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
@@ -223,7 +232,12 @@
 
         <script type="text/javascript" src="master/analytics/analytics.js"></script>
         <script>
-            var swiperPhoto = new Swiper('.swiperPhoto .swiper-container', {
+            var swiperText = new Swiper('.swiperPhoto .swiper-container.textArea', {
+                loop: true,
+                effect: 'fade'
+            });
+
+            var swiperPhoto = new Swiper('.swiperPhoto .swiper-container.photoArea', {
                 loop: true,
                 effect: 'fade',
                 autoplay: {
@@ -237,6 +251,11 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+                on: {
+                    slideNextTransitionStart: function(){
+                        swiperText.slideTo(this.activeIndex, 1000, false)
+                    },
+                }
             });
         </script>
 	</body>

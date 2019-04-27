@@ -16,8 +16,18 @@
 
 		<!-- Mobile Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-        
-        <div class="load" id="load">
+       
+        <style>
+            .load{position:fixed;top:0;left:0;width:100%;height:100%;}
+            .load img{position:absolute;top:170px;left:50%;margin-left:-100px;border-radius:100%;box-shadow:0 10px 20px rgba(0,0,0,.2);cursor:pointer;justify-content:center;align-items:center;flex-direction:column;animation:jumping .8s infinite alternate;}
+            @keyframes jumping{50%{top:170px;box-shadow:0 10px 20px rgba(0,0,0,.2);}
+            100%{top:120px;box-shadow:0 120px 50px rgba(0,0,0,.2);}
+            }
+            .load p{position:absolute;bottom:200px;width:100%;color:#063c85;text-align:center;font-size:24px;}
+        </style>
+        <div class="load">
+            <img src="img/lessonIcon_4.png" alt="">
+            <p>即将进入精彩的优范儿世界...</p>
         </div>
         <script>
             document.onreadystatechange = completeLoading;
@@ -27,7 +37,7 @@
                     $("#load").animate({opacity:"0"});
                     setTimeout(() => {
                         $("#load").remove()
-                    }, 1000);
+                    }, 1000000);
                 }
             }  
         </script>
@@ -217,33 +227,36 @@
                     <p class="title">YOURFANCY 理论</p>
                     <p class="titleNext">优范儿致力于为0-8岁的婴幼儿及家庭提供科学、健康、全方位的亲子运动服务。</p>
                     <div class="row counters text-dark">
-                        <div class="col-sm-4 col-lg-4 mb-4 mb-lg-0">
+                        <a href="Ufaner.html" class="col-sm-4 col-lg-4 mb-4 mb-lg-0">
                             <div class="counter">
                                 <div class="row">
                                     <img src="img/aboutIcon_3.png" alt="">
                                     <strong data-to="20">0</strong>
                                 </div>
                                 <label>历经20个月的研发及多地考究</label>
+                                <span class="particletext bubbles">MORE</span>
                             </div>
-                        </div>
-                        <div class="col-sm-4 col-lg-4 mb-4 mb-sm-0">
+                        </a>
+                        <a href="Ufaner.html" class="col-sm-4 col-lg-4 mb-4 mb-sm-0">
                             <div class="counter">
                                 <div class="row">
                                     <img src="img/aboutIcon_2.png" alt="">
                                     <strong data-to="2015">0</strong>
                                 </div>
                                 <label>首家优范儿亲子水中教育<br>于2015年在北京正式成立</label>
+                                <span class="particletext bubbles">MORE</span>
                             </div>
-                        </div>
-                        <div class="col-sm-4 col-lg-4">
+                        </a>
+                        <a href="Ufaner.html" class="col-sm-4 col-lg-4">
                             <div class="counter">
                                 <div class="row">
                                     <img src="img/aboutIcon_1.png" alt="">
                                     <strong data-to="24000" data-append="+">0</strong>
                                 </div>
                                 <label>已突破24000+VIP会员</label>
+                                <span class="particletext bubbles">MORE</span>
                             </div>
-                        </div>
+                        </a>
                         <div class="babyArea">
                             <img class="babyBottom" src="img/babyBottom.png" alt="">
                             <a href="Ufaner-timeline.html"><img src="img/babyBottom_btn.png" alt=""></a>
@@ -258,7 +271,7 @@
                         <p class="title">YOURFANCY 课程</p>
                         <p class="titleNext">为每个孩子提供最优秀的游泳课程</p>
                         <div class="lessonCard">
-                            <a href="lesson_content.html">
+                            <a href="lesson.html">
                                 <img class="cardImg" src="img/lessonIcon_4.png"/>
                                 <p class="cardTitle">水育早教</p>
                                 <div class="cardNext">
@@ -268,7 +281,7 @@
                                     <p><img src="img/waterDot.png" />发现自我兴趣</p>
                                 </div>
                             </a>
-                            <a href="lesson_content.html">
+                            <a href="lesson.html">
                                 <img class="cardImg" src="img/lessonIcon_1.png"/>
                                 <p class="cardTitle">亲子游泳</p>
                                 <div class="cardNext">
@@ -278,7 +291,7 @@
                                     <p><img src="img/waterDot.png" />掌握标准的跳水、出发转身</p>
                                 </div>
                             </a>
-                            <a href="lesson_content.html">
+                            <a href="lesson.html">
                                 <div>
                                     <img class="cardImg" src="img/lessonIcon_2.png"/>
                                     <img class="cardImg" src="img/lessonIcon_3.png"/>
@@ -292,7 +305,7 @@
                                 </div>
                             </a>
                         </div>
-                        <a href="lesson_content.html" class="particletext bubbles">MORE</a>
+                        <a href="lesson.html" class="particletext bubbles">MORE</a>
                     </div>
                 </div>
             </div>
@@ -300,8 +313,8 @@
             <div class="container imgBgArea mPrevent">
                 <div class="container">
                     <div class="row">
-                        <p class="title">YOURFANCY ing</p>
-                        <p class="titleNext">每一个品牌活动，都是优范儿前行路上的珍贵记忆</p>
+                        <p class="title">YOURFANCY 优势</p>
+                        <p class="titleNext">细节决定成败，每一个环节都经过严格筛选把关</p>
                         <div class="row brandPhotos">
                             <a href="Ufaner.html">
                                 <img src="img/brand_1.jpg" alt="">
@@ -342,7 +355,7 @@
                     <div>
                         <p>专属空间</p>
                         <p>安全、舒适，且适合宝宝身心发展的高品质的体验环境</p>
-                        <p>细节决定成败每一个环节<br>都经过严格筛选把关</p>
+                        <p>细节决定成败<br>每一个环节都经过严格筛选把关</p>
                         <a class="particletext bubbles" href="lesson_content.html">MORE</a>
                     </div>
                 </div>
@@ -350,7 +363,7 @@
 
             <div class="container ufanerPage_2">
                 <div class="row">
-                    <p class="title">品牌活动</p>
+                    <p class="title">YOURFANCY ing</p>
                     <p class="titleNext">每一个品牌活动，都是优范儿前行路上的珍贵记忆</p>
                     <div>
                         <div class="thin">
@@ -370,7 +383,7 @@
                             <img src="img/KOLActive_3.png" alt="">
                         </div>
                     </div>
-                    <a href="" class="particletext bubbles">MORE</a>
+                    <a href="news.html" class="particletext bubbles">MORE</a>
                 </div>
             </div>
 
@@ -494,5 +507,26 @@
 		<script type="text/javascript" src="js/theme.init.js"></script>
 
         <script type="text/javascript" src="master/analytics/analytics.js"></script>
+
+        <script>
+            $('.city>div>div>p>a').on('click', function() {
+                console.log(this.innerHTML)
+                if(this.innerHTML === '北京') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '天津') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '石家庄') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>石家庄分店</span> <span>地址：哈尔滨万象里</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '哈尔滨') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '盐城') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '温州') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                } else if (this.innerHTML === '内蒙古') {
+                    $('.cityInside').html('<div><p>北京</p><p><span>科妮运动早教中心</span> <span>地址：北京蓝色港湾</span> <span>电话：010－88888888</span></p></div>')
+                }
+            })
+        </script>
 	</body>
 </html>
