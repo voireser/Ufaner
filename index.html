@@ -34,9 +34,12 @@
     
             function completeLoading() {  
                 if (document.readyState == "complete") {  
-                    $("#load").animate({opacity:"0"});
+                    $("#load p").html('欢迎您的到来!')
                     setTimeout(() => {
-                        $("#load").remove()
+                        $("#load").animate({opacity:"0"});
+                        setTimeout(() => {
+                            $("#load").remove()
+                        }, 1000);
                     }, 1000);
                 }
             }  
