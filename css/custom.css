@@ -231,8 +231,8 @@ canvas#flower{position:fixed;top:0;left:0;z-index:9999;display:block;margin:0;pa
 .city>div>div:nth-child(2){position:relative;float:left;padding:30px 50px;width:400px;border-radius:15px;background-color:#fff;text-align:center;}
 .city>div>div:nth-child(2)>p:nth-child(1){margin-bottom:10px;color:#063c85;font-size:24px;}
 .city>div>div:nth-child(2)>p:nth-child(2)>a{display:inline-block;width:24%;}
-.city .cityInside{position:relative;float:right;display:block;overflow-y:overlay;padding-right:50px;width:400px;height:148px;}
-.city .cityTriangle{position:absolute;top:64px;right:-54px;border:10px solid #fff;border-color:transparent #fff transparent transparent;}
+.city .cityInside{position:relative;float:right;display:block;overflow-y:overlay;padding-right:50px;width:400px;height:174px;}
+.city .cityTriangle{position:absolute;top:77px;right:-54px;border:10px solid #fff;border-color:transparent #fff transparent transparent;}
 .city .cityInside>div{padding:5px 0 0 100px;}
 .city .cityInside>div>p:nth-child(1){margin-bottom:11px;padding-bottom:20px;border-bottom:1px solid;color:#fff;font-size:30px;}
 .city .cityInside>div>p:nth-child(2){margin-bottom:20px;padding-bottom:18px;border-bottom:1px dotted rgba(255,255,255,.25);color:#fff;line-height:30px;}
