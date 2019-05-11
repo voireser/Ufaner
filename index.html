@@ -245,9 +245,9 @@
                             <div class="counter">
                                 <div class="row">
                                     <img src="img/aboutIcon_2.png" alt="">
-                                    <strong data-to="2015">0</strong>
+                                    <strong data-to="2013">0</strong>
                                 </div>
-                                <label>首家优范儿亲子水中教育<br>于2015年在北京正式成立</label>
+                                <label>首家优范儿水中运动<br>于2013年在北京正式成立</label>
                                 <span class="particletext bubbles">MORE</span>
                             </div>
                         </a>
@@ -285,16 +285,7 @@
                                     <p><img src="img/waterDot.png" />发现自我兴趣</p>
                                 </div>
                             </a>
-                            <a href="lesson.html">
-                                <img class="cardImg" src="img/lessonIcon_1.png"/>
-                                <p class="cardTitle">亲子游泳</p>
-                                <div class="cardNext">
-                                    <p><img src="img/waterDot.png" />发掘孩子的运动天赋</p>
-                                    <p><img src="img/waterDot.png" />增强体能、学会呼吸控制</p>
-                                    <p><img src="img/waterDot.png" />学会四种专业泳姿</p>
-                                    <p><img src="img/waterDot.png" />掌握标准的跳水、出发转身</p>
-                                </div>
-                            </a>
+                            
                             <a href="lesson.html">
                                 <div>
                                     <img class="cardImg" src="img/lessonIcon_2.png"/>
@@ -306,6 +297,17 @@
                                     <p><img src="img/waterDot.png" />加强应急入水能力</p>
                                     <p><img src="img/waterDot.png" />强水中专业技能</p>
                                     <p><img src="img/waterDot.png" />掌握初步的自救本领</p>
+                                </div>
+                            </a>
+
+                            <a href="lesson.html">
+                                <img class="cardImg" src="img/lessonIcon_1.png"/>
+                                <p class="cardTitle">亲子游泳</p>
+                                <div class="cardNext">
+                                    <p><img src="img/waterDot.png" />发掘孩子的运动天赋</p>
+                                    <p><img src="img/waterDot.png" />增强体能、学会呼吸控制</p>
+                                    <p><img src="img/waterDot.png" />学会四种专业泳姿</p>
+                                    <p><img src="img/waterDot.png" />掌握标准的跳水、出发转身</p>
                                 </div>
                             </a>
                         </div>
@@ -490,25 +492,22 @@
                                 </div>
                                 <div class="cityInside">
                                     <div>
-                                        <p>北京</p>
+                                        <p>优范儿世贸天阶旗舰中心</p>
                                         <p>
-                                            <span>优范儿世贸天阶旗舰中心</span>
                                             <span>北京朝阳区比世贸天阶南街B108A</span>
                                             <span>010-53092353</span>
                                         </p>
                                     </div>
                                     <div>
-                                        <p>北京</p>
+                                        <p>优范儿比如世界旗舰中心</p>
                                         <p>
-                                            <span>优范儿比如世界旗舰中心</span>
                                             <span>北京朝阳区比如世界二层</span>
                                             <span>010-64304133</span>
                                         </p>
                                     </div>
                                     <div>
-                                        <p>北京</p>
+                                        <p>优范儿蓝色港湾科妮中心</p>
                                         <p>
-                                            <span>优范儿蓝色港湾科妮中心</span>
                                             <span>北京朝阳区蓝色港湾儿童城M层</span>
                                             <span>010-59056720</span>
                                         </p>
@@ -575,23 +574,23 @@
             $('.city>div>div>p>a').on('click', function() {
                 console.log(this.innerHTML)
                 if(this.innerHTML === '北京') {
-                    $('.cityInside').html('<div><p>北京</p><p><span>优范儿世贸天阶旗舰中心</span> <span>北京朝阳区比世贸天阶南街B108A</span> <span>010-53092353</span></p></div><div><p>北京</p><p><span>优范儿比如世界旗舰中心</span> <span>北京朝阳区比如世界二层</span> <span>010-64304133</span></p></div><div><p>北京</p><p><span>优范儿蓝色港湾科妮中心</span> <span>北京朝阳区蓝色港湾儿童城M层</span> <span>010-59056720</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿世贸天阶旗舰中心</p><p><span>北京朝阳区比世贸天阶南街B108A</span> <span>010-53092353</span></p></div><div><p>优范儿比如世界旗舰中心</p><p><span>北京朝阳区比如世界二层</span> <span>010-64304133</span></p></div><div><p>优范儿蓝色港湾科妮中心</p><p><span>北京朝阳区蓝色港湾儿童城M层</span> <span>010-59056720</span></p></div>')
                 } else if (this.innerHTML === '盐城') {
-                    $('.cityInside').html('<div><p>盐城</p><p><span>优范儿大丰旗舰中心</span><span>盐城市大丰区恒达世纪新城20栋二层</span><span>0515-83897778</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿大丰旗舰中心</p><p><span>盐城市大丰区恒达世纪新城20栋二层</span><span>0515-83897778</span></p></div>')
                 } else if (this.innerHTML === '温州') {
-                    $('.cityInside').html('<div><p>温州</p><p><span>优范儿温州旗舰中心</span><span>温州蒲州街道白云路8-10号</span><span>0577-86503155</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿温州旗舰中心</p><p><span>温州蒲州街道白云路8-10号</span><span>0577-86503155</span></p></div>')
                 } else if (this.innerHTML === '天津') {
-                    $('.cityInside').html('<div><p>天津</p><p><span>优范儿泰达旗舰中心</span><span>天津市开发区泰达时尚购物中心二层</span><span>022-65186981</span></p></div><div><p>天津</p><p><span>优范儿福地旗舰中心</span><span>天津市开发区贻成福地广场二层</span><span>022-65186981</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿泰达旗舰中心</p><p><span>天津市开发区泰达时尚购物中心二层</span><span>022-65186981</span></p></div><div><p>优范儿福地旗舰中心</p><p><span>天津市开发区贻成福地广场二层</span><span>022-65186981</span></p></div>')
                 } else if (this.innerHTML === '苏州') {
-                    $('.cityInside').html('<div><p>苏州</p><p><span>优范儿相城中心</span><span>苏州市相城区兴旺路55号</span><span>400-660-1255</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿相城中心</p><p><span>苏州市相城区兴旺路55号</span><span>400-660-1255</span></p></div>')
                 } else if (this.innerHTML === '宁波') {
-                    $('.cityInside').html('<div><p>宁波</p><p><span>优范儿银泰城旗舰中心</span><span>宁波市天童南路银泰城一层</span><span>400-660-1255</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿银泰城旗舰中心</p><p><span>宁波市天童南路银泰城一层</span><span>400-660-1255</span></p></div>')
                 } else if (this.innerHTML === '合肥') {
-                    $('.cityInside').html('<div><p>合肥</p><p><span>优范儿旗舰中心（筹建）</span><span>合肥市蜀山区黄山路</span><span>400-660-1255</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿旗舰中心（筹建）</p><p><span>合肥市蜀山区黄山路</span><span>400-660-1255</span></p></div>')
                 } else if (this.innerHTML === '石家庄') {
-                    $('.cityInside').html('<div><p>石家庄</p><p><span>优范儿先天下中心</span><span>石家庄市桥西区先天下中心4楼</span><span>0311-89108472</span></p></div><div><p>石家庄</p><p><span>优范儿万象城中心</span><span>石家庄市桥西区万象城五楼</span><span>0311-66099366</span></p></div>')
+                    $('.cityInside').html('<div><p>优范儿先天下中心</p><p><span>石家庄市桥西区先天下中心4楼</span><span>0311-89108472</span></p></div><div><p>优范儿万象城中心</p><p><span>石家庄市桥西区万象城五楼</span><span>0311-66099366</span></p></div>')
                 } else if (this.innerHTML === '邢台') {
-                    $('.cityInside').html('<div><p>邢台</p><p><span>逗号立方中心</span><span>邢台市桥西区逗号立方中心三层</span><span>400-660-1255</span></p></div>')
+                    $('.cityInside').html('<div><p>逗号立方中心</p><p><span>邢台市桥西区逗号立方中心三层</span><span>400-660-1255</span></p></div>')
                 }
             })
         </script>
