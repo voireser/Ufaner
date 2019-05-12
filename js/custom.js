@@ -166,14 +166,4 @@
 
 }).apply(this, [window.theme, jQuery]);
 
-// card
-(function(theme, $) {
-	theme = theme || {};
 
-	var initialized = false;
-
-	$(".project").hover3d({
-        selector: ".project__card"
-    });
-
-}).apply(this, [window.theme, jQuery]);
