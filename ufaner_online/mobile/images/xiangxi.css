@@ -1,0 +1,26 @@
+.list-h li{ float:left;}
+#spec-n5{
+	width:450px;
+	height:56px;
+	padding-top:6px;
+	overflow:hidden;
+
+}
+#spec-list{ width:450px; float:left; overflow:hidden; margin-left:2px; display:inline;}
+#spec-list ul li{ float:left; margin-right:0px; display:inline; width:105px;}
+#spec-list ul li img{ padding:2px ; border:1px solid #ccc; width:85px; height:50px;}
+
+
+#spec-list{ position:relative; width:420px; margin-right:6px;}
+#spec-list div{ margin-top:0;margin-left:-30px; *margin-left:0;}
+
+
+
+.tabbox {width:840px;}
+.tabmenu {width:840px;height:35px; }
+.tabmenu ul {margin:0;padding:0;list-style-type:none;}
+.tabmenu li { text-align:center; float:left; display:block; width:166px; height:35px; overflow:hidden;background: #e7eaef; line-height:35px; display:inline; font-size:14px;  color:#333333; border-right:1px #c3c3c3 solid; }
+.tabmenu .cli {text-align:center;float:left;display:block;width:166px;height:35px;overflow:hidden;background:#18a1f0;line-height:35px;display:inline;font-size:14px; cursor:pointer; color:#fff;}
+#tabcontent {width:840px;background-color:#fff;}
+#tabcontent ul {margin:0;padding:5px;list-style-type: none; margin-top:20px; height:600px;}
+#tabcontent .hidden {display:none;} 

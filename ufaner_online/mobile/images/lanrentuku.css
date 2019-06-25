@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, h1, h2, h3, h4, h5, h6, fieldset, legend {padding:0; margin:0;}
+ul,li {list-style-type:none; text-transform:capitalize;}
+.clear {clear:both; *display:inline;/*IE only*/}
+
+/*menu*/
+#nav {
+     margin:0 ; 
+     width:800px; 
+     display:block;
+	 font-size:15px; 
+	 font-family:"微软雅黑"; float:left; margin-top:20px
+}
+#nav .mainlevel {
+  
+	  float:left; 
+	  
+	  width:100px;background:url(line.gif) no-repeat center right; 
+	  
+/*IE6 only*/}
+#nav .mainlevel a {
+      color:#333; 
+	  text-decoration:none; 
+	  line-height:40px; 
+	  display:block; 
+	  padding:0; 
+	  width:100px;
+	  text-align:center; 
+	  }
+#nav .mainlevel a:hover {
+      color:#056fc3;
+	  line-height:40px;
+	  text-decoration:none; 
+
+	  }
+#nav .mainlevel1 {
+	  float:left; 
+	  margin-right:4px; 
+	  width:100px;
+/*IE6 only*/}
+#nav .mainlevel1 a {
+      color:#606161;
+	  font-size:12px; 
+	  text-decoration:none; 
+	  line-height:30px; 
+	  display:block; 
+	  padding:0; 
+	  width:100px;
+	  text-align:center;
+	  }
+#nav .mainlevel1 a:hover {
+      color:#ff8800;
+	  line-height:30px;
+	  text-decoration:none; 
+	  }
+#nav .mainlevel ul {
+      display:none; 
+	  position:absolute;
+	  z-index:9999
+	  }
+#nav .mainlevel li {
+	  width:100px;
+	  background-color:#f6f6f6
+	  /*IE6 only*/}
+
+.abc{display:none;}

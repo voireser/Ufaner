@@ -1,0 +1,45 @@
+{xiao:template header.html}
+<div class="x"></div>
+<div class="list_wrapper m"> {xiao:template left.html}
+  <div class="list_right">
+    <div class="position">
+      <p class="rt">您现在的位置：<span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+    <!--右侧主体-->
+    <div class="zhishi">
+      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="tit" align="center" height="50"><strong style="font-size:14px; color:#000;" >{xiao:$title}</strong></td>
+          </tr>
+          <tr align="center">
+            <td style="border: 1px solid rgb(233, 233, 233);" width="80%" height="30" class="ysss"> 发布时间:{xiao:function.date("Y-m-d H:i:s", $time)}|  浏览次数：<font color="#FF0000"><script type="text/javascript" src="{xiao:function.url('api/hits',array('id'=>$id))}"></script></font></td>
+          </tr>
+          <tr>
+            <td class="black" id="fontzoom" style=" padding-top: 10px;"><div style="overflow:hidden;">{xiao:$content}</div></td>
+          </tr>
+          <tr align="right">
+            <td>&nbsp;</td>
+          </tr>
+          <tr align="right">
+            <td>&nbsp;</td>
+          </tr>
+          <tr align="right">
+            <td><table width="95%" align="center" border="0" cellpadding="0" cellspacing="0" height="30">
+                <tbody>
+                  <tr>
+                    <td align="right" class="ysss"><a href="javascript:window.print()">打印本页</a> || <a href="javascript:window.close()">关闭窗口</a></td>
+                  </tr>
+                </tbody>
+              </table></td>
+          </tr>
+          <tr align="left">
+            <td class="ysss">&nbsp;上一篇：<a href="{xiao:$prev_page['url']}">{xiao:$prev_page['title']}</a><br />
+              &nbsp;下一篇：<a href="{xiao:$next_page['url']}">{xiao:$next_page['title']}</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{xiao:template footer.html} 

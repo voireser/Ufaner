@@ -1,0 +1,24 @@
+<div class="list_left">
+  <div class="sidebar_menu">
+    <h2>{xiao:php $topcat = get_top_cat($catid);}
+      {xiao:if $topcat}
+      {xiao:nav catid=$topcat[catid]}{xiao:$xiao['catname']} {/xiao:nav} 
+      {xiao:else}
+      {/xiao:if}</h2>
+    <ul>
+      {xiao:nav parentid=$xiao[catid]}
+      <li><a class=" {xiao:if $current}current{/xiao:if}"  href="{xiao:$xiao['url']}">{xiao:$xiao['catname']}</a></li>
+      {/xiao:nav} 
+      <!--<li><a href="#"class="current" >精彩活动</a></li>-->
+    </ul>
+  </div>
+  <div class="gr-sidebar-two">
+    <h2 class="l_left_title"><span>联系我们</span></h2>
+    <div class="contact-box">
+      <h3>咨询热线<span>{xiao:block 5}</span></h3>
+      <p>电话：{xiao:block 6} <br />
+        E-mail：{xiao:block 7}<br />
+        地址：{xiao:block 8}</p>
+    </div>
+  </div>
+</div>

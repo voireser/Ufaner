@@ -1,0 +1,133 @@
+{xiao:template header.html}
+<div class="x"></div>
+<div class="wrap">
+  <div class="content" style="padding-top: 45px; background: url(images/index-08.png) center top no-repeat;
+            position: relative;">
+    <h1 class="tith1 tith1dingwei"> 预约体验</h1>
+    <div class="yuyuep yuyuepdingwei">
+      <p style="color:#666666"> 宝&nbsp;宝&nbsp;姓&nbsp;名:
+        <input name="name" id="name" class="text01" type="text">
+        <b style="margin-left:8px; color:red;">*</b></p>
+      <p style="color:#666666"> 宝&nbsp;宝&nbsp;生&nbsp;日:&nbsp; <span class="selectClass" style="width: 50px;"><b>年</b>
+        <select id="b_year" name="b_year">
+          <option value="年" selected="selected">年</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+        </select>
+        <input name="hid_year" id="hid_year" type="hidden">
+        </span> 
+        <script>
+                             $("#b_year").change(function() {
+                                 $("#hid_year").val($("#b_year").val());
+                             })
+                </script> 
+        <span class="selectClass" style="width: 50px;"> <b>月</b>
+        <select id="b_month" name="b_month">
+          <option value="月" selected="selected">月</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <input name="hid_month" id="hid_month" type="hidden">
+        </span> 
+        <script>
+                                $("#b_month").change(function() {
+                                    $("#hid_month").val($("#b_month").val());
+                                })
+                </script> 
+        <span class="selectClass" style="width: 50px; margin-right: 10px;"> <b>日</b>
+        <select id="b_day" name="b_day">
+          <option value="日" selected="selected">日</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+        <input name="hid_day" id="hid_day" type="hidden">
+        </span> 
+        <script>
+                           $("#b_day").change(function() {
+                               $("#hid_day").val($("#b_day").val());
+                           })
+                </script><b style="margin-left:8px; color:red;">*</b> </p>
+      <p style="color:#666666"> 联&nbsp;系&nbsp;电&nbsp;话:
+        <input name="tel" id="tel" class="text01" type="text">
+        <b style="margin-left:8px; color:red;">*</b></p>
+      <p style="color:#666666"> 预约俱乐部: <span class="selectClass" style="width: 147px;"><b>请选择(必填)</b>
+        <select id="b_club" name="b_club">
+          <option selected="selected">请选择(必填)</option>
+          <option value="方庄中心">方庄中心</option>
+          <option value="万柳中心">万柳中心</option>
+          <option value="水立方中心">水立方中心</option>
+        </select>
+        <input name="hid_club" id="hid_club" type="hidden">
+        </span> 
+        <script>
+                    $("#b_club").change(function() {
+                        $("#hid_club").val($("#b_club").val());
+                    })
+                </script> 
+      </p>
+      <p>
+        <input name="b_submit" value="提交预约" id="b_submit" class="tijiao" type="submit">
+      </p>
+    </div>
+    <div class="tishiwenx"><b>温馨提示</b>
+      <p>1、三岁以下宝宝需要穿防水纸尿裤后下水，当然如果您来不及准备，可以到俱乐部前台购买。<br>
+        2、最好在课前1小时给宝宝喂食，切记不要过早喂食。对于母乳喂养的婴儿可以在课前半小时到一小时之间少喂一些。<br>
+        3、家长下水需要穿泳衣，佩戴泳帽，最好不要给自己和宝宝佩戴戒指、项链、手链、手镯、锐利饰品等进入水池，避免划伤宝宝。<br>
+        4、宝宝初到陌生的环境会产生焦躁的小情绪，下水前最好安抚一下宝宝情绪，配合教练的指令学习才能事半功倍。<br>
+        5、优范儿会给宝宝和家长准备高品质的洗浴用品，当然您也可以自行准备。<br>
+        6、请各位粑粑麻麻们为了宝宝的健康，淋浴后再下水。<br>
+        &nbsp;</p>
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <div class="foot1"></div>
+  <div class="foot2">
+    <div class="zt"> <a href="#">加入我们</a>|<a href="#">法律声明</a>|<a href="#">联系我们</a>|<a href="#">网站地图</a>|<a href="#">友情链接</a>|<a href="#">优范儿特色</a><br />
+      Copyright&copy;2014 北京优范儿教育科技有限公司版权所有 </div>
+  </div>
+</div>
+</body>
+</html>

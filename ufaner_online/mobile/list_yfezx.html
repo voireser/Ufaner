@@ -1,0 +1,35 @@
+{xiao:template header.html}
+<div class="x"></div>
+<div class="list_wrapper m"> {xiao:template left.html}
+  <div class="list_right">
+    <div class="position">
+      <p class="rt">您现在的位置：<span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+    <!--右侧主体-->
+    <div class="qgzx0">
+      <ul>
+        {xiao:list catid=$catid page=$page xiaocms=1}
+        <li>
+          <div class="qgzx_l">
+            <div class="qgzx_l_tit"><a href="{xiao:$xiao['url']}">{xiao:$xiao['title']}</a></div>
+            <div class="qgzx_l_con">
+              <div class="pdh">{xiao:$xiao['lianxidianhua']}</div>
+              <div class="pmc">{xiao:$xiao['yingyeshijian']}</div>
+              <div class="pdz">{xiao:$xiao['dizhi']}</div>
+              <div class="jtxx"> <b>周边交通信息</b>
+                <p>交通信息：{xiao:$xiao['jiaotongxinxi']}</p>
+                <p>驾驶路线：{xiao:$xiao['jiashiluxian']}</p>
+              </div>
+              <div class="ljgd"><a href="{xiao:$xiao['url']}">了解更多信息</a></div>
+            </div>
+          </div>
+          <div class="qgzx_r"><img src="{xiao:function.image($xiao[thumb])}" ></div>
+        </li>
+        {/xiao:list}
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="fyys">{xiao:$pagelist}</div>
+  </div>
+</div>
+{xiao:template footer.html}

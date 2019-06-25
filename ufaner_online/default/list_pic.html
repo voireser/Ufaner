@@ -1,0 +1,112 @@
+{xiao:template header.html}
+
+<!-- <div class="x"></div>
+
+<div class="list_wrapper m"> {xiao:template left.html}
+
+  <div class="list_right">
+
+    <div class="position">
+
+      <p class="rt">您现在的位置：<span><span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+
+    < !--右侧主体- - >
+
+    <div class="tk">
+
+      <ul>
+
+        {xiao:list catid=$catid page=$page}
+
+        <li class="lf"><img src="{xiao:function.image($xiao[thumb])}" />
+
+          <p><a>{xiao:$xiao['title']}</a></p>
+
+        </li>
+
+        {/xiao:list}
+
+        <div class="clear"></div>
+
+      </ul>
+
+    </div>
+
+    <div class="fyys">{xiao:$pagelist}</div>
+
+  </div>
+
+</div> -->
+<div class="container swiperPhoto">
+                <div class="row">
+                    <div class="swiper-container col-lg-8">
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="img/photo_1.jpg" alt="">
+                            <img class="swiper-slide" src="img/photo_2.jpg" alt="">
+                            <img class="swiper-slide" src="img/photo_3.jpg" alt="">
+                            <img class="swiper-slide" src="img/photo_4.jpg" alt="">
+                            <img class="swiper-slide" src="img/photo_5.jpg" alt="">
+                            <img class="swiper-slide" src="img/photo_6.jpg" alt="">
+                            <!-- <img class="swiper-slide" src="" alt="">
+                            <img class="swiper-slide" src="" alt="">
+                            <img class="swiper-slide" src="" alt="">
+                            <img class="swiper-slide" src="" alt="">
+                            <img class="swiper-slide" src="" alt=""> -->
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p>孩子们<br>的精彩瞬间</p>
+                        <p>北京长楹天街天街店内<br>跳水训练课<br>课程等级-W4</p>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container statePhoto">
+                <div class="row">
+                    <div class="one"><img src="img/statePhoto_1.jpg" alt=""></div>
+                    <div class="one">
+                        <div class="textShadow_2">
+                            <p>课程展示</p>
+                            <p>C1-C4阶段的课程展示</p>
+                            <p>小天使们在水中的英姿</p>
+                        </div>
+                        <img src="img/statePhoto_3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="line">
+                        <div class="textShadow">
+                            <p>亲子课C2阶段</p>
+                            <p>北京蓝色港湾店内拍摄</p>
+                        </div>
+                        <img src="img/statePhoto_2.jpg" alt="">
+                    </div>
+                    <div class="line">
+                        <div class="textShadow">
+                            <p>水训课C2阶段</p>
+                            <p>北京蓝色港湾店内拍摄</p>
+                        </div>
+                        <img src="img/statePhoto_4.jpg" alt="">
+                    </div>
+                    <div class="line">
+                        <div class="textShadow">
+                            <p>水育早教C3阶段</p>
+                            <p>北京蓝色港湾店内拍摄</p>
+                        </div>
+                        <img src="img/statePhoto_6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="one"><img src="img/statePhoto_5.jpg" alt=""></div>
+                    <div class="one"><img src="img/statePhoto_7.jpg" alt=""></div>
+                </div>
+            </div>
+
+{xiao:template footer.html} 

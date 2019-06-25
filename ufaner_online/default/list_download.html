@@ -1,0 +1,39 @@
+{xiao:template header.html}
+<div class="nei">
+<div style="width:1000px; margin:0 auto;">
+  <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr> {xiao:template left.html}
+      <td  valign="top" style="padding-top:10px; padding-left:10px;"><table width="755" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><table width="755" border="0" cellspacing="0" cellpadding="0"  style="border-bottom:2px solid #05486b">
+                <tr>
+                  <td width="300" height="44"  align="left" valign="middle" style="background:url({xiao:$site_template}images/b1.jpg) no-repeat center;"><span class="STYLE23">{xiao:$cats[$catid][catname]} </span></td>
+                  <td width="699" align="right"><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</td>
+                </tr>
+              </table>
+              <table width="755" height="316" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="755" align="center" valign="top" style="line-height:24px; padding-top:20px; text-align:left"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      {xiao:list catid=$catid page=$page xiaocms=1}
+                      <tr>
+                        <td width="6%" height="30" align="center" style="BORDER-bottom: #999 1px dashed"><img src="{xiao:$site_template}images/arrow_6.gif" width="11" height="11" /></td>
+                        <td width="55%" align="left" height="24" style="BORDER-bottom: #999 1px dashed"><a href="{xiao:$xiao['url']}">{xiao:$xiao['title']}</a></td>
+                        <td width="15%" align="right" height="24" style="BORDER-bottom: #999 1px dashed"><a href="{xiao:$xiao['fujian']}">附件下载</a></td>
+                        <td width="15%" style="BORDER-bottom: #999 1px dashed; padding-right:20px;" align="right"><font>{xiao:function.date("Y-m-d", $xiao['time'])}</font></td>
+                      </tr>
+                      {/xiao:list}
+                      <tr valign="bottom">
+                        <td height="50" colspan="3" align="center" >{xiao:$pagelist}</td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td valign="top" style="padding:15px 0px;"></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</div>
+{xiao:template footer.html} 

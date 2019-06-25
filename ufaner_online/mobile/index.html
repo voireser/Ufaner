@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <title>优范儿｜YOURFANCY </title>   
+
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="Ufaner 优范儿 优范">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{xiao:$site_template}images/new/img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="{xiao:$site_template}images/new/img/apple-touch-icon.png">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+        <style>
+            .load{position:fixed;top:0;left:0;width:100%;height:100%;z-index: 99999;background-color: #fff;}
+            .load img{position:absolute;top:170px;left:50%;margin-left:-100px;border-radius:100%;box-shadow:0 10px 20px rgba(0,0,0,.2);cursor:pointer;justify-content:center;align-items:center;flex-direction:column;animation:jumping .8s infinite alternate;}
+            @keyframes jumping{50%{top:170px;box-shadow:0 10px 20px rgba(0,0,0,.2);}
+            100%{top:120px;box-shadow:0 120px 50px rgba(0,0,0,.2);}
+            }
+            .load p{position:absolute;bottom:200px;width:100%;color:#063c85;text-align:center;font-size:24px;}
+        </style>
+        <div class="load" id="load">
+            <img src="{xiao:$site_template}images/new/img/lessonIcon_4.png" alt="">
+            <p>即将进入精彩的优范儿世界...</p>
+        </div>
+        <script>
+            document.onreadystatechange = completeLoading;
+    
+            function completeLoading() {  
+                if (document.readyState == "complete") {  
+                    $("#load p").html('欢迎您的到来!')
+                    setTimeout(() => {
+                        $("#load").animate({opacity:"0"});
+                        setTimeout(() => {
+                            $("#load").remove()
+                        }, 1000);
+                    }, 1000);
+                }
+            }  
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="{xiao:$site_template}images/new/css/normalize.css" />
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="{xiao:$site_template}images/new/vendor/bootstrap/css/bootstrap.min.css">
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="{xiao:$site_template}images/new/css/theme.css">
+        <link rel="stylesheet" href="{xiao:$site_template}images/new/css/theme-elements.css">
+        <link rel="stylesheet" href="{xiao:$site_template}images/new/vendor/rs-plugin/css/settings.css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href="{xiao:$site_template}images/new/css/custom.css">
+
+        <!-- Head Libs -->
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/modernizr/modernizr.min.js"></script>
+    </head>
+    <body class="index" style="margin: 0;">
+        <div class="body">
+            {xiao:template header.html}
+            <div class="slider-container rev_slider_wrapper" style="height: 100vh;">
+                <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 1000, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }}">
+                    <ul>
+                        <li class="slide-overlay" data-transition="fade">
+                            <img src="{xiao:$site_template}images/new/video/video-1.jpg"  
+                                alt=""
+                                data-bgposition="center center" 
+                                data-bgfit="cover" 
+                                data-bgrepeat="no-repeat" 
+                                class="rev-slidebg">
+
+                            <div class="rs-background-video-layer" 
+                                data-forcerewind="on" 
+                                data-volume="mute" 
+                                data-videowidth="100%" 
+                                data-videoheight="100%" 
+                                data-videomp4="{xiao:$site_template}images/new/video/video-1.mp4?1" 
+                                data-videopreload="preload" 
+                                data-videoloop="loop" 
+                                data-forceCover="1" 
+                                data-aspectratio="16:9" 
+                                data-autoplay="true" 
+                                data-autoplayonlyfirsttime="false" 
+                                data-nextslideatend="false">
+                            </div>
+                            
+                            <div class="tp-caption"
+                                data-x="center" data-hoffset="['-125','-125','-125','-215']"
+                                data-y="center" data-voffset="['-50','-50','-50','-75']"
+                                data-start="1000"
+                                data-transform_in="x:[-300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;" style="z-index: 5;"><img src="{xiao:$site_template}images/new/img/slide-title-border.png" alt=""></div>
+
+                            <div class="tp-caption text-color-light font-weight-normal"
+                                data-x="center"
+                                data-y="center" data-voffset="['-50','-50','-50','-75']"
+                                data-start="700"
+                                data-fontsize="['22','22','22','40']"
+                                data-lineheight="['25','25','25','45']"
+                                data-transform_in="y:[-50%];opacity:0;s:500;" style="z-index: 5;">源 自 美 国</div>
+
+                            <div class="tp-caption d-none d-md-block blueLine"
+                                data-frames='[{"delay":2400,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center" data-hoffset="['72','72','72','127']"
+                                data-y="center" data-voffset="['-33','-33','-33','-55']" style="z-index: 5;"></div>
+
+                            <div class="tp-caption"
+                                data-x="center" data-hoffset="['125','125','125','215']"
+                                data-y="center" data-voffset="['-50','-50','-50','-75']"
+                                data-start="1000"
+                                data-transform_in="x:[300%];opacity:0;s:500;"
+                                data-transform_idle="opacity:0.2;s:500;" style="z-index: 5;"><img src="{xiao:$site_template}images/new/img/slide-title-border.png" alt=""></div>
+
+                            <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
+                                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                data-x="center"
+                                data-y="center"
+                                data-fontsize="['50','50','50','90']"
+                                data-lineheight="['55','55','55','95']" style="z-index: 5;">优范儿｜YOURFANCY</div>
+
+                            <div class="tp-caption font-weight-light"
+                                data-frames='[{
+                                    "from":"opacity:0;",
+                                    "speed":300,
+                                    "to":"o:1;",
+                                    "delay":2000,
+                                    "split":"chars",
+                                    "splitdelay":0.05,
+                                    "ease":"Power2.easeInOut"
+                                },{
+                                    "delay":"wait",
+                                    "speed":1000,
+                                    "to":"y:[100%];",
+                                    "mask":"x:inherit;y:inherit;s:inherit;e:inherit;",
+                                    "ease":"Power2.easeInOut"
+                                }]'
+                                data-x="center"
+                                data-y="center" data-voffset="['40','40','40','80']"
+                                data-fontsize="['18','18','18','50']"
+                                data-lineheight="['20','20','20','55']"
+                                style="color: #ffffff; z-index: 5;margin-top: 10px">水中运动创新品牌</div>
+                            
+                            <a class="tp-caption slider-scroll-button"
+                                data-hash
+                                data-hash-offset="80"
+                                href="#main"
+                                data-x="center"
+                                data-y="bottom" data-voffset="['30','30','30','30']"
+                                data-start="1600"          
+                                data-transform_in="y:[100%];s:500;"
+                                data-transform_out="y:[100%];opacity:0;s:500;"
+                                data-mask_in="x:0px;y:0px;" style="z-index: 5;"></a>
+
+                            <div class="tp-dottedoverlay tp-opacity-overlay"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container" id="main">
+                <div class="row">
+                    <p class="title">YOURFANCY 理论</p>
+                    <p class="titleNext">优范儿致力于为0-8岁的婴幼儿及家庭提供科学、健康、全方位的亲子运动服务。</p>
+                    <div class="row counters text-dark">
+                        <a href="/index.php?catid=1" class="col-sm-4 col-lg-4 mb-4 mb-lg-0">
+                            <div class="counter">
+                                <div class="row">
+                                    <img src="{xiao:$site_template}images/new/img/aboutIcon_3.png" alt="">
+                                    <strong data-to="20">0</strong>
+                                </div>
+                                <label>历经20个月的研发及多地考究</label>
+                                <span class="particletext bubbles">MORE</span>
+                            </div>
+                        </a>
+                        <a href="/index.php?catid=1" class="col-sm-4 col-lg-4 mb-4 mb-sm-0">
+                            <div class="counter">
+                                <div class="row">
+                                    <img src="{xiao:$site_template}images/new/img/aboutIcon_2.png" alt="">
+                                    <strong data-to="2013">0</strong>
+                                </div>
+                                <label>首家优范儿水中运动<br>于2013年在北京正式成立</label>
+                                <span class="particletext bubbles">MORE</span>
+                            </div>
+                        </a>
+                        <a href="/index.php?catid=1" class="col-sm-4 col-lg-4">
+                            <div class="counter">
+                                <div class="row">
+                                    <img src="{xiao:$site_template}images/new/img/aboutIcon_1.png" alt="">
+                                    <strong data-to="24000" data-append="+">0</strong>
+                                </div>
+                                <label>已突破24000+VIP会员</label>
+                                <span class="particletext bubbles">MORE</span>
+                            </div>
+                        </a>
+                        <div class="babyArea">
+                            <img class="babyBottom" src="{xiao:$site_template}images/new/img/babyBottom.png" alt="">
+                            <a href="/index.php?catid=8"><img src="{xiao:$site_template}images/new/img/babyBottom_btn.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container blueArea mPrevent">
+                <div class="container">
+                    <div class="row">
+                        <p class="title">YOURFANCY 课程</p>
+                        <p class="titleNext">为每个孩子提供最优秀的游泳课程</p>
+                        <div class="lessonCard">
+                            <a href="/index.php?catid=2">
+                                <img class="cardImg" src="{xiao:$site_template}images/new/img/lessonIcon_4.png"/>
+                                <p class="cardTitle">水育早教</p>
+                                <div class="cardNext">
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />促进婴幼儿智能发育</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />增加亲子关系</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />锻炼身体控制能力及胆量</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />发现自我兴趣</p>
+                                </div>
+                            </a>
+                            <a href="/index.php?catid=2">
+                                <div>
+                                    <img class="cardImg" src="{xiao:$site_template}images/new/img/lessonIcon_2.png"/>
+                                    <img class="cardImg" src="{xiao:$site_template}images/new/img/lessonIcon_3.png"/>
+                                </div>
+                                <p class="cardTitle">水训课</p>
+                                <div class="cardNext">
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />有效的控制呼吸</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />加强应急入水能力</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />强水中专业技能</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />掌握初步的自救本领</p>
+                                </div>
+                            </a>
+                            <a href="/index.php?catid=2">
+                                <img class="cardImg" src="{xiao:$site_template}images/new/img/lessonIcon_1.png"/>
+                                <p class="cardTitle">亲子游泳</p>
+                                <div class="cardNext">
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />发掘孩子的运动天赋</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />增强体能、学会呼吸控制</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />学会四种专业泳姿</p>
+                                    <p><img src="{xiao:$site_template}images/new/img/waterDot.png" />掌握标准的跳水、出发转身</p>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="/index.php?catid=2" class="particletext bubbles">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container imgBgArea mPrevent">
+                <div class="container">
+                    <div class="row">
+                        <p class="title">YOURFANCY 优势</p>
+                        <p class="titleNext">细节决定成败，每一个环节都经过严格筛选把关</p>
+                        <div class="row brandPhotos">
+                            <a href="/index.php?catid=1">
+                                <img src="{xiao:$site_template}images/new/img/brand_1.jpg" alt="">
+                                <div>
+                                    <p>技术优势</p>
+                                    <p>保证孩子学习的科学高效</p>
+                                </div>
+                            </a>
+                            <a href="/index.php?catid=1">
+                                <img src="{xiao:$site_template}images/new/img/brand_2.jpg" alt="">
+                                <div>
+                                    <p>管理优势</p>
+                                    <p>为每家门店的安全运营保驾护航</p>
+                                </div>
+                            </a>
+                            <a href="/index.php?catid=1">
+                                <img src="{xiao:$site_template}images/new/img/brand_3.jpg" alt="">
+                                <div>
+                                    <p>硬件优势</p>
+                                    <p>提供安全放心的教学体验环境</p>
+                                </div>
+                            </a>
+                            <a href="/index.php?catid=1">
+                                <img src="{xiao:$site_template}images/new/img/brand_4.jpg" alt="">
+                                <div>
+                                    <p>国际标准</p>
+                                    <p>为每家门店的安全运营保驾护航</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container spaceBanner mPrevent">
+                <div class="row">
+                    <img src="{xiao:$site_template}images/new/img/us_1.jpg" alt="">
+                    <div>
+                        <p>专属空间</p>
+                        <p>安全、舒适，且适合宝宝身心发展的高品质的体验环境</p>
+                        <p>细节决定成败每一个环节<br>都经过严格筛选把关</p>
+                        <a class="particletext bubbles" href="/index.php?catid=11">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container ufanerPage_2">
+                <div class="row">
+                    <p class="title">品牌活动</p>
+                    <p class="titleNext">每一个品牌活动，都是优范儿前行路上的珍贵记忆</p>
+                    <div class="row">
+                        {xiao:list catid=15 num=1 cache=0 status=2}
+                        <a href="{xiao:$xiao['url']}" class="thin">
+                            <img src="{xiao:$site_template}images/new/img/KOLActiveIcon_1.png" alt="">
+                            <p>{xiao:function.strcut($xiao[description],80)}......</p>
+                            <p>{xiao:function.strcut($xiao[title],1000)}</p>
+                            <div style="background-image: url({xiao:function.image($xiao[thumb])}")></div>
+                        </a>
+                        {/xiao:list}
+                        {xiao:list catid=16 num=1 cache=0 status=2}
+                        <a href="{xiao:$xiao['url']}" class="thin">
+                            <img src="{xiao:$site_template}images/new/img/KOLActiveIcon_2.png" alt="">
+                            <p>{xiao:function.strcut($xiao[description],80)}......</p>
+                            <p>{xiao:function.strcut($xiao[title],1000)}</p>
+                            <div style="background-image: url({xiao:function.image($xiao[thumb])}")></div>
+                        </a>
+                        {/xiao:list}
+                        {xiao:list catid=17 num=1 cache=0 status=2}
+                        <a href="{xiao:$xiao['url']}" class="fat">
+                            <p>{xiao:function.strcut($xiao[title],1000)}</p>
+                            <div style="background-image: url({xiao:function.image($xiao[thumb])}")></div>
+                        </a>
+                        {/xiao:list}
+                    </div>
+                    <a href="/index.php?catid=3" class="particletext bubbles">MORE</a>
+                </div>
+            </div>
+            
+            <div class="modal flyBall fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_1.png" alt="">
+                    <p>身心健康</p>
+                    <p>从出生就开始水中运动对于宝贝的健康，发展都很有帮助，还能激发起孩子对运动的兴趣，特别是宝贝的心率和肺功能的锻炼，还有大脑的发育及五官（味觉，嗅觉，触觉视觉和听觉）的刺激。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_2.png" alt="">
+                    <p>自信胆量</p>
+                    <p>A 让宝贝很早的接触水会帮助宝贝抑制后期对水的恐惧。水中自由的游动，跳水及抓握在池边可以很好的增强宝贝的自信心。<br>B 谨慎的宝贝学会接受风险，容易过度兴奋的则会变得比较谨慎。<br>C 为宝贝提供一个丰富且富有刺激性的环境让宝贝在探索中变得更勇敢。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_3.png" alt="">
+                    <p>协调平衡</p>
+                    <p>A 在水中能很好的增强协调和平衡能力。<br>B 让宝贝自己在浅区行走，锻炼平衡感。<br>C 让宝贝趴在浮棍上锻炼协调和平衡。<br>D 让宝贝坐、趴、站在漂浮垫上。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_4.png" alt="">
+                    <p>幸福感</p>
+                    <p>A 孩子在温暖的水中会很放松，心情愉悦。<br>B 水中运动对孩子消化系统有很好的帮助。<br>C 同时促进孩子的睡眠和饮食质量。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_5.png" alt="">
+                    <p>充实每天</p>
+                    <p>A 每周的水中运动课能充实孩子每天的生活。<br>B 可以给孩子提供有趣的社交环境。<br>C 同龄段社交环境可以让孩子成长更快。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_6.png" alt="">
+                    <p>学习能力</p>
+                    <p>A 不断的重复性信号词会增强宝贝的智力和理解能力。<br>B 德国研究发现水中运动的宝贝有更好的动作发展，社交能力和智力发展。<br>C 让宝宝较为容易地学会分享，排队，并接受失望。<br>D 常态性的课程有助于建立互动互助。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            <div class="modal flyBall fade" id="myModal_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <img src="{xiao:$site_template}images/new/img/setInside_7.png" alt="">
+                    <p>增强力量</p>
+                    <p>A 水中的浮力和阻力更能练习宝贝的肌肉力量，水中比陆地有更明显的效果。<br>B 芬兰研究表明很好的肌肉控制能力对后期宝贝爬行和行走也大有益处。<br>C 使宝贝强化身体，有助于肌肉骨骼发展。</p>
+                    <img src="{xiao:$site_template}images/new/img/close.png" alt="">
+                </div>
+            </div>
+            
+            <div class="container setLesson mPrevent">
+                <div class="row">
+                    <p class="title">定制课程</p>
+                    <p class="titleNext">优范儿youfaner 根据中国宝宝的体质研发的综合水中运动课程，<br>针对不同年龄、体质、及成长阶段而设计，能为每个独特的宝宝找到最适合他们的课程</p>
+                    <div class="setArea">
+                        <img src="{xiao:$site_template}images/new/img/baby_water.png" />
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_1"><img src="{xiao:$site_template}images/new/img/set_1.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_2"><img src="{xiao:$site_template}images/new/img/set_2.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_3"><img src="{xiao:$site_template}images/new/img/set_3.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_4"><img src="{xiao:$site_template}images/new/img/set_4.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_5"><img src="{xiao:$site_template}images/new/img/set_5.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_6"><img src="{xiao:$site_template}images/new/img/set_6.png" alt=""></a>
+                        <a href="javascript:;" data-toggle="modal" data-target="#myModal_7"><img src="{xiao:$site_template}images/new/img/set_7.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container blueArea topFlower mPrevent">
+                <div class="container">
+                    <div class="row">
+                        <p class="title">YOUFANCY 全国</p >
+                        <p class="titleNext">我们期待您的致电与光临</p >
+                        <div class="city">
+                            <div>
+                                <img src="{xiao:$site_template}images/new/img/baby.png" alt="">
+                                <div>
+                                    <p>选择城市</p >
+                                    <p>
+                                        {xiao:nav parentid=6}
+                                        <a href="javascript:;">{xiao:$xiao['catname']}</a>
+                                        {/xiao:nav}
+                                    </p >
+                                    <div class="cityTriangle"></div>
+                                </div>
+                                <div class="cityInside">
+                                    {xiao:list catid=22 xiaocms=1}
+                                    <div>
+                                        <p>{xiao:$xiao['title']}</p>
+                                        <p>
+                                            <span>{xiao:$xiao['dizhi']}</span>
+                                            <span>{xiao:$xiao['lianxidianhua']}</span>
+                                        </p>
+                                    </div>
+                                    {/xiao:list}
+                                    <!-- <div>
+                                        <p>优范儿世贸天阶旗舰中心</p >
+                                        <p>
+                                            <span>北京朝阳区比世贸天阶南街B108A</span>
+                                            <span>010-53092353</span>
+                                        </p >
+                                    </div>
+                                    <div>
+                                        <p>优范儿比如世界旗舰中心</p >
+                                        <p>
+                                            <span>北京朝阳区比如世界二层</span>
+                                            <span>010-64304133</span>
+                                        </p >
+                                    </div> -->
+                                    <!-- <div>
+                                        <p>优范儿蓝色港湾科妮中心</p >
+                                        <p>
+                                            <span>北京朝阳区蓝色港湾儿童城M层</span>
+                                            <span>010-59056720</span>
+                                        </p >
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {xiao:template foot.html}
+        </div>
+        
+        <canvas id="flower"></canvas>
+
+        <!-- Vendor -->
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/common/common.min.js"></script>
+        
+        <!-- Theme Base, Components and Settings -->
+        <script type="text/javascript" src="{xiao:$site_template}images/new/js/theme.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/js/custom.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/js/swiper.min.js"></script>
+    
+        <!-- Current Page Vendor and Views -->
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="{xiao:$site_template}images/new/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        
+        <!-- Theme Initialization Files -->
+        <script type="text/javascript" src="{xiao:$site_template}images/new/js/theme.init.js"></script>
+
+        <script type="text/javascript" src="{xiao:$site_template}images/new/master/analytics/analytics.js"></script>
+        <script>
+            $('.city>div>div>p>a').on('click', function() {
+                if(this.innerHTML === '北京') {
+                    let json = ''
+                    {xiao:list catid=22 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+
+                } else if (this.innerHTML === '天津') {
+                    let json1 = ''
+                    {xiao:list catid=23 xiaocms=1}
+                    json1 += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json1)
+                } else if (this.innerHTML === '上海') {
+                    let json2 = ''
+                    {xiao:list catid=47 xiaocms=1}
+                    json2 += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json2)
+                } else if (this.innerHTML === '温州') {
+                    let json = ''
+                    {xiao:list catid=54 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                } else if (this.innerHTML === '哈尔滨') {
+                    let json = ''
+                    {xiao:list catid=55 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                } else if (this.innerHTML === '江苏盐城') {
+                    let json = ''
+                    {xiao:list catid=56 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                } else if (this.innerHTML === '石家庄') {
+                   let json = ''
+                    {xiao:list catid=61 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                    // $('.cityInside').html('<div><p>优范儿旗舰中心（筹建）</p><p><span>合肥市蜀山区黄山路</span><span>400-660-1255</span></p></div>')
+                } else if (this.innerHTML === '内蒙古') {
+                    let json = ''
+                    {xiao:list catid=64 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                    // $('.cityInside').html('<div><p>优范儿先天下中心</p><p><span>石家庄市桥西区先天下中心4楼</span><span>0311-89108472</span></p></div><div><p>优范儿万象城中心</p><p><span>石家庄市桥西区万象城五楼</span><span>0311-66099366</span></p></div>')
+                } else if (this.innerHTML === '苏州') {
+                    let json = ''
+                    {xiao:list catid=65 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                    // $('.cityInside').html('<div><p>逗号立方中心</p><p><span>邢台市桥西区逗号立方中心三层</span><span>400-660-1255</span></p></div>')
+
+                }else if (this.innerHTML === '邢台') {
+                    let json = ''
+                    {xiao:list catid=66 xiaocms=1}
+                    json += '<div><p>{xiao:$xiao['title']}</p><p><span>{xiao:$xiao['dizhi']}</span><span>{xiao:$xiao['lianxidianhua']}</span></p></div>'
+                    {/xiao:list}
+                    $('.cityInside').html(json)
+                }
+            })
+        </script>
+    </body>
+</html>
+
+            

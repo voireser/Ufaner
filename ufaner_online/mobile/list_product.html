@@ -1,0 +1,54 @@
+<style type="text/css">
+.ys ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.ys ul li {
+	width: 225px;
+	height: 200xp;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	text-align: center
+}
+.ys ul li a {
+	color: #000;
+	font-size: 12px;
+	font-family: 微软雅黑;
+}
+.ys ul li img {
+	width: 225px;
+	height: 130px;
+	float: left;
+	border: solid 1px #CCCCCC;
+}
+</style>
+
+{xiao:template header.html}
+<div class="x"></div>
+<div class="list_wrapper m"> {xiao:template left.html}
+  <div class="list_right">
+    <div class="position">
+      <p class="rt">您现在的位置：<span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+    <!--右侧主体-->
+    <div class="zhishi">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td valign="top" class="ys"><ul>
+              {xiao:list catid=$catid page=$page}
+              <li> <a style="float:left;" href="{xiao:$xiao['url']}"><img src="{xiao:function.image($xiao[thumb])}" /></a><br/>
+                <a href="{xiao:$xiao['url']}">{xiao:$xiao['title']}</a> </li>
+              {/xiao:list}
+              <div style="clear:both"></div>
+            </ul></td>
+        </tr>
+        <tr valign="middle">
+          <td height="20" colspan="3" align="center" class="ys" >{xiao:$pagelist}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+{xiao:template footer.html} 

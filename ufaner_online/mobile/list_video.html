@@ -1,0 +1,43 @@
+{xiao:template header.html}
+
+<div class="x"></div>
+
+<div class="list_wrapper m"> {xiao:template left.html}
+
+  <div class="list_right">
+
+    <div class="position">
+
+      <p class="rt">您现在的位置：<span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+
+    <!--右侧主体-->
+
+    <div class="tk1">
+
+      <ul>
+
+        {xiao:list catid=$catid page=$page}
+
+        <li class="lf"><a href="{xiao:$xiao['url']}"><img src="{xiao:function.image($xiao[thumb])}" width="236" height="177" /></a>
+
+          <p><a href="{xiao:$xiao['url']}">{xiao:$xiao['title']}</a></p>
+
+        </li>
+
+        {/xiao:list}
+
+        <div class="clear"></div>
+
+      </ul>
+
+    </div>
+
+    <div class="fyys">{xiao:$pagelist}</div>
+
+  </div>
+
+</div>
+
+{xiao:template footer.html}

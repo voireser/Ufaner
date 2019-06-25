@@ -1,0 +1,23 @@
+{xiao:template header.html}
+<div class="x"></div>
+<div class="list_wrapper m"> {xiao:template left.html}
+  <div class="list_right">
+    <div class="position">
+      <p class="rt">您现在的位置：<span><a href="{xiao:$site_url}">首页</a> >> {xiao:function.position($catid, ' &gt;&gt;&nbsp;&nbsp;')}</span></p>
+      <strong>{xiao:$cats[$catid][catname]}</strong></div>
+    <!--右侧主体-->
+    <div class="zhishi">
+      <div class="nav_nyrb"> {xiao:nav num=999}
+        <h2><a href="{xiao:$xiao['url']}">{xiao:$xiao['catname']}</a></h2>
+        <br />
+        {xiao:if  $xiao['child']}
+        {xiao:nav parentid=$xiao[catid] }
+        <h3><a href="{xiao:$xiao['url']}">{xiao:$xiao['catname']}</a></h3>
+        {/xiao:nav}
+        <hr />
+        {/xiao:if}
+        {/xiao:nav} </div>
+    </div>
+  </div>
+</div>
+{xiao:template footer.html} 
